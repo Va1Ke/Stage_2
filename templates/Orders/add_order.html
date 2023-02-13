@@ -1,0 +1,29 @@
+{% extends 'orders_layout.html' %}
+
+{% block title %}Hotel - Orders{% endblock %}
+
+{% block first_body %}
+    <h1>Add Order</h1>
+{% endblock %}
+
+{% block second_body %}
+    <span class="inside">
+        <label>client_id:</label>
+        <input type="text" id="id" size="3">
+    </span>
+
+    <span class="inside">
+        <label>room_id:</label>
+        <input type="text" id="id" size="3">
+    </span>
+
+    <span class="inside">
+        <label>on_days:</label>
+        <input type="text" id="id" size="3">
+    </span>
+
+    <span class="menu">
+        <button class="button button4">Cancel</button>
+        <button class="button button1">Add</button>
+    </span>
+{% endblock %}

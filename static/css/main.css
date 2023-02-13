@@ -14,7 +14,12 @@ li {
     font-size: 20px;
     align-items: center;
 }
-
+.id{
+    margin-right: 150px
+}
+.name{
+    margin-right: 65px
+}
 .button {
   border: none;
   color: white;
@@ -25,6 +30,12 @@ li {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+.inside{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .menu{
@@ -58,3 +69,4 @@ table{
 .button1 {background-color: #4CAF50;}
 .button2 {background-color: #008CBA;}
 .button3 {background-color: brown;}
+.button4 {background-color: orange;}
