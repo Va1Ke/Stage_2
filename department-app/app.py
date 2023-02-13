@@ -1,6 +1,6 @@
 from flask import Flask,  render_template, url_for
 from flask_sqlalchemy import SQLAlchemy
-from config import settings
+from .config import settings
 app = Flask(__name__)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://'+settings.MYSQL_USER+':'+settings.MYSQL_PASSWORD+'@localhost:'+settings.MYSQL_PORT+'/'+settings.MYSQL_DATABASE
