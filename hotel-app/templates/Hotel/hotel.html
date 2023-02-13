@@ -1,0 +1,36 @@
+{% extends 'hotel_layout.html' %}
+
+{% block title %}Hotel - Room List{% endblock %}
+
+{% block first_body %}
+    <h1>Hotel</h1>
+{% endblock %}
+
+{% block second_body %}
+
+
+
+    <table style="width:475px">
+      <tr>
+          <th>id</th>
+          <th>area</th>
+          <th>number_of_beds</th>
+          <th>price_for_a_night</th>
+          <th>busy</th>
+      </tr>
+      <tr>
+          <th>1</th>
+          <th>20</th>
+          <th>1</th>
+          <th>30</th>
+          <th>False</th>
+      </tr>
+      <tr>
+          <th>2</th>
+          <th>35</th>
+          <th>2</th>
+          <th>55</th>
+          <th>True</th>
+      </tr>
+    </table>
+{% endblock %}

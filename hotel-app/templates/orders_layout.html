@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <div>
+    {% block first_body %}{% endblock %}
+    <div class="menu">
+        <ul>
+          <li><a href="/order_list/">Orders</a></li>
+          <li><a href="/client_list/">Clients</a></li>
+          <li><a href="/room_list/">Hotel</a></li>
+        </ul>
+
+        <a href="/order_list/delete/" class="button button3">Delete</a>
+        <a href="/order_list/edit/" class="button button2">Edit</a>
+        <a href="/order_list/add/" class="button button1">Add</a>
+
+    </div>
+
+    {% block second_body %}{% endblock %}
+    </div>
+</body>
+</html>
