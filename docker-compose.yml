@@ -5,14 +5,15 @@ services:
     image: mysql:latest
     restart: always
     command: --default-authentication-plugin=mysql_native_password
+    env_file:
+      - .env
     environment:
       MYSQL_DATABASE: ${MYSQL_DATABASE}
       MYSQL_USER: ${MYSQL_USER}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
     volumes:
-      - ./init:/docker-entrypoint-initdb.d
-
+      - my-datavolume:/var/lib/mysql
   adminer:
     image: adminer
     restart: always
@@ -21,14 +22,14 @@ services:
 
   web:
     build: .
-    command: flask run --host=${APP_HOST} --port=${APP_PORT}
     ports:
       - 5000:5000
+    volumes:
+      - .:/code
     env_file:
       - .env
     depends_on:
       - db
 
 volumes:
-  db:
-    driver: local
+  my-datavolume:
