@@ -1,31 +1,33 @@
-from main import db
+from sqlalchemy import Column, Integer, String, Boolean, DateTime, ForeignKey
+from hotel.db import Base
 
-class Clients(db.Model):
+class Clients(Base):
     __tablename__ = "clients"
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(128))
-    phone_number = db.Column(db.String(128))
+    id = Column(Integer, primary_key=True)
+    name = Column(String(128))
+    phone_number = Column(String(128))
+
 
 clients = Clients.__table__
 
-class Hotel(db.Model):
+class Hotel(Base):
     __tablename__ = "hotel"
-    id = db.Column(db.Integer, primary_key=True)
-    area = db.Column(db.Integer)
-    number_of_beds = db.Column(db.Integer)
-    price_for_a_night = db.Column(db.Integer)
-    busy = db.Column(db.Boolean)
+    id = Column(Integer, primary_key=True)
+    area = Column(Integer)
+    number_of_beds = Column(Integer)
+    price_for_a_night = Column(Integer)
+    busy = Column(Boolean)
 
 hotel = Hotel.__table__
 
-class Orders(db.Model):
+class Orders(Base):
     __tablename__ = "orders"
-    id = db.Column(db.Integer, primary_key=True)
-    client_id = db.Column(db.Integer, db.ForeignKey("clients.id"))
-    room_id = db.Column(db.Integer, db.ForeignKey("hotel.id"))
-    name = db.Column(db.String(128))
-    phone_number = db.Column(db.String(128))
-    rented = db.Column(db.DateTime)
-    on_days = db.Column(db.Integer)
+    id = Column(Integer, primary_key=True)
+    client_id = Column(Integer, ForeignKey("clients.id"))
+    room_id = Column(Integer, ForeignKey("hotel.id"))
+    name = Column(String(128))
+    phone_number = Column(String(128))
+    rented = Column(DateTime)
+    on_days = Column(Integer)
 
 orders = Orders.__table__

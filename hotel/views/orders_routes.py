@@ -1,33 +1,34 @@
-from flask import Blueprint, render_template, abort
+from aioflask import Blueprint, render_template, abort
 from jinja2 import TemplateNotFound
-from main import app, db
 
 
-@app.route('/')
-def main():
+orders_rout = Blueprint('orders_rout', __name__)
+
+@orders_rout.route('/')
+async def main():
     """Main page"""
-    return render_template("main.html")
+    return await render_template("main.html")
 
 
-@app.route('/order_list/')
-def orders():
+@orders_rout.route('/order_list/')
+async def orders():
     """Orders page"""
-    return render_template("/Orders/orders.html")
+    return await render_template("/Orders/orders.html")
 
 
-@app.route('/order_list/add/')
-def add_order():
+@orders_rout.route('/order_list/add/')
+async def add_order():
     """Page for adding orders"""
-    return render_template("/Orders/add_order.html")
+    return await render_template("/Orders/add_order.html")
 
 
-@app.route('/order_list/edit/')
-def edit_order():
+@orders_rout.route('/order_list/edit/')
+async def edit_order():
     """Page for editing orders"""
-    return render_template("/Orders/edit_order.html")
+    return await render_template("/Orders/edit_order.html")
 
 
-@app.route('/order_list/delete/')
-def delete_order():
+@orders_rout.route('/order_list/delete/')
+async def delete_order():
     """Page for deleting orders"""
-    return render_template("/Orders/delete_order.html")
+    return await render_template("/Orders/delete_order.html")

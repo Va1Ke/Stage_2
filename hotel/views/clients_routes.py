@@ -1,28 +1,28 @@
-from flask import Blueprint, render_template, abort
+from aioflask import Blueprint, render_template, abort
 from jinja2 import TemplateNotFound
-from main import app, db
 
 
+clients_rout = Blueprint('clients_rout', __name__)
 
-@app.route('/client_list/')
-def clients():
+@clients_rout.route('/client_list/')
+async def clients():
     """Clients page"""
-    return render_template("/Clients/clients.html")
+    return await render_template("/Clients/clients.html")
 
 
-@app.route('/client_list/add/')
-def add_client():
+@clients_rout.route('/client_list/add/')
+async def add_client():
     """Page for adding clients"""
-    return render_template("/Clients/add_client.html")
+    return await render_template("/Clients/add_client.html")
 
 
-@app.route('/client_list/edit/')
-def edit_client():
+@clients_rout.route('/client_list/edit/')
+async def edit_client():
     """Page for editing clients"""
-    return render_template("/Clients/edit_client.html")
+    return await render_template("/Clients/edit_client.html")
 
 
-@app.route('/client_list/delete/')
-def delete_client():
+@clients_rout.route('/client_list/delete/')
+async def delete_client():
     """Page for deleting clients"""
-    return render_template("/Clients/delete_client.html")
+    return await render_template("/Clients/delete_client.html")
