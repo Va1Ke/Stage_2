@@ -16,14 +16,5 @@ app.register_blueprint(clients_routes.clients_rout)
 app.register_blueprint(orders_routes.orders_rout)
 app.register_blueprint(hotel_routes.hotel_rout)
 
-
-# @app.before_first_request
-# async def startup():
-#    await db.connect()
-#
-# @app.teardown_appcontext
-# async def shutdown():
-#    await db.disconnect()
-
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port='5000')
