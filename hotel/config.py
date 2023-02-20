@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv, find_dotenv
 
-#ENV_PATH = '../.env'
+
 load_dotenv(dotenv_path=find_dotenv('.env'))
 
 class Settings:

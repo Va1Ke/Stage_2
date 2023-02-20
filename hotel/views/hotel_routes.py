@@ -1,5 +1,5 @@
 from aioflask import Blueprint, render_template, request, redirect, url_for
-from hotel.service.schemas import hotel_schemas
+from service.schemas import hotel_schemas
 
 
 hotel_rout = Blueprint('hotel_rout', __name__)

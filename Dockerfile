@@ -1,8 +1,7 @@
 FROM python:3.10
-WORKDIR /hotel/
-COPY ./requirements.txt /hotel/requirements.txt
-RUN pip install --no-cache-dir --upgrade -r /hotel/requirements.txt
-COPY hotel /hotel/
-COPY .env /
-ENTRYPOINT ["python3"]
-CMD ["app.py"]
+WORKDIR /code/
+COPY ./requirements.txt /code/requirements.txt
+RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
+COPY . /code/
+WORKDIR /code/hotel
+CMD ["python","app.py"]
