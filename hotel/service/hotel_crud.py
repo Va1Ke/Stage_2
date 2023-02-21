@@ -1,5 +1,5 @@
-from service.schemas import hotel_schemas
-from models.models import Hotel
+from hotel.service.schemas import hotel_schemas
+from hotel.models.models import Hotel
 
 class Hotel_crud:
 

@@ -31,7 +31,9 @@ li {
   margin: 4px 2px;
   cursor: pointer;
 }
-
+form{
+    margin: 5px 0 5px 0;
+}
 .inside{
     display: flex;
     flex-direction: row;

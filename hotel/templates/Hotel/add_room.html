@@ -8,30 +8,12 @@
 
 {% block second_body %}
     <form action='' method = "POST">
-        <p>employee ID <input type = "integer" name = "employee_id" /></p>
-        <p>name <input type = "text" name = "name" /></p>
-        <p>age <input type = "integer" name = "age" /></p>
-        <p>position <input type = "text" name = "position" /></p>
-        <p><input type = "submit" value = "Submit" /></p>
+        <p>employee ID <input type = "integer" name = "area" /></p>
+        <p>name <input type = "integer" name = "number_of_beds" /></p>
+        <p>age <input type = "integer" name = "price_for_a_night" /></p>
+        <span class="menu">
+        <p><input class="button button4" type = "cancel" value = "Cancel" /></p>
+        <p><input class="button button1" type = "add" value = "Add" /></p>
+        </span>
     </form>
-
-    <span class="inside">
-        <label>area:</label>
-        <input type="text" id="id" size="4" name="area">
-    </span>
-
-    <span class="inside">
-        <label>number_of_beds:</label>
-        <input type="text" id="id" size="3" name="number_of_beds">
-    </span>
-
-    <span class="inside">
-        <label>price_for_a_night:</label>
-        <input type="text" id="id" size="4" name="price_for_a_night">
-    </span>
-
-    <span class="menu">
-        <button class="button button4">Cancel</button>
-        <button class="button button1">Add</button>
-    </span>
 {% endblock %}
