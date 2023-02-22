@@ -7,20 +7,12 @@
 {% endblock %}
 
 {% block second_body %}
-
-
-    <span class="inside name">
-        <label>name:</label>
-        <input type="text" id="id" size="10">
-    </span>
-
-    <span class="inside">
-        <label>phone_number:</label>
-        <input type="text" id="id" size="10">
-    </span>
-
-    <span class="menu">
-        <button class="button button4">Cancel</button>
-        <button class="button button1">Add</button>
-    </span>
+<form action='' method = "POST">
+        <p>name <input type = "text" name = "name" /></p>
+        <p>phone_number <input type = "text" name = "phone_number" /></p>
+        <span class="menu">
+        <p><a href="/client_list/" class="button button4" type = "cancel">Cancel</a></p>
+        <p><input class="button button1" type = "submit" value = "Add" /></p>
+        </span>
+    </form>
 {% endblock %}
