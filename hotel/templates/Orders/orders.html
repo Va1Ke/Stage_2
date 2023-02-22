@@ -1,0 +1,40 @@
+{% extends 'orders_layout.html' %}
+
+{% block title %}Hotel - Orders{% endblock %}
+
+{% block first_body %}
+    <h1>Orders</h1>
+{% endblock %}
+
+{% block second_body %}
+<table style="width:475px">
+  <tr>
+      <th>id</th>
+      <th>client_id</th>
+      <th>room_id</th>
+      <th>name</th>
+      <th>phone_number</th>
+      <th>rented</th>
+      <th>on_days</th>
+  </tr>
+  <tr>
+      <th>1</th>
+      <th>1</th>
+      <th>1</th>
+      <th>Ben</th>
+      <th>+178678612</th>
+      <th>10-02-2023</th>
+      <th>1</th>
+  </tr>
+  <tr>
+      <th>2</th>
+      <th>2</th>
+      <th>2</th>
+      <th>Maria</th>
+      <th>+145901823</th>
+      <th>11-02-2023</th>
+      <th>3</th>
+  </tr>
+</table>
+{% endblock %}
+

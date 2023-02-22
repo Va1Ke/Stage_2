@@ -1,0 +1,74 @@
+body{
+    background: bisque;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-left: 0px;
+}
+li {
+    display: inline;
+    padding-left: 8px;
+    font-size: 20px;
+    align-items: center;
+}
+.id{
+    margin-right: 150px
+}
+.name{
+    margin-right: 65px
+}
+.button {
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+form{
+    margin: 5px 0 5px 0;
+}
+.inside{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+div{
+    border: 1px solid black;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0px 0 0 0;
+    align-items: center;
+}
+
+table, th, td {
+    border:1px solid black;
+
+}
+table{
+    margin: 5px 0 5px 0;
+
+}
+
+.button1 {background-color: #4CAF50;}
+.button2 {background-color: #008CBA;}
+.button3 {background-color: brown;}
+.button4 {background-color: orange;}

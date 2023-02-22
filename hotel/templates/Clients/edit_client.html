@@ -1,0 +1,19 @@
+{% extends 'clients_layout.html' %}
+
+{% block title %}Hotel - Clients{% endblock %}
+
+{% block first_body %}
+    <h1>Edit Client</h1>
+{% endblock %}
+
+{% block second_body %}
+    <form action='' method = "POST">
+        <p>id <input type = "integer" name = "id" /></p>
+        <p>name <input type = "text" name = "name" /></p>
+        <p>phone_number <input type = "text" name = "phone_number" /></p>
+        <span class="menu">
+        <p><a href="/client_list/" class="button button4" type = "cancel">Cancel</a></p>
+        <p><input class="button button2" type = "submit" value = "Edit" /></p>
+        </span>
+    </form>
+{% endblock %}
