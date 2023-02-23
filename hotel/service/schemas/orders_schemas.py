@@ -8,19 +8,19 @@ class OrderInfoReturn(BaseModel):
     name: str
     phone_number: str
     rented: str
-    on_days: int
+    renting_ends: str
 
 class CreateOrder(BaseModel):
     client_id: int
     room_id: int
     rented: str
-    on_days: int
+    renting_ends: str
 
 class EditOrder(BaseModel):
     id: int
     client_id: int
     room_id: int
     rented: str
-    on_days: int
+    renting_ends: str
 
 

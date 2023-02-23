@@ -6,10 +6,16 @@ from hotel.service.schemas.clients_schemas import EditClientInfo, AddClient
 
 clients_rout = Blueprint('clients_rout', __name__)
 
-@clients_rout.route('/client_list/')
+@clients_rout.route('/client_list/', methods=['GET','POST'])
 def clients():
     """Clients page"""
-    return render_template("/Clients/clients.html")
+    if request.method == 'GET':
+        clients = Clients_crud(db=db).get_all_clients()
+        return render_template("/Clients/clients.html", clients=clients)
+    if request.method == "POST":
+        phone_number = request.form['phone_number']
+        finded_clients = Clients_crud(db=db).find_client(phone_number=phone_number)
+        return render_template("/Clients/clients.html", clients=finded_clients)
 
 
 
@@ -56,5 +62,13 @@ def delete_client():
         record = Clients_crud(db=db).delete_client(id=id)
         if record == "Success":
             return redirect('/client_list/')
+        elif record == "redirect":
+            return redirect('/client_list/delete/error/')
         else:
             return redirect('/bad_request/')
+
+@clients_rout.route('/client_list/delete/error/')
+def delete_error():
+    """Page for deleting clients"""
+    return render_template("/Clients/delete_error.html")
+

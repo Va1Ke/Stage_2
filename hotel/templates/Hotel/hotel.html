@@ -7,30 +7,19 @@
 {% endblock %}
 
 {% block second_body %}
-
-
+    <form action='' method = "POST">
+    <span class="menu">
+    <p>busy:<input type = "text" name = "busy" size="10"/></p>
+    <p><input type = "submit" value = "Search"/></p>
+    </span>
+    </form>
 
     <table style="width:475px">
-      <tr>
-          <th>id</th>
-          <th>area</th>
-          <th>number_of_beds</th>
-          <th>price_for_a_night</th>
-          <th>busy</th>
-      </tr>
-      <tr>
-          <th>1</th>
-          <th>20</th>
-          <th>1</th>
-          <th>30</th>
-          <th>False</th>
-      </tr>
-      <tr>
-          <th>2</th>
-          <th>35</th>
-          <th>2</th>
-          <th>55</th>
-          <th>True</th>
-      </tr>
+        <thead><tr><th>id</th><th>area</th><th>number_of_beds</th><th>price_for_a_night</th><th>busy</th></tr></thead>
+    <tbody>
+        {% for room in rooms %}
+        <tr><td>{{ room.id }}</td><td>{{ room.area }}</td><td>{{ room.number_of_beds }}</td><td>{{ room.price_for_a_night }}</td><td>{{ room.busy }}</td></tr>
+        {% endfor %}
+    </tbody>
     </table>
 {% endblock %}

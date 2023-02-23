@@ -7,10 +7,19 @@ class Orders_crud:
     def __init__(self, db):
         self.db = db
 
+    def get_all_orders(self) -> list[orders_schemas.OrderInfoReturn]:
+        orders = Orders.query.all()
+        return orders
+
+    def find_orders(self, client_id: int) -> list[orders_schemas.OrderInfoReturn]:
+        updated_client = Orders.query.filter_by(client_id=client_id).all()
+        return updated_client
+
     def create_order(self, order: orders_schemas.CreateOrder) -> str:
         client = Clients.query.filter_by(id=order.client_id).first()
-        new_order = Orders(client_id=order.client_id, room_id=order.room_id, name=client.name,
-                           phone_number=client.phone_number, rented=order.rented, on_days=order.on_days)
+        new_order = Orders(client_id=order.client_id, room_id=order.room_id,
+                           name=client.name, phone_number=client.phone_number,
+                           rented=order.rented, renting_ends=order.renting_ends)
         self.db.session.add(new_order)
         self.db.session.commit()
         return "Success"
@@ -20,7 +29,7 @@ class Orders_crud:
         updated_order.client_id = order.client_id
         updated_order.room_id = order.room_id
         updated_order.rented = order.rented
-        updated_order.on_days = order.on_days
+        updated_order.renting_ends = order.renting_ends
         self.db.session.commit()
         return "Success"
 

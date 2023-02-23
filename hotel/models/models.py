@@ -27,6 +27,6 @@ class Orders(db.Model):
     room_id = db.Column(db.Integer, db.ForeignKey("hotel.id"))
     name = db.Column(db.String(128))
     phone_number = db.Column(db.String(128))
-    rented = db.Column(db.String(10))
-    on_days = db.Column(db.Integer)
+    rented = db.Column(db.String(20))
+    renting_ends = db.Column(db.String(20))
 

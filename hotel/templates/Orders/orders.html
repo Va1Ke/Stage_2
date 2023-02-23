@@ -7,34 +7,20 @@
 {% endblock %}
 
 {% block second_body %}
+    <form action='' method = "POST">
+        <span class="menu">
+            <p>client_id:<input type = "integer" name = "client_id" size="10"/></p>
+            <p><input type = "submit" value = "Search"/></p>
+        </span>
+    </form>
+
 <table style="width:475px">
-  <tr>
-      <th>id</th>
-      <th>client_id</th>
-      <th>room_id</th>
-      <th>name</th>
-      <th>phone_number</th>
-      <th>rented</th>
-      <th>on_days</th>
-  </tr>
-  <tr>
-      <th>1</th>
-      <th>1</th>
-      <th>1</th>
-      <th>Ben</th>
-      <th>+178678612</th>
-      <th>10-02-2023</th>
-      <th>1</th>
-  </tr>
-  <tr>
-      <th>2</th>
-      <th>2</th>
-      <th>2</th>
-      <th>Maria</th>
-      <th>+145901823</th>
-      <th>11-02-2023</th>
-      <th>3</th>
-  </tr>
+    <thead><tr><th>id</th><th>client_id</th><th>room_id</th><th>name</th><th>phone_number</th><th>rented</th><th>renting_ends</th></tr></thead>
+    <tbody>
+        {% for order in orders %}
+        <tr><td>{{ order.id }}</td><td>{{ order.client_id }}</td><td>{{ order.room_id }}</td><td>{{ order.name }}</td><td>{{ order.phone_number }}</td><td>{{ order.rented }}</td><td>{{ order.renting_ends }}</td></tr>
+        {% endfor %}
+    </tbody>
 </table>
 {% endblock %}
 

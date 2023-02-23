@@ -6,13 +6,19 @@ from hotel.service.schemas.hotel_schemas import AddRoom, EditRoomInfo
 
 hotel_rout = Blueprint('hotel_rout', __name__)
 
-@hotel_rout.route('/room_list/')
+@hotel_rout.route('/room_list/', methods=['GET','POST'])
 def hotel():
     """Hotel page"""
-    return render_template("Hotel/hotel.html")
+    if request.method == 'GET':
+        rooms = Hotel_crud(db=db).get_all_rooms()
+        return render_template("Hotel/hotel.html", rooms=rooms)
+    if request.method == "POST":
+        busy = int(request.form['busy'])
+        free_rooms = Hotel_crud(db=db).find_room(busy=busy)
+        return render_template("Hotel/hotel.html", rooms=free_rooms)
 
 
-@hotel_rout.route('/room_list/add/', methods = ['GET','POST'])
+@hotel_rout.route('/room_list/add/', methods=['GET','POST'])
 async def add_room_html():
     """Page for adding rooms"""
     if request.method == 'GET':
@@ -29,7 +35,7 @@ async def add_room_html():
             return redirect('/bad_request/')
 
 
-@hotel_rout.route('/room_list/edit/', methods = ['GET','POST'])
+@hotel_rout.route('/room_list/edit/', methods=['GET','POST'])
 async def edit_room():
     """Page for editing rooms"""
     if request.method == 'GET':
@@ -56,7 +62,7 @@ async def edit_room():
         else:
             return redirect('/bad_request/')
 
-@hotel_rout.route('/room_list/delete/', methods = ['GET','POST'])
+@hotel_rout.route('/room_list/delete/', methods=['GET','POST'])
 async def delete_room():
     """Page for deleting rooms"""
     if request.method == 'GET':
@@ -66,8 +72,16 @@ async def delete_room():
         record = Hotel_crud(db=db).delete_room(id=id)
         if record == "Success":
             return redirect('/room_list/')
+        elif record == "redirect":
+            return redirect('/room_list/delete/error/')
         else:
             return redirect('/bad_request/')
+
+@hotel_rout.route('/room_list/delete/error/')
+async def delete_error():
+    """Page for deleting rooms"""
+    return render_template("/Hotel/delete_error.html")
+
 
 @hotel_rout.route('/bad_request/')
 def error():
