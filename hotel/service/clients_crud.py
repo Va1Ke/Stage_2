@@ -1,44 +1,51 @@
 from http.client import HTTPException
-
 from hotel.service.schemas import clients_schemas
 from hotel.models.models import Clients, Orders
-from hotel.service.orders_crud import Orders_crud
+from hotel.service.orders_crud import update_client_info
+from hotel.models.models import db
 
-class Clients_crud:
 
-    def __init__(self, db):
-        self.db = db
+def get_all_clients() -> list[Clients]:
+    clients = Clients.query.all()
+    return clients
 
-    def get_all_clients(self) -> list[clients_schemas.ClientInfoReturn]:
-        clients = Clients.query.all()
-        return clients
 
-    def find_client(self, phone_number: str) -> list[clients_schemas.ClientInfoReturn]:
-        updated_client = Clients.query.filter_by(phone_number=phone_number).all()
-        return updated_client
+def find_client(phone_number: str):
+    client = Clients.query.filter_by(phone_number=phone_number).first()
+    if client:
+        return client
+    else:
+        return {"Status_code": "400", "description": "no such client"}
 
-    def add_client(self, client: clients_schemas.AddClient) -> str:
-        new_client = Clients(name=client.name, phone_number=client.phone_number)
-        self.db.session.add(new_client)
-        self.db.session.commit()
-        return "Success"
 
-    def edit_client(self, client: clients_schemas.EditClientInfo) -> str:
-        updated_client = Clients.query.filter_by(id=client.id).first()
-        updated_client.name = client.name
-        updated_client.phone_number = client.phone_number
-        self.db.session.commit()
-        Orders_crud(db=self.db).update_client_info(client_id=client.id, name= client.name,
-                                                   phone_number=client.phone_number)
-        return "Success"
+def add_client(client: clients_schemas.AddClient):
+    new_client = Clients(name=client.name, phone_number=client.phone_number)
+    db.session.add(new_client)
+    db.session.commit()
+    client = Clients.query.filter_by(phone_number=client.phone_number).first()
+    return client
 
-    def delete_client(self, id: int) -> str:
-        check = Orders.query.filter_by(client_id=id).first()
-        if check:
-            return "redirect"
 
-        client = Clients.query.filter_by(id=id).first()
-        self.db.session.delete(client)
-        self.db.session.commit()
-        return "Success"
+def edit_client(client: clients_schemas.EditClientInfo):
+    updated_client = Clients.query.filter_by(id=client.id).first()
+    updated_client.name = client.name
+    updated_client.phone_number = client.phone_number
+    db.session.commit()
+    update_client_info(client_id=client.id, name=client.name,
+                        phone_number=client.phone_number)
+    client = Clients.query.filter_by(id=client.id).first()
+    return client
 
+
+def delete_client(id: int) -> dict:
+    check = Orders.query.filter_by(client_id=id).first()
+    if check:
+        raise {"Status_code": "400", "description": "order exist with that user"}
+
+    client = Clients.query.filter_by(id=id).first()
+    if client:
+        db.session.delete(client)
+        db.session.commit()
+        return {"Status_code": "200", "description": "Success"}
+    else:
+        raise {"Status_code": "400", "description": "no such client"}

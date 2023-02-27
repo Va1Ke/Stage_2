@@ -1,5 +1,6 @@
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
+import json
 
 db = SQLAlchemy()
 migrate = Migrate()
@@ -10,6 +11,12 @@ class Clients(db.Model):
     name = db.Column(db.String(128))
     phone_number = db.Column(db.String(128))
 
+    def to_json(self):
+        return json.dumps({
+            "id": self.id,
+            "name": self.name,
+            "phone_number": self.phone_number
+        })
 
 class Hotel(db.Model):
     __tablename__ = "hotel"
@@ -19,6 +26,14 @@ class Hotel(db.Model):
     price_for_a_night = db.Column(db.Integer)
     busy = db.Column(db.Boolean)
 
+    def to_json(self):
+        return json.dumps({
+            "room_id": self.id,
+            "area": self.area,
+            "number_of_beds": self.number_of_beds,
+            "price_for_a_night": self.price_for_a_night,
+            "busy": self.busy
+        })
 
 class Orders(db.Model):
     __tablename__ = "orders"
@@ -29,4 +44,15 @@ class Orders(db.Model):
     phone_number = db.Column(db.String(128))
     rented = db.Column(db.String(20))
     renting_ends = db.Column(db.String(20))
+
+    def to_json(self):
+        return json.dumps({
+            "order_id": self.id,
+            "client_id": self.client_id,
+            "room_id": self.room_id,
+            "client_name": self.name,
+            "client_phone_number": self.phone_number,
+            "phone_number": self.rented,
+            "renting_ends": self.renting_ends
+        })
 
