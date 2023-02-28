@@ -1,4 +1,5 @@
 from http.client import HTTPException
+from sqlalchemy import and_
 from hotel.service.schemas import hotel_schemas
 from hotel.models.models import Hotel, Orders
 from hotel.models.models import db
@@ -9,7 +10,7 @@ def get_all_rooms() -> list[Hotel]:
     if rooms:
         return rooms
     else:
-        raise {"Status_code": "400", "description": "no rooms"}
+        return []
 
 
 def find_room(busy: int) -> list[Hotel]:
@@ -17,7 +18,7 @@ def find_room(busy: int) -> list[Hotel]:
     if room:
         return room
     else:
-        raise {"Status_code": "400", "description": "no free rooms"}
+        return []
 
 
 def add_room(room: hotel_schemas.AddRoom) -> dict:

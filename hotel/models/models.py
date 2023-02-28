@@ -52,7 +52,7 @@ class Orders(db.Model):
             "room_id": self.room_id,
             "client_name": self.name,
             "client_phone_number": self.phone_number,
-            "phone_number": self.rented,
+            "rented": self.rented,
             "renting_ends": self.renting_ends
         })
 

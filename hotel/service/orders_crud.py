@@ -35,7 +35,8 @@ def edit_order(order: orders_schemas.EditOrder) -> dict:
         updated_order.rented = order.rented
         updated_order.renting_ends = order.renting_ends
         db.session.commit()
-        return updated_order
+        updated_order_ = Orders.query.filter_by(id=order.id).first()
+        return updated_order_
     else:
         raise {"Status_code": "400", "description": "no such order"}
 

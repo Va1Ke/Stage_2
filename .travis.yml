@@ -1,12 +1,19 @@
 language: python
 python:
   - "3.10"
-
 services:
-  - docker
   - mysql
 
-before_script: pip install docker-compose
+env:
+  - MYSQL_DATABASE=db MYSQL_USER=root MYSQL_PORT=3306 MYSQL_HOST=127.0.0.1 DATABASE_URL=mysql://$MYSQL_USER:@$MYSQL_HOST:$MYSQL_PORT/$MYSQL_DATABASE
+
+install:
+  - pip install -r requirements.txt
+  - pip install mysqlclient
+
+before_script:
+  - mysql -e 'CREATE DATABASE IF NOT EXISTS db;'
 
 script:
-  - docker-compose up --build
+  - pylint hotel/
+  - flask --app=hotel/ db upgrade

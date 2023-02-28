@@ -27,7 +27,7 @@ def create_app(test_config=None):
     app.register_blueprint(hotel_api.api_Hotel_blueprint)
     api.add_resource(hotel_api.HotelList, '/rooms/')
     api.add_resource(hotel_api.HotelListByBusy, '/rooms/<busy>/')
-    api.add_resource(hotel_api.HotelDeleteUpdateAdd, '/rooms/change/<client_id>/')
+    api.add_resource(hotel_api.HotelDeleteUpdateAdd, '/rooms/change/<room_id>/')
 
     app.register_blueprint(orders_api.api_Orders_blueprint)
     api.add_resource(orders_api.OrderList, '/orders/')

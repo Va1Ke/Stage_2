@@ -10,5 +10,7 @@ class Settings:
     MYSQL_USER: str = os.getenv("MYSQL_USER")
     MYSQL_PASSWORD: str = os.getenv("MYSQL_PASSWORD")
     MYSQL_PORT: str = os.getenv("MYSQL_PORT")
+    #SQLALCHEMY_DATABASE_URL: str = 'mysql+pymysql://' + MYSQL_USER + ':' + MYSQL_PASSWORD + \
+    #                          '@db:' + MYSQL_PORT + '/' + MYSQL_DATABASE
     SQLALCHEMY_DATABASE_URL: str = 'mysql+pymysql://' + MYSQL_USER + ':' + MYSQL_PASSWORD + \
-                              '@db:' + MYSQL_PORT + '/' + MYSQL_DATABASE
+                                   '@127.0.0.1:' + MYSQL_PORT + '/' + MYSQL_DATABASE
