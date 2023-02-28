@@ -18,7 +18,7 @@
         <thead><tr><th>id</th><th>area</th><th>number_of_beds</th><th>price_for_a_night</th><th>busy</th></tr></thead>
     <tbody>
         {% for room in rooms %}
-        <tr><td>{{ room.id }}</td><td>{{ room.area }}</td><td>{{ room.number_of_beds }}</td><td>{{ room.price_for_a_night }}</td><td>{{ room.busy }}</td></tr>
+        <tr><td>{{ room.room_id }}</td><td>{{ room.area }}</td><td>{{ room.number_of_beds }}</td><td>{{ room.price_for_a_night }}</td><td>{{ room.busy }}</td></tr>
         {% endfor %}
     </tbody>
     </table>

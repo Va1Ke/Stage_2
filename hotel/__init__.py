@@ -14,11 +14,12 @@ def create_app(test_config=None):
     db.init_app(app)
     migrate.init_app(app, db)
 
-    #from hotel.views import clients_routes, orders_routes, hotel_routes
+    from hotel.views import clients_routes, hotel_routes, orders_routes
 
-    #app.register_blueprint(clients_routes.clients_rout)
-    #app.register_blueprint(orders_routes.orders_rout)
-    #app.register_blueprint(hotel_routes.hotel_rout)
+    app.register_blueprint(clients_routes.clients_rout)
+    app.register_blueprint(hotel_routes.hotel_rout)
+    app.register_blueprint(orders_routes.orders_rout)
+
     app.register_blueprint(client_api.api_Client_blueprint)
     api.add_resource(client_api.ClientList, '/clients/')
     api.add_resource(client_api.ClientListByPhone, '/clients/<phone_number>/')

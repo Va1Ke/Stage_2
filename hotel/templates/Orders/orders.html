@@ -18,7 +18,7 @@
     <thead><tr><th>id</th><th>client_id</th><th>room_id</th><th>name</th><th>phone_number</th><th>rented</th><th>renting_ends</th></tr></thead>
     <tbody>
         {% for order in orders %}
-        <tr><td>{{ order.id }}</td><td>{{ order.client_id }}</td><td>{{ order.room_id }}</td><td>{{ order.name }}</td><td>{{ order.phone_number }}</td><td>{{ order.rented }}</td><td>{{ order.renting_ends }}</td></tr>
+        <tr><td>{{ order.order_id }}</td><td>{{ order.client_id }}</td><td>{{ order.room_id }}</td><td>{{ order.client_name }}</td><td>{{ order.client_phone_number }}</td><td>{{ order.rented }}</td><td>{{ order.renting_ends }}</td></tr>
         {% endfor %}
     </tbody>
 </table>

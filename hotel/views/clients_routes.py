@@ -1,8 +1,7 @@
 from flask import Blueprint, render_template, abort, request, redirect
 from jinja2 import TemplateNotFound
-from hotel.models.models import db
-from hotel.service.clients_crud import Clients_crud
-from hotel.service.schemas.clients_schemas import EditClientInfo, AddClient
+import requests
+import json
 
 clients_rout = Blueprint('clients_rout', __name__)
 
@@ -10,12 +9,12 @@ clients_rout = Blueprint('clients_rout', __name__)
 def clients():
     """Clients page"""
     if request.method == 'GET':
-        clients = Clients_crud(db=db).get_all_clients()
-        return render_template("/Clients/clients.html", clients=clients)
+        clients = requests.get("http://127.0.0.1:5000/clients/")
+        return render_template("/Clients/clients.html", clients=clients.json())
     if request.method == "POST":
         phone_number = request.form['phone_number']
-        finded_clients = Clients_crud(db=db).find_client(phone_number=phone_number)
-        return render_template("/Clients/clients.html", clients=finded_clients)
+        clients = requests.post(f"http://127.0.0.1:5000/clients/{phone_number}/")
+        return render_template("/Clients/clients.html", clients=[clients.json()])
 
 
 
@@ -27,9 +26,12 @@ def add_client():
     if request.method == "POST":
         name = request.form['name']
         phone_number = request.form['phone_number']
-        new_client = AddClient(name=name, phone_number=phone_number)
-        record = Clients_crud(db=db).add_client(client=new_client)
-        if record == "Success":
+        client_attrs = {
+            "name": f"{name}",
+            "phone_number": f"{phone_number}"
+        }
+        response = requests.post("http://127.0.0.1:5000/clients/", json=client_attrs)
+        if response.status_code == 200:
             return redirect('/client_list/')
         else:
             return redirect('/bad_request/')
@@ -44,26 +46,27 @@ def edit_client():
         id = request.form['id']
         name = request.form['name']
         phone_number = request.form['phone_number']
-        new_client_info = EditClientInfo(id=id, name=name, phone_number=phone_number)
-        record = Clients_crud(db=db).edit_client(client=new_client_info)
-        if record == "Success":
+        client_attrs = {
+            "name": f"{name}",
+            "phone_number": f"{phone_number}"
+        }
+        response = requests.put(f"http://127.0.0.1:5000/clients/change/{id}", json=client_attrs)
+        if response.status_code == 200:
             return redirect('/client_list/')
         else:
             return redirect('/bad_request/')
 
 
-@clients_rout.route('/client_list/delete/', methods=['GET','POST'])
+@clients_rout.route('/client_list/delete/', methods=['GET', 'POST'])
 def delete_client():
     """Page for deleting clients"""
     if request.method == 'GET':
         return render_template("/Clients/delete_client.html")
     if request.method == "POST":
-        id = request.form['id']
-        record = Clients_crud(db=db).delete_client(id=id)
-        if record == "Success":
+        client_id = request.form['id']
+        response = requests.delete(f"http://127.0.0.1:5000/clients/change/{client_id}")
+        if response.status_code == 200:
             return redirect('/client_list/')
-        elif record == "redirect":
-            return redirect('/client_list/delete/error/')
         else:
             return redirect('/bad_request/')
 

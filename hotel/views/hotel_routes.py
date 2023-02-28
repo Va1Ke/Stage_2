@@ -1,8 +1,7 @@
 from flask import Blueprint, render_template, request, redirect, url_for
 from jinja2 import TemplateNotFound
-from hotel.models.models import db
-from hotel.service.hotel_crud import Hotel_crud
-from hotel.service.schemas.hotel_schemas import AddRoom, EditRoomInfo
+import requests
+import json
 
 hotel_rout = Blueprint('hotel_rout', __name__)
 
@@ -10,12 +9,12 @@ hotel_rout = Blueprint('hotel_rout', __name__)
 def hotel():
     """Hotel page"""
     if request.method == 'GET':
-        rooms = Hotel_crud(db=db).get_all_rooms()
-        return render_template("Hotel/hotel.html", rooms=rooms)
+        rooms = requests.get("http://127.0.0.1:5000/rooms/")
+        return render_template("Hotel/hotel.html", rooms=rooms.json())
     if request.method == "POST":
         busy = int(request.form['busy'])
-        free_rooms = Hotel_crud(db=db).find_room(busy=busy)
-        return render_template("Hotel/hotel.html", rooms=free_rooms)
+        free_rooms = requests.post(f"http://127.0.0.1:5000/rooms/{busy}/")
+        return render_template("Hotel/hotel.html", rooms=free_rooms.json())
 
 
 @hotel_rout.route('/room_list/add/', methods=['GET','POST'])
@@ -27,9 +26,13 @@ async def add_room_html():
         area = request.form['area']
         number_of_beds = request.form['number_of_beds']
         price_for_a_night = request.form['price_for_a_night']
-        room = AddRoom(area=area, number_of_beds=number_of_beds, price_for_a_night=price_for_a_night)
-        record = Hotel_crud(db=db).add_room(room=room)
-        if record == "Success":
+        room_attrs = {
+            "area": area,
+            "number_of_beds": number_of_beds,
+            "price_for_a_night": price_for_a_night
+        }
+        response = requests.post("http://127.0.0.1:5000/rooms/", json=room_attrs)
+        if response.status_code == 200:
             return redirect('/room_list/')
         else:
             return redirect('/bad_request/')
@@ -41,8 +44,7 @@ async def edit_room():
     if request.method == 'GET':
         return render_template("/Hotel/edit_room.html")
     if request.method == "POST":
-
-        id = request.form['id']
+        room_id = request.form['id']
         area = request.form['area']
         number_of_beds = request.form['number_of_beds']
         price_for_a_night = request.form['price_for_a_night']
@@ -54,10 +56,15 @@ async def edit_room():
         else:
             print(busy)
             return redirect('/bad_request/busy/')
-        new_room = EditRoomInfo(id=id, area=area, number_of_beds=number_of_beds,
-                                price_for_a_night=price_for_a_night, busy=busy)
-        record = Hotel_crud(db=db).edit_room(room=new_room)
-        if record == "Success":
+
+        room_attrs = {
+            "area": area,
+            "number_of_beds": number_of_beds,
+            "price_for_a_night": price_for_a_night,
+            "busy": busy
+        }
+        response = requests.put(f"http://127.0.0.1:5000/rooms/change/{room_id}", json=room_attrs)
+        if response.status_code == 200:
             return redirect('/room_list/')
         else:
             return redirect('/bad_request/')
@@ -68,12 +75,10 @@ async def delete_room():
     if request.method == 'GET':
         return render_template("/Hotel/delete_room.html")
     if request.method == "POST":
-        id = request.form['id']
-        record = Hotel_crud(db=db).delete_room(id=id)
-        if record == "Success":
+        room_id = request.form['id']
+        response = requests.delete(f"http://127.0.0.1:5000/rooms/change/{room_id}/")
+        if response.status_code == 200:
             return redirect('/room_list/')
-        elif record == "redirect":
-            return redirect('/room_list/delete/error/')
         else:
             return redirect('/bad_request/')
 
