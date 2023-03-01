@@ -1,7 +1,5 @@
-from flask import Blueprint, render_template, abort, request, redirect
-from jinja2 import TemplateNotFound
+from flask import Blueprint, render_template, request, redirect
 import requests
-import json
 
 orders_rout = Blueprint('orders_rout', __name__)
 
@@ -43,12 +41,11 @@ def add_order():
         check = requests.get("http://127.0.0.1:5000/orders/")
         for room in check.json():
             if int(room.get("client_id")) == int(client_id) and int(room.get("room_id")) == int(room_id):
-                return redirect('/bad_request/')
+                raise redirect('/bad_request/')
         response = requests.post("http://127.0.0.1:5000/orders/", json=order_attrs)
         if response.status_code == 200:
             return redirect('/order_list/')
-        else:
-            return redirect('/bad_request/')
+        return redirect('/bad_request/')
 
 
 @orders_rout.route('/order_list/edit/', methods=['GET', 'POST'])
@@ -71,8 +68,7 @@ def edit_order():
         response = requests.put(f"http://127.0.0.1:5000/orders/change/{order_id}", json=order_attrs)
         if response.status_code == 200:
             return redirect('/order_list/')
-        else:
-            return redirect('/bad_request/')
+        return redirect('/bad_request/')
 
 
 @orders_rout.route('/order_list/delete/', methods=['GET', 'POST'])
@@ -85,6 +81,4 @@ def delete_order():
         response = requests.delete(f"http://127.0.0.1:5000/orders/change/{room_id}/")
         if response.status_code == 200:
             return redirect('/order_list/')
-        else:
-            return redirect('/bad_request/')
-
+        return redirect('/bad_request/')

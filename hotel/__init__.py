@@ -3,8 +3,8 @@ from flask_restful import Api
 from hotel.config import Settings
 from hotel.rest import client_api, hotel_api, orders_api
 
-def create_app(test_config=None):
-
+def create_app():
+    """flask main def"""
     app = Flask(__name__, instance_relative_config=True)
     app.config['SQLALCHEMY_DATABASE_URI'] = Settings.SQLALCHEMY_DATABASE_URL
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False

@@ -1,17 +1,19 @@
+import json
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
-import json
 
 db = SQLAlchemy()
 migrate = Migrate()
 
 class Clients(db.Model):
+    """class for db interaction"""
     __tablename__ = "clients"
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(128))
     phone_number = db.Column(db.String(128))
 
     def to_json(self):
+        """get client info as json"""
         return json.dumps({
             "id": self.id,
             "name": self.name,
@@ -19,6 +21,7 @@ class Clients(db.Model):
         })
 
 class Hotel(db.Model):
+    """class for db interaction"""
     __tablename__ = "hotel"
     id = db.Column(db.Integer, primary_key=True)
     area = db.Column(db.Integer)
@@ -27,6 +30,7 @@ class Hotel(db.Model):
     busy = db.Column(db.Boolean)
 
     def to_json(self):
+        """get room info as json"""
         return json.dumps({
             "room_id": self.id,
             "area": self.area,
@@ -36,6 +40,7 @@ class Hotel(db.Model):
         })
 
 class Orders(db.Model):
+    """class for db interaction"""
     __tablename__ = "orders"
     id = db.Column(db.Integer, primary_key=True)
     client_id = db.Column(db.Integer, db.ForeignKey("clients.id"))
@@ -46,6 +51,7 @@ class Orders(db.Model):
     renting_ends = db.Column(db.String(20))
 
     def to_json(self):
+        """get order info as json"""
         return json.dumps({
             "order_id": self.id,
             "client_id": self.client_id,
@@ -55,4 +61,3 @@ class Orders(db.Model):
             "rented": self.rented,
             "renting_ends": self.renting_ends
         })
-

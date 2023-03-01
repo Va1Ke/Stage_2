@@ -1,7 +1,6 @@
-from flask import Blueprint, render_template, request, redirect, url_for
-from jinja2 import TemplateNotFound
+from flask import Blueprint, render_template, request, redirect
 import requests
-import json
+
 
 hotel_rout = Blueprint('hotel_rout', __name__)
 
@@ -34,8 +33,7 @@ async def add_room_html():
         response = requests.post("http://127.0.0.1:5000/rooms/", json=room_attrs)
         if response.status_code == 200:
             return redirect('/room_list/')
-        else:
-            return redirect('/bad_request/')
+        return redirect('/bad_request/')
 
 
 @hotel_rout.route('/room_list/edit/', methods=['GET','POST'])
@@ -55,7 +53,7 @@ async def edit_room():
             busy = False
         else:
             print(busy)
-            return redirect('/bad_request/busy/')
+            raise redirect('/bad_request/busy/')
 
         room_attrs = {
             "area": area,
@@ -66,8 +64,7 @@ async def edit_room():
         response = requests.put(f"http://127.0.0.1:5000/rooms/change/{room_id}", json=room_attrs)
         if response.status_code == 200:
             return redirect('/room_list/')
-        else:
-            return redirect('/bad_request/')
+        return redirect('/bad_request/')
 
 @hotel_rout.route('/room_list/delete/', methods=['GET','POST'])
 async def delete_room():
@@ -79,8 +76,7 @@ async def delete_room():
         response = requests.delete(f"http://127.0.0.1:5000/rooms/change/{room_id}/")
         if response.status_code == 200:
             return redirect('/room_list/')
-        else:
-            return redirect('/bad_request/')
+        return redirect('/bad_request/')
 
 @hotel_rout.route('/room_list/delete/error/')
 async def delete_error():

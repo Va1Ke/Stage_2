@@ -21,4 +21,3 @@ class Settings:
 
     #for travis-ci
     SQLALCHEMY_DATABASE_URL: str = os.getenv("DATABASE_URL")
-
