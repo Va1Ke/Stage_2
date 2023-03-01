@@ -32,7 +32,7 @@ def create_app():
 
     app.register_blueprint(orders_api.api_Orders_blueprint)
     api.add_resource(orders_api.OrderList, '/orders/')
-    api.add_resource(orders_api.OrderListByBusy, '/orders/<client_id>/')
+    api.add_resource(orders_api.OrderListByClient, '/orders/<client_id>/')
     api.add_resource(orders_api.OrderDeleteUpdateAdd, '/orders/change/<order_id>/')
 
     return app
