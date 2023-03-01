@@ -1,9 +1,10 @@
 import unittest
 import requests
-
+import pytest
 
 class OrderApiTestCase(unittest.TestCase):
 
+    @pytest.mark.order(1)
     def test_create_order(self):
         amount_before = len(requests.get("http://127.0.0.1:5000/orders/").json())
         take_all_rooms = requests.get("http://127.0.0.1:5000/rooms/")
@@ -19,11 +20,13 @@ class OrderApiTestCase(unittest.TestCase):
         self.assertEqual(200, response.status_code)
         self.assertEqual(amount_before + 1, amount_after)
 
+    @pytest.mark.order(2)
     def test_get_all_order(self):
         response = requests.get("http://127.0.0.1:5000/orders/")
         self.assertEqual(200, response.status_code)
         self.assertIsNotNone(response.json())
 
+    @pytest.mark.order(3)
     def test_update_order(self):
         take_all = requests.get("http://127.0.0.1:5000/orders/")
         take_all_rooms = requests.get("http://127.0.0.1:5000/rooms/")
@@ -37,13 +40,13 @@ class OrderApiTestCase(unittest.TestCase):
         }
         order_id = take_all.json()[len(take_all.json()) - 1].get('order_id')
         response = requests.put(f"http://127.0.0.1:5000/orders/change/{order_id}", json=order_attrs)
-        print(response.json())
         self.assertEqual(200, response.status_code)
         self.assertEqual(order_attrs['client_id'], response.json()['client_id'])
         self.assertEqual(order_attrs['room_id'], response.json()['room_id'])
         self.assertEqual(order_attrs['rented'], response.json()['rented'])
         self.assertEqual(order_attrs['renting_ends'], response.json()['renting_ends'])
 
+    @pytest.mark.order(4)
     def test_delete_order(self):
         take_all = requests.get("http://127.0.0.1:5000/orders/")
         room_id = take_all.json()[len(take_all.json()) - 1].get('order_id')

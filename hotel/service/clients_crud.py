@@ -28,15 +28,18 @@ def add_client(client: clients_schemas.AddClient):
 
 def edit_client(client: clients_schemas.EditClientInfo):
     updated_client = Clients.query.filter_by(id=client.id).first()
-    updated_client.name = client.name
-    updated_client.phone_number = client.phone_number
-    db.session.commit()
-    order = Orders.query.filter_by(client_id=client.id).first()
-    if order:
-        update_client_info(client_id=client.id, name=client.name,
-                            phone_number=client.phone_number)
-    client = Clients.query.filter_by(id=client.id).first()
-    return client
+    if updated_client:
+        updated_client.name = client.name
+        updated_client.phone_number = client.phone_number
+        db.session.commit()
+        order = Orders.query.filter_by(client_id=client.id).first()
+        if order:
+            update_client_info(client_id=client.id, name=client.name,
+                                phone_number=client.phone_number)
+        client = Clients.query.filter_by(id=client.id).first()
+        return client
+    else:
+        {"Status_code": 400, "description": "no such client"}
 
 
 def delete_client(id: int) -> dict:
