@@ -18,8 +18,8 @@ before_script:
 
 script:
   - flask --app=hotel/ db upgrade
-#  - pylint hotel/
-#  - coverage run -m pytest && coverage report
+  - pylint hotel/
+  - coverage run -m pytest && coverage report
 
 after_script:
   - pkill gunicorn
