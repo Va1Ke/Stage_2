@@ -1,6 +1,6 @@
 language: python
 python:
-  - "3.10"
+  - "3.9"
 services:
   - mysql
 
@@ -13,7 +13,14 @@ install:
 
 before_script:
   - mysql -e 'CREATE DATABASE IF NOT EXISTS db;'
+  - gunicorn wsgi:app -b 127.0.0.1:5000 -D
+  - ps ax|grep gunicorn
 
 script:
   - pylint hotel/
   - flask --app=hotel/ db upgrade
+  - coverage run -m pytest && coverage report
+
+after_script:
+  - pkill gunicorn
+  - ps ax|grep gunicorn
