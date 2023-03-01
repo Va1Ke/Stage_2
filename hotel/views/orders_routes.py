@@ -13,11 +13,11 @@ def main():
 def orders():
     """Orders page"""
     if request.method == 'GET':
-        response = requests.get("http://127.0.0.1:5000/orders/")
+        response = requests.get("http://127.0.0.1:5000/orders/", timeout=100)
         return render_template("/Orders/orders.html", orders=response.json())
     if request.method == "POST":
         client_id = request.form['client_id']
-        response = requests.post(f"http://127.0.0.1:5000/orders/{client_id}/")
+        response = requests.post(f"http://127.0.0.1:5000/orders/{client_id}/", timeout=100)
         return render_template("/Orders/orders.html", orders=response.json())
 
 
@@ -38,11 +38,11 @@ def add_order():
             "rented": rented,
             "renting_ends": renting_ends
         }
-        check = requests.get("http://127.0.0.1:5000/orders/")
+        check = requests.get("http://127.0.0.1:5000/orders/", timeout=100)
         for room in check.json():
             if int(room.get("client_id")) == int(client_id) and int(room.get("room_id")) == int(room_id):
                 raise redirect('/bad_request/')
-        response = requests.post("http://127.0.0.1:5000/orders/", json=order_attrs)
+        response = requests.post("http://127.0.0.1:5000/orders/", json=order_attrs, timeout=100)
         if response.status_code == 200:
             return redirect('/order_list/')
         return redirect('/bad_request/')
@@ -65,7 +65,7 @@ def edit_order():
             "rented": rented,
             "renting_ends": renting_ends
         }
-        response = requests.put(f"http://127.0.0.1:5000/orders/change/{order_id}", json=order_attrs)
+        response = requests.put(f"http://127.0.0.1:5000/orders/change/{order_id}", json=order_attrs, timeout=100)
         if response.status_code == 200:
             return redirect('/order_list/')
         return redirect('/bad_request/')
@@ -78,7 +78,7 @@ def delete_order():
         return render_template("/Orders/delete_order.html")
     if request.method == "POST":
         room_id = request.form['id']
-        response = requests.delete(f"http://127.0.0.1:5000/orders/change/{room_id}/")
+        response = requests.delete(f"http://127.0.0.1:5000/orders/change/{room_id}/", timeout=100)
         if response.status_code == 200:
             return redirect('/order_list/')
         return redirect('/bad_request/')

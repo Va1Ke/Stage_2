@@ -1,23 +1,22 @@
-from flask import Blueprint, render_template, abort, request, redirect
+from flask import Blueprint, render_template, request, redirect
 import requests
-
 
 clients_rout = Blueprint('clients_rout', __name__)
 
-@clients_rout.route('/client_list/', methods=['GET','POST'])
+
+@clients_rout.route('/client_list/', methods=['GET', 'POST'])
 def clients():
     """Clients page"""
     if request.method == 'GET':
-        clients_list = requests.get("http://127.0.0.1:5000/clients/")
+        clients_list = requests.get("http://127.0.0.1:5000/clients/", timeout=100)
         return render_template("/Clients/clients.html", clients=clients_list.json())
     if request.method == "POST":
         phone_number = request.form['phone_number']
-        clients_list = requests.post(f"http://127.0.0.1:5000/clients/{phone_number}/")
+        clients_list = requests.post(f"http://127.0.0.1:5000/clients/{phone_number}/", timeout=100)
         return render_template("/Clients/clients.html", clients=[clients_list.json()])
 
 
-
-@clients_rout.route('/client_list/add/', methods=['GET','POST'])
+@clients_rout.route('/client_list/add/', methods=['GET', 'POST'])
 def add_client():
     """Page for adding clients"""
     if request.method == 'GET':
@@ -29,7 +28,7 @@ def add_client():
             "name": f"{name}",
             "phone_number": f"{phone_number}"
         }
-        response = requests.post("http://127.0.0.1:5000/clients/", json=client_attrs)
+        response = requests.post("http://127.0.0.1:5000/clients/", json=client_attrs, timeout=100)
         if response.status_code == 200:
             return redirect('/client_list/')
         return redirect('/bad_request/')
@@ -48,7 +47,7 @@ def edit_client():
             "name": f"{name}",
             "phone_number": f"{phone_number}"
         }
-        response = requests.put(f"http://127.0.0.1:5000/clients/change/{client_id}", json=client_attrs)
+        response = requests.put(f"http://127.0.0.1:5000/clients/change/{client_id}", json=client_attrs, timeout=100)
         if response.status_code == 200:
             return redirect('/client_list/')
         return redirect('/bad_request/')
@@ -61,10 +60,11 @@ def delete_client():
         return render_template("/Clients/delete_client.html")
     if request.method == "POST":
         client_id = request.form['id']
-        response = requests.delete(f"http://127.0.0.1:5000/clients/change/{client_id}")
+        response = requests.delete(f"http://127.0.0.1:5000/clients/change/{client_id}", timeout=100)
         if response.status_code == 200:
             return redirect('/client_list/')
         return redirect('/bad_request/')
+
 
 @clients_rout.route('/client_list/delete/error/')
 def delete_error():

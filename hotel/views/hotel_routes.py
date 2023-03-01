@@ -8,11 +8,11 @@ hotel_rout = Blueprint('hotel_rout', __name__)
 def hotel():
     """Hotel page"""
     if request.method == 'GET':
-        rooms = requests.get("http://127.0.0.1:5000/rooms/")
+        rooms = requests.get("http://127.0.0.1:5000/rooms/", timeout=100)
         return render_template("Hotel/hotel.html", rooms=rooms.json())
     if request.method == "POST":
         busy = int(request.form['busy'])
-        free_rooms = requests.post(f"http://127.0.0.1:5000/rooms/{busy}/")
+        free_rooms = requests.post(f"http://127.0.0.1:5000/rooms/{busy}/", timeout=100)
         return render_template("Hotel/hotel.html", rooms=free_rooms.json())
 
 
@@ -30,7 +30,7 @@ async def add_room_html():
             "number_of_beds": number_of_beds,
             "price_for_a_night": price_for_a_night
         }
-        response = requests.post("http://127.0.0.1:5000/rooms/", json=room_attrs)
+        response = requests.post("http://127.0.0.1:5000/rooms/", json=room_attrs, timeout=100)
         if response.status_code == 200:
             return redirect('/room_list/')
         return redirect('/bad_request/')
@@ -61,7 +61,7 @@ async def edit_room():
             "price_for_a_night": price_for_a_night,
             "busy": busy
         }
-        response = requests.put(f"http://127.0.0.1:5000/rooms/change/{room_id}", json=room_attrs)
+        response = requests.put(f"http://127.0.0.1:5000/rooms/change/{room_id}", json=room_attrs, timeout=100)
         if response.status_code == 200:
             return redirect('/room_list/')
         return redirect('/bad_request/')
@@ -73,7 +73,7 @@ async def delete_room():
         return render_template("/Hotel/delete_room.html")
     if request.method == "POST":
         room_id = request.form['id']
-        response = requests.delete(f"http://127.0.0.1:5000/rooms/change/{room_id}/")
+        response = requests.delete(f"http://127.0.0.1:5000/rooms/change/{room_id}/", timeout=100)
         if response.status_code == 200:
             return redirect('/room_list/')
         return redirect('/bad_request/')
