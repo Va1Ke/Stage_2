@@ -17,8 +17,8 @@ before_script:
   - ps ax|grep gunicorn
 
 script:
-  - pylint hotel/
   - flask --app=hotel/ db upgrade
+  - pylint hotel/
   - coverage run -m pytest && coverage report
 
 after_script:
