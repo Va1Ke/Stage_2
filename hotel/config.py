@@ -10,9 +10,15 @@ class Settings:
     MYSQL_USER: str = os.getenv("MYSQL_USER")
     MYSQL_PASSWORD: str = os.getenv("MYSQL_PASSWORD")
     MYSQL_PORT: str = os.getenv("MYSQL_PORT")
+
+    #for docker-compose
     #SQLALCHEMY_DATABASE_URL: str = 'mysql+pymysql://' + MYSQL_USER + ':' + MYSQL_PASSWORD + \
     #                          '@db:' + MYSQL_PORT + '/' + MYSQL_DATABASE
+
+    #for local
     #SQLALCHEMY_DATABASE_URL: str = 'mysql+pymysql://' + MYSQL_USER + ':' + MYSQL_PASSWORD + \
     #                               '@127.0.0.1:' + MYSQL_PORT + '/' + MYSQL_DATABASE
-    SQLALCHEMY_DATABASE_URL: str = os.getenv("SQLALCHEMY_DATABASE_URL")
+
+    #for travis-ci
+    SQLALCHEMY_DATABASE_URL: str = os.getenv("DATABASE_URL")
 
