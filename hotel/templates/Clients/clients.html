@@ -1,0 +1,27 @@
+{% extends 'clients_layout.html' %}
+
+{% block title %}Hotel - Clients{% endblock %}
+
+{% block first_body %}
+    <h1>Clients</h1>
+{% endblock %}
+
+{% block second_body %}
+
+    <form action='' method = "POST">
+    <span class="menu">
+    <p>phone_number:<input type = "text" name = "phone_number" size="10"/></p>
+    <p><input type = "submit" value = "Search"/></p>
+    </span>
+    </form>
+
+ <table style="width:475px">
+  <thead><tr><th>id</th><th>name</th><th>phone_number</th></tr></thead>
+    <tbody>
+        {% for client in clients %}
+        <tr><td>{{ client.id }}</td><td>{{ client.name }}</td><td>{{ client.phone_number }}</td></tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
+

@@ -1,0 +1,25 @@
+{% extends 'hotel_layout.html' %}
+
+{% block title %}Hotel - Room List{% endblock %}
+
+{% block first_body %}
+    <h1>Hotel</h1>
+{% endblock %}
+
+{% block second_body %}
+    <form action='' method = "POST">
+    <span class="menu">
+    <p>busy:<input type = "text" name = "busy" size="10"/></p>
+    <p><input type = "submit" value = "Search"/></p>
+    </span>
+    </form>
+
+    <table style="width:475px">
+        <thead><tr><th>id</th><th>area</th><th>number_of_beds</th><th>price_for_a_night</th><th>busy</th></tr></thead>
+    <tbody>
+        {% for room in rooms %}
+        <tr><td>{{ room.room_id }}</td><td>{{ room.area }}</td><td>{{ room.number_of_beds }}</td><td>{{ room.price_for_a_night }}</td><td>{{ room.busy }}</td></tr>
+        {% endfor %}
+    </tbody>
+    </table>
+{% endblock %}

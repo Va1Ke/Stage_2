@@ -1,0 +1,21 @@
+{% extends 'hotel_layout.html' %}
+
+{% block title %}Hotel - Rooms{% endblock %}
+
+{% block first_body %}
+    <h1>Edit Room</h1>
+{% endblock %}
+
+{% block second_body %}
+    <form action='' method = "POST">
+        <p>id <input type = "integer" name = "id" required="required"/></p>
+        <p>area <input type = "integer" name = "area" required="required"/></p>
+        <p>number_of_beds <input type = "integer" name = "number_of_beds" required="required"/></p>
+        <p>price_for_a_night <input type = "integer" name = "price_for_a_night" required="required"/></p>
+        <p>busy <input type = "integer" name = "busy" required="required"/></p>
+        <span class="menu">
+        <p><a href="/room_list/" class="button button4" type = "cancel">Cancel</a></p>
+        <p><input class="button button2" type = "submit" value = "Edit" /></p>
+        </span>
+    </form>
+{% endblock %}

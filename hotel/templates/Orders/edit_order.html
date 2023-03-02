@@ -1,0 +1,21 @@
+{% extends 'orders_layout.html' %}
+
+{% block title %}Hotel - Orders{% endblock %}
+
+{% block first_body %}
+    <h1>Edit Order</h1>
+{% endblock %}
+
+{% block second_body %}
+    <form action='' method = "POST">
+        <p>id <input type = "integer" name = "id" required="required"/></p>
+        <p>client_id <input type = "integer" name = "client_id" required="required"/></p>
+        <p>room_id <input type = "integer" name = "room_id" required="required"/></p>
+        <p>rented <input type = "date" name = "rented" required="required"/></p>
+        <p>renting_ends <input type = "date" name = "renting_ends" required="required"/></p>
+        <span class="menu">
+        <p><a href="/orders/" class="button button4" type = "cancel">Cancel</a></p>
+        <p><input class="button button2" type = "submit" value = "Edit" /></p>
+        </span>
+    </form>
+{% endblock %}

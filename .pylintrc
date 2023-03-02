@@ -1,0 +1,8 @@
+[MASTER]
+ignore=tests
+
+[MESSAGES CONTROL]
+disable=C0103, E0401, C0413, R1710, R0903, E1101, C0415, C0114
+
+[FORMAT]
+max-line-length=120
