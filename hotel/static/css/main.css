@@ -45,6 +45,10 @@ form{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+
+}
+input{
+    margin: 5px 5px 5px 5px;
 }
 div{
     border: 1px solid black;
