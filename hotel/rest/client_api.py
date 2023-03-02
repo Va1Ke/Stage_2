@@ -33,7 +33,7 @@ class ClientDeleteUpdateAdd(Resource):
     """ApiClass for put and delete client"""
     def delete(self, client_id: int) -> dict:
         """delete client"""
-        response = delete_client(id=client_id)
+        response = delete_client(client_id=client_id)
         if response == "Success":
             return {"Status_code": "200", "description": "Success"}
         return {"Status_code": "400", "description": "No such user"}

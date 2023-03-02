@@ -46,9 +46,11 @@ class ClientApiTestCase(unittest.TestCase):
     @pytest.mark.order(4)
     def test_delete_client(self):
         take_all = requests.get("http://127.0.0.1:5000/clients/")
+        #if len(take_all.json()) > 0:
         client_id = take_all.json()[len(take_all.json()) - 1].get('id')
         response = requests.delete(f"http://127.0.0.1:5000/clients/change/{client_id}")
         self.assertEqual(200, response.status_code)
+
 
     @pytest.mark.order(5)
     def test_create(self):

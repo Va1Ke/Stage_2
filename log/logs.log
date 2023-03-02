@@ -1,0 +1,794 @@
+2023-03-01 17:32:31,192 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.211:5000
+2023-03-01 17:32:31,193 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-03-01 17:34:35,500 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:34:35,510 - hotel - ERROR - Exception on /rooms/ [GET]
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/util/_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x7fe7f56178c0 (otid=0x7fe7f3466c40) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/rest/hotel_api.py", line 13, in get
+    response = get_all_rooms()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/service/hotel_crud.py", line 8, in get_all_rooms
+    rooms = Hotel.query.all()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/orm/scoping.py", line 47, in __call__
+    sess = self.registry()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/util/_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4274, in __call__
+    return self.class_(**local_kw)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 176, in __init__
+    bind = options.pop('bind', None) or db.engine
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 998, in engine
+    return self.get_engine()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 1017, in get_engine
+    return connector.get_engine()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 593, in get_engine
+    sa_url, options = self.get_options(sa_url, echo)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 608, in get_options
+    sa_url, options = self._sa.apply_driver_hacks(self._app, sa_url, options)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 933, in apply_driver_hacks
+    if sa_url.drivername.startswith('mysql'):
+AttributeError: 'NoneType' object has no attribute 'drivername'
+2023-03-01 17:34:35,550 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:35] "[35m[1mGET /rooms/ HTTP/1.1[0m" 500 -
+2023-03-01 17:34:35,551 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 500 37
+2023-03-01 17:34:35,566 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:35] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-01 17:34:35,643 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:35] "GET /static/css/main.css HTTP/1.1" 200 -
+2023-03-01 17:34:35,728 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-03-01 17:34:36,617 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:34:36,624 - hotel - ERROR - Exception on /rooms/ [GET]
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/util/_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x7fe7f22375c0 (otid=0x7fe7f34d4a80) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/rest/hotel_api.py", line 13, in get
+    response = get_all_rooms()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/service/hotel_crud.py", line 8, in get_all_rooms
+    rooms = Hotel.query.all()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/orm/scoping.py", line 47, in __call__
+    sess = self.registry()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/util/_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4274, in __call__
+    return self.class_(**local_kw)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 176, in __init__
+    bind = options.pop('bind', None) or db.engine
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 998, in engine
+    return self.get_engine()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 1017, in get_engine
+    return connector.get_engine()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 593, in get_engine
+    sa_url, options = self.get_options(sa_url, echo)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 608, in get_options
+    sa_url, options = self._sa.apply_driver_hacks(self._app, sa_url, options)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 933, in apply_driver_hacks
+    if sa_url.drivername.startswith('mysql'):
+AttributeError: 'NoneType' object has no attribute 'drivername'
+2023-03-01 17:34:36,625 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:36] "[35m[1mGET /rooms/ HTTP/1.1[0m" 500 -
+2023-03-01 17:34:36,625 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 500 37
+2023-03-01 17:34:36,639 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:36] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-01 17:34:36,707 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:36] "GET /static/css/main.css HTTP/1.1" 200 -
+2023-03-01 17:34:37,221 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:34:37,229 - hotel - ERROR - Exception on /rooms/ [GET]
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/util/_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x7fe7f2237980 (otid=0x7fe7f34d4ed0) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/rest/hotel_api.py", line 13, in get
+    response = get_all_rooms()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/service/hotel_crud.py", line 8, in get_all_rooms
+    rooms = Hotel.query.all()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/orm/scoping.py", line 47, in __call__
+    sess = self.registry()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/util/_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4274, in __call__
+    return self.class_(**local_kw)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 176, in __init__
+    bind = options.pop('bind', None) or db.engine
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 998, in engine
+    return self.get_engine()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 1017, in get_engine
+    return connector.get_engine()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 593, in get_engine
+    sa_url, options = self.get_options(sa_url, echo)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 608, in get_options
+    sa_url, options = self._sa.apply_driver_hacks(self._app, sa_url, options)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 933, in apply_driver_hacks
+    if sa_url.drivername.startswith('mysql'):
+AttributeError: 'NoneType' object has no attribute 'drivername'
+2023-03-01 17:34:37,229 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:37] "[35m[1mGET /rooms/ HTTP/1.1[0m" 500 -
+2023-03-01 17:34:37,229 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 500 37
+2023-03-01 17:34:37,232 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:37] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-01 17:34:37,324 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:37] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:34:37,883 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:34:37,907 - hotel - ERROR - Exception on /orders/ [GET]
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/util/_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x7fe7f34b9640 (otid=0x7fe7f34d53b0) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/rest/orders_api.py", line 12, in get
+    response = get_all_orders()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/service/orders_crud.py", line 8, in get_all_orders
+    orders = Orders.query.all()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/orm/scoping.py", line 47, in __call__
+    sess = self.registry()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/util/_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4274, in __call__
+    return self.class_(**local_kw)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 176, in __init__
+    bind = options.pop('bind', None) or db.engine
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 998, in engine
+    return self.get_engine()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 1017, in get_engine
+    return connector.get_engine()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 593, in get_engine
+    sa_url, options = self.get_options(sa_url, echo)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 608, in get_options
+    sa_url, options = self._sa.apply_driver_hacks(self._app, sa_url, options)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 933, in apply_driver_hacks
+    if sa_url.drivername.startswith('mysql'):
+AttributeError: 'NoneType' object has no attribute 'drivername'
+2023-03-01 17:34:37,907 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:37] "[35m[1mGET /orders/ HTTP/1.1[0m" 500 -
+2023-03-01 17:34:37,908 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /orders/ HTTP/1.1" 500 37
+2023-03-01 17:34:37,913 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:37] "GET /order_list/ HTTP/1.1" 200 -
+2023-03-01 17:34:38,026 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:38] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:34:39,739 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:39] "GET /order_list/add/ HTTP/1.1" 200 -
+2023-03-01 17:34:39,829 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:39] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:34:41,000 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:34:41,011 - hotel - ERROR - Exception on /clients/ [GET]
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/util/_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x7fe7f34b8e80 (otid=0x7fe7f34d7270) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/rest/client_api.py", line 12, in get
+    response = get_all_clients()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/service/clients_crud.py", line 9, in get_all_clients
+    clients = Clients.query.all()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/orm/scoping.py", line 47, in __call__
+    sess = self.registry()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/util/_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4274, in __call__
+    return self.class_(**local_kw)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 176, in __init__
+    bind = options.pop('bind', None) or db.engine
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 998, in engine
+    return self.get_engine()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 1017, in get_engine
+    return connector.get_engine()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 593, in get_engine
+    sa_url, options = self.get_options(sa_url, echo)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 608, in get_options
+    sa_url, options = self._sa.apply_driver_hacks(self._app, sa_url, options)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 933, in apply_driver_hacks
+    if sa_url.drivername.startswith('mysql'):
+AttributeError: 'NoneType' object has no attribute 'drivername'
+2023-03-01 17:34:41,014 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:41] "[35m[1mGET /clients/ HTTP/1.1[0m" 500 -
+2023-03-01 17:34:41,015 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 500 37
+2023-03-01 17:34:41,020 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:41] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-01 17:34:41,141 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:41] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:34:41,667 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:41] "GET /client_list/add/ HTTP/1.1" 200 -
+2023-03-01 17:34:41,771 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:41] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:34:46,383 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:34:46,397 - hotel - ERROR - Exception on /clients/ [POST]
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/util/_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x7fe7f23dc500 (otid=0x7fe7f34d7a20) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/rest/client_api.py", line 20, in post
+    response = add_client(client=client)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/service/clients_crud.py", line 24, in add_client
+    db.session.add(new_client)
+  File "<string>", line 2, in add
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/orm/scoping.py", line 24, in _proxied
+    return self.registry()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/util/_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4274, in __call__
+    return self.class_(**local_kw)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 176, in __init__
+    bind = options.pop('bind', None) or db.engine
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 998, in engine
+    return self.get_engine()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 1017, in get_engine
+    return connector.get_engine()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 593, in get_engine
+    sa_url, options = self.get_options(sa_url, echo)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 608, in get_options
+    sa_url, options = self._sa.apply_driver_hacks(self._app, sa_url, options)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 933, in apply_driver_hacks
+    if sa_url.drivername.startswith('mysql'):
+AttributeError: 'NoneType' object has no attribute 'drivername'
+2023-03-01 17:34:46,398 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:46] "[35m[1mPOST /clients/ HTTP/1.1[0m" 500 -
+2023-03-01 17:34:46,398 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/ HTTP/1.1" 500 37
+2023-03-01 17:34:46,399 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:46] "[32mPOST /client_list/add/ HTTP/1.1[0m" 302 -
+2023-03-01 17:34:46,421 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:46] "GET /bad_request/ HTTP/1.1" 200 -
+2023-03-01 17:34:46,521 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:46] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:34:48,013 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:34:48,031 - hotel - ERROR - Exception on /clients/ [GET]
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/util/_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x7fe7f22547c0 (otid=0x7fe7f34d6e50) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/rest/client_api.py", line 12, in get
+    response = get_all_clients()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/service/clients_crud.py", line 9, in get_all_clients
+    clients = Clients.query.all()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/orm/scoping.py", line 47, in __call__
+    sess = self.registry()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/util/_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4274, in __call__
+    return self.class_(**local_kw)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 176, in __init__
+    bind = options.pop('bind', None) or db.engine
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 998, in engine
+    return self.get_engine()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 1017, in get_engine
+    return connector.get_engine()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 593, in get_engine
+    sa_url, options = self.get_options(sa_url, echo)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 608, in get_options
+    sa_url, options = self._sa.apply_driver_hacks(self._app, sa_url, options)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 933, in apply_driver_hacks
+    if sa_url.drivername.startswith('mysql'):
+AttributeError: 'NoneType' object has no attribute 'drivername'
+2023-03-01 17:34:48,031 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:48] "[35m[1mGET /clients/ HTTP/1.1[0m" 500 -
+2023-03-01 17:34:48,032 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 500 37
+2023-03-01 17:34:48,032 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:48] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-01 17:34:48,164 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:48] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:34:51,101 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:34:51,118 - hotel - ERROR - Exception on /rooms/ [GET]
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/util/_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x7fe7f2254e00 (otid=0x7fe7f34d5080) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/rest/hotel_api.py", line 13, in get
+    response = get_all_rooms()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/service/hotel_crud.py", line 8, in get_all_rooms
+    rooms = Hotel.query.all()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/orm/scoping.py", line 47, in __call__
+    sess = self.registry()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/util/_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4274, in __call__
+    return self.class_(**local_kw)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 176, in __init__
+    bind = options.pop('bind', None) or db.engine
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 998, in engine
+    return self.get_engine()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 1017, in get_engine
+    return connector.get_engine()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 593, in get_engine
+    sa_url, options = self.get_options(sa_url, echo)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 608, in get_options
+    sa_url, options = self._sa.apply_driver_hacks(self._app, sa_url, options)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 933, in apply_driver_hacks
+    if sa_url.drivername.startswith('mysql'):
+AttributeError: 'NoneType' object has no attribute 'drivername'
+2023-03-01 17:34:51,118 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:51] "[35m[1mGET /rooms/ HTTP/1.1[0m" 500 -
+2023-03-01 17:34:51,118 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 500 37
+2023-03-01 17:34:51,119 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:51] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-01 17:34:51,222 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:51] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:34:51,892 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:34:51,904 - hotel - ERROR - Exception on /clients/ [GET]
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/util/_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x7fe7f2254280 (otid=0x7fe7f34d7ae0) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/rest/client_api.py", line 12, in get
+    response = get_all_clients()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/service/clients_crud.py", line 9, in get_all_clients
+    clients = Clients.query.all()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/orm/scoping.py", line 47, in __call__
+    sess = self.registry()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/util/_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4274, in __call__
+    return self.class_(**local_kw)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 176, in __init__
+    bind = options.pop('bind', None) or db.engine
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 998, in engine
+    return self.get_engine()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 1017, in get_engine
+    return connector.get_engine()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 593, in get_engine
+    sa_url, options = self.get_options(sa_url, echo)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 608, in get_options
+    sa_url, options = self._sa.apply_driver_hacks(self._app, sa_url, options)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 933, in apply_driver_hacks
+    if sa_url.drivername.startswith('mysql'):
+AttributeError: 'NoneType' object has no attribute 'drivername'
+2023-03-01 17:34:51,905 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:51] "[35m[1mGET /clients/ HTTP/1.1[0m" 500 -
+2023-03-01 17:34:51,906 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 500 37
+2023-03-01 17:34:51,908 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:51] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-01 17:34:52,027 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:52] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:34:52,618 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:52] "GET /client_list/add/ HTTP/1.1" 200 -
+2023-03-01 17:34:52,723 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:52] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:34:59,386 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:34:59,407 - hotel - ERROR - Exception on /clients/ [POST]
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/util/_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x7fe7f2234dc0 (otid=0x7fe7f34d7c60) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/rest/client_api.py", line 20, in post
+    response = add_client(client=client)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/service/clients_crud.py", line 24, in add_client
+    db.session.add(new_client)
+  File "<string>", line 2, in add
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/orm/scoping.py", line 24, in _proxied
+    return self.registry()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/util/_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4274, in __call__
+    return self.class_(**local_kw)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 176, in __init__
+    bind = options.pop('bind', None) or db.engine
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 998, in engine
+    return self.get_engine()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 1017, in get_engine
+    return connector.get_engine()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 593, in get_engine
+    sa_url, options = self.get_options(sa_url, echo)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 608, in get_options
+    sa_url, options = self._sa.apply_driver_hacks(self._app, sa_url, options)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 933, in apply_driver_hacks
+    if sa_url.drivername.startswith('mysql'):
+AttributeError: 'NoneType' object has no attribute 'drivername'
+2023-03-01 17:34:59,407 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:59] "[35m[1mPOST /clients/ HTTP/1.1[0m" 500 -
+2023-03-01 17:34:59,408 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/ HTTP/1.1" 500 37
+2023-03-01 17:34:59,408 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:59] "[32mPOST /client_list/add/ HTTP/1.1[0m" 302 -
+2023-03-01 17:34:59,435 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:59] "GET /bad_request/ HTTP/1.1" 200 -
+2023-03-01 17:34:59,527 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:34:59] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:35:44,798 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.211:5000
+2023-03-01 17:35:44,798 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-03-01 17:35:48,266 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:35:48,485 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:35:48] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:35:48,486 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 125
+2023-03-01 17:35:48,493 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:35:48] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-01 17:35:48,648 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:35:48] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:35:51,319 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:35:51,338 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:35:51] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-01 17:35:51,339 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 89
+2023-03-01 17:35:51,344 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:35:51] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-01 17:35:51,515 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:35:51] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:35:51,975 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:35:52,007 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:35:52] "GET /orders/ HTTP/1.1" 200 -
+2023-03-01 17:35:52,007 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /orders/ HTTP/1.1" 200 3
+2023-03-01 17:35:52,013 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:35:52] "GET /order_list/ HTTP/1.1" 200 -
+2023-03-01 17:35:52,151 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:35:52] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:35:52,814 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:35:52,828 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:35:52] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:35:52,828 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 125
+2023-03-01 17:35:52,829 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:35:52] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-01 17:35:52,949 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:35:52] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:35:53,808 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:35:53] "GET /client_list/delete/ HTTP/1.1" 200 -
+2023-03-01 17:35:53,930 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:35:53] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:35:55,723 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:35:55,736 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:35:55] "[32mDELETE /clients/change/24 HTTP/1.1[0m" 308 -
+2023-03-01 17:35:55,736 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/24 HTTP/1.1" 308 267
+2023-03-01 17:35:55,737 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-01 17:35:55,751 - hotel - ERROR - Exception on /clients/change/24/ [DELETE]
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/rest/client_api.py", line 36, in delete
+    response = delete_client(id=client_id)
+TypeError: delete_client() got an unexpected keyword argument 'id'
+2023-03-01 17:35:55,752 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:35:55] "[35m[1mDELETE /clients/change/24/ HTTP/1.1[0m" 500 -
+2023-03-01 17:35:55,752 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/24/ HTTP/1.1" 500 37
+2023-03-01 17:35:55,753 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:35:55] "[32mPOST /client_list/delete/ HTTP/1.1[0m" 302 -
+2023-03-01 17:35:55,777 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:35:55] "GET /bad_request/ HTTP/1.1" 200 -
+2023-03-01 17:35:55,894 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:35:55] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:35:56,736 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:35:56,756 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:35:56] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:35:56,756 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 125
+2023-03-01 17:35:56,757 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:35:56] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-01 17:35:56,883 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:35:56] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:36:38,763 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.211:5000
+2023-03-01 17:36:38,763 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-03-01 17:36:40,444 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:36:40,507 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:40] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:36:40,508 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 125
+2023-03-01 17:36:40,515 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:40] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-01 17:36:40,583 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:40] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:36:42,071 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:42] "GET /client_list/delete/ HTTP/1.1" 200 -
+2023-03-01 17:36:42,169 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:42] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:36:45,467 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:36:45,478 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:45] "[32mDELETE /clients/change/24 HTTP/1.1[0m" 308 -
+2023-03-01 17:36:45,478 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/24 HTTP/1.1" 308 267
+2023-03-01 17:36:45,480 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-01 17:36:45,685 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:45] "DELETE /clients/change/24/ HTTP/1.1" 200 -
+2023-03-01 17:36:45,685 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/24/ HTTP/1.1" 200 54
+2023-03-01 17:36:45,686 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:45] "[32mPOST /client_list/delete/ HTTP/1.1[0m" 302 -
+2023-03-01 17:36:45,706 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:36:45,724 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:45] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:36:45,724 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 63
+2023-03-01 17:36:45,725 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:45] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-01 17:36:45,831 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:45] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:36:48,470 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:48] "GET /client_list/delete/ HTTP/1.1" 200 -
+2023-03-01 17:36:48,587 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:48] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:36:50,656 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:36:50,669 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:50] "[32mDELETE /clients/change/22 HTTP/1.1[0m" 308 -
+2023-03-01 17:36:50,669 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/22 HTTP/1.1" 308 267
+2023-03-01 17:36:50,670 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-01 17:36:51,097 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:51] "DELETE /clients/change/22/ HTTP/1.1" 200 -
+2023-03-01 17:36:51,097 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/22/ HTTP/1.1" 200 54
+2023-03-01 17:36:51,098 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:51] "[32mPOST /client_list/delete/ HTTP/1.1[0m" 302 -
+2023-03-01 17:36:51,104 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:36:51,120 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:51] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:36:51,120 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 3
+2023-03-01 17:36:51,126 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:51] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-01 17:36:51,246 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:51] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:36:51,592 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:36:51,607 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:51] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-01 17:36:51,607 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 89
+2023-03-01 17:36:51,612 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:51] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-01 17:36:51,718 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:51] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:36:54,576 - asyncio - DEBUG - Using selector: EpollSelector
+2023-03-01 17:36:54,588 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:54] "GET /room_list/delete/ HTTP/1.1" 200 -
+2023-03-01 17:36:54,725 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:54] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:36:56,344 - asyncio - DEBUG - Using selector: EpollSelector
+2023-03-01 17:36:56,363 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:36:56,552 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:56] "DELETE /rooms/change/19/ HTTP/1.1" 200 -
+2023-03-01 17:36:56,552 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/19/ HTTP/1.1" 200 49
+2023-03-01 17:36:56,553 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:56] "[32mPOST /room_list/delete/ HTTP/1.1[0m" 302 -
+2023-03-01 17:36:56,572 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:36:56,583 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:56] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-01 17:36:56,584 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 3
+2023-03-01 17:36:56,584 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:56] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-01 17:36:56,681 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:56] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:36:58,371 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:36:58,387 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:58] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-01 17:36:58,388 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 3
+2023-03-01 17:36:58,388 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:58] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-01 17:36:58,521 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:58] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:36:58,660 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:36:58,677 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:58] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:36:58,677 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 3
+2023-03-01 17:36:58,678 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:58] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-01 17:36:58,953 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:58] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:36:59,319 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:59] "GET /client_list/add/ HTTP/1.1" 200 -
+2023-03-01 17:36:59,456 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:36:59] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:37:06,649 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:37:06,872 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:06] "POST /clients/ HTTP/1.1" 200 -
+2023-03-01 17:37:06,872 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/ HTTP/1.1" 200 53
+2023-03-01 17:37:06,873 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:06] "[32mPOST /client_list/add/ HTTP/1.1[0m" 302 -
+2023-03-01 17:37:06,892 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:37:06,904 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:06] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:37:06,904 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 55
+2023-03-01 17:37:06,907 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:06] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-01 17:37:06,986 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:06] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:37:08,042 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:08] "GET /client_list/delete/ HTTP/1.1" 200 -
+2023-03-01 17:37:08,229 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:08] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:37:09,653 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:37:09,665 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:09] "[32mDELETE /clients/change/25 HTTP/1.1[0m" 308 -
+2023-03-01 17:37:09,665 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/25 HTTP/1.1" 308 267
+2023-03-01 17:37:09,668 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-01 17:37:09,824 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:09] "DELETE /clients/change/25/ HTTP/1.1" 200 -
+2023-03-01 17:37:09,824 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/25/ HTTP/1.1" 200 54
+2023-03-01 17:37:09,825 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:09] "[32mPOST /client_list/delete/ HTTP/1.1[0m" 302 -
+2023-03-01 17:37:09,841 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:37:09,852 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:09] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:37:09,852 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 3
+2023-03-01 17:37:09,856 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:09] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-01 17:37:09,999 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:09] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:37:33,828 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:33] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:37:33,930 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:33] "POST /clients/ HTTP/1.1" 200 -
+2023-03-01 17:37:33,956 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:33] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:37:33,974 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:33] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:37:33,993 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:33] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-01 17:37:34,121 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:34] "POST /rooms/ HTTP/1.1" 200 -
+2023-03-01 17:37:34,136 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:34] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-01 17:37:34,156 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:34] "GET /orders/ HTTP/1.1" 200 -
+2023-03-01 17:37:34,184 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:34] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-01 17:37:34,212 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:34] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:37:34,296 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:34] "POST /orders/ HTTP/1.1" 200 -
+2023-03-01 17:37:34,324 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:34] "GET /orders/ HTTP/1.1" 200 -
+2023-03-01 17:37:34,344 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:34] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:37:34,368 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:34] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-01 17:37:34,396 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:34] "GET /orders/ HTTP/1.1" 200 -
+2023-03-01 17:37:34,414 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:34] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:37:34,430 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:34] "[32mPUT /clients/change/26 HTTP/1.1[0m" 308 -
+2023-03-01 17:37:34,455 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:34] "PUT /clients/change/26/ HTTP/1.1" 200 -
+2023-03-01 17:37:34,479 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:34] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-01 17:37:34,507 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:34] "[32mPUT /rooms/change/20 HTTP/1.1[0m" 308 -
+2023-03-01 17:37:34,527 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:34] "PUT /rooms/change/20/ HTTP/1.1" 200 -
+2023-03-01 17:37:34,556 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:34] "GET /orders/ HTTP/1.1" 200 -
+2023-03-01 17:37:34,584 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:34] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-01 17:37:34,612 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:34] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:37:34,639 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:34] "[32mPUT /orders/change/15 HTTP/1.1[0m" 308 -
+2023-03-01 17:37:34,750 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:34] "PUT /orders/change/15/ HTTP/1.1" 200 -
+2023-03-01 17:37:34,776 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:34] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:37:34,799 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:34] "[32mDELETE /clients/change/26 HTTP/1.1[0m" 308 -
+2023-03-01 17:37:34,823 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:34] "DELETE /clients/change/26/ HTTP/1.1" 200 -
+2023-03-01 17:37:34,842 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:34] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-01 17:37:34,868 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:34] "DELETE /rooms/change/20/ HTTP/1.1" 200 -
+2023-03-01 17:37:34,888 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:34] "GET /orders/ HTTP/1.1" 200 -
+2023-03-01 17:37:35,323 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:35] "DELETE /orders/change/15/ HTTP/1.1" 200 -
+2023-03-01 17:37:35,352 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:35] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:37:35,493 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:35] "POST /clients/ HTTP/1.1" 200 -
+2023-03-01 17:37:35,512 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:35] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:37:35,536 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:35] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:37:35,556 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:35] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-01 17:37:35,634 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:35] "POST /rooms/ HTTP/1.1" 200 -
+2023-03-01 17:37:35,660 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:37:35] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-01 17:38:07,867 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:38:07,883 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:38:07] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:38:07,883 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 125
+2023-03-01 17:38:07,884 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:38:07] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-01 17:38:08,043 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:38:08] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:38:08,215 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:38:08,231 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:38:08] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-01 17:38:08,231 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 177
+2023-03-01 17:38:08,232 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:38:08] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-01 17:38:08,384 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:38:08] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:38:09,023 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:38:09,041 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:38:09] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:38:09,068 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 125
+2023-03-01 17:38:09,069 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:38:09] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-01 17:38:09,168 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:38:09] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:38:10,130 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:38:10,147 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:38:10] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-01 17:38:10,147 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 177
+2023-03-01 17:38:10,148 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:38:10] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-01 17:38:10,247 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:38:10] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:38:10,698 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:38:10,724 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:38:10] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:38:10,724 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 125
+2023-03-01 17:38:10,725 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:38:10] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-01 17:38:10,819 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:38:10] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:38:43,316 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:38:43] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:38:43,336 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:38:43] "[32mDELETE /clients/change/27 HTTP/1.1[0m" 308 -
+2023-03-01 17:38:43,448 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:38:43] "DELETE /clients/change/27/ HTTP/1.1" 200 -
+2023-03-01 17:38:45,687 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-01 17:38:45,697 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:38:45] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:38:45,705 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 63
+2023-03-01 17:38:45,706 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:38:45] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-01 17:38:45,848 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:38:45] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-01 17:38:48,512 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:38:48] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:38:48,523 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:38:48] "[32mDELETE /clients/change/26 HTTP/1.1[0m" 308 -
+2023-03-01 17:38:48,661 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:38:48] "DELETE /clients/change/26/ HTTP/1.1" 200 -
+2023-03-01 17:38:51,384 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:38:51] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:39:18,640 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:39:18] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:39:39,600 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:39:39] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:40:55,391 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:40:55] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:43:12,476 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:43:12] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:43:26,438 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:43:26] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:44:43,792 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:43] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:44:52,340 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:52] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:44:52,468 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:52] "POST /clients/ HTTP/1.1" 200 -
+2023-03-01 17:44:52,488 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:52] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:44:52,516 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:52] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:44:52,548 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:52] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-01 17:44:52,650 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:52] "POST /rooms/ HTTP/1.1" 200 -
+2023-03-01 17:44:52,666 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:52] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-01 17:44:52,683 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:52] "GET /orders/ HTTP/1.1" 200 -
+2023-03-01 17:44:52,699 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:52] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-01 17:44:52,714 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:52] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:44:52,801 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:52] "POST /orders/ HTTP/1.1" 200 -
+2023-03-01 17:44:52,824 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:52] "GET /orders/ HTTP/1.1" 200 -
+2023-03-01 17:44:52,844 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:52] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:44:52,872 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:52] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-01 17:44:52,898 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:52] "GET /orders/ HTTP/1.1" 200 -
+2023-03-01 17:44:52,915 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:52] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:44:52,939 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:52] "[32mPUT /clients/change/28 HTTP/1.1[0m" 308 -
+2023-03-01 17:44:52,967 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:52] "PUT /clients/change/28/ HTTP/1.1" 200 -
+2023-03-01 17:44:52,996 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:52] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-01 17:44:53,011 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:53] "[32mPUT /rooms/change/22 HTTP/1.1[0m" 308 -
+2023-03-01 17:44:53,041 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:53] "PUT /rooms/change/22/ HTTP/1.1" 200 -
+2023-03-01 17:44:53,072 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:53] "GET /orders/ HTTP/1.1" 200 -
+2023-03-01 17:44:53,100 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:53] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-01 17:44:53,120 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:53] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:44:53,144 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:53] "[32mPUT /orders/change/16 HTTP/1.1[0m" 308 -
+2023-03-01 17:44:53,249 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:53] "PUT /orders/change/16/ HTTP/1.1" 200 -
+2023-03-01 17:44:53,272 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:53] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:44:53,290 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:53] "[32mDELETE /clients/change/28 HTTP/1.1[0m" 308 -
+2023-03-01 17:44:53,316 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:53] "DELETE /clients/change/28/ HTTP/1.1" 200 -
+2023-03-01 17:44:53,336 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:53] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-01 17:44:53,353 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:53] "DELETE /rooms/change/22/ HTTP/1.1" 200 -
+2023-03-01 17:44:53,380 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:53] "GET /orders/ HTTP/1.1" 200 -
+2023-03-01 17:44:53,519 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:53] "DELETE /orders/change/16/ HTTP/1.1" 200 -
+2023-03-01 17:44:53,548 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:53] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:44:53,663 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:53] "POST /clients/ HTTP/1.1" 200 -
+2023-03-01 17:44:53,681 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:53] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:44:53,699 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:53] "GET /clients/ HTTP/1.1" 200 -
+2023-03-01 17:44:53,720 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:53] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-01 17:44:53,804 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:53] "POST /rooms/ HTTP/1.1" 200 -
+2023-03-01 17:44:53,822 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2023 17:44:53] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 09:01:19,934 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-02 09:01:19,978 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-03-02 09:03:50,839 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.211:5000
+2023-03-02 09:03:50,839 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-03-02 09:29:04,226 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 09:29:35,570 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 09:31:17,731 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.211:5000
+2023-03-02 09:31:17,732 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-03-02 09:31:22,365 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:31:22] "GET / HTTP/1.1" 200 -
+2023-03-02 09:31:22,521 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:31:22] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 09:31:23,986 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 09:31:24,049 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:31:24] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 09:31:24,049 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 187
+2023-03-02 09:31:24,056 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:31:24] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-02 09:31:24,187 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:31:24] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
