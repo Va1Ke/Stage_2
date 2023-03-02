@@ -10,7 +10,9 @@ class ClientList(Resource):
     def get(self) -> list:
         """get all clients list"""
         response = get_all_clients()
-        return [json.loads(client.to_json()) for client in response]
+        if response:
+            return [json.loads(client.to_json()) for client in response]
+        return {"description": "no clients"}
 
     def post(self) -> dict:
         """add client"""

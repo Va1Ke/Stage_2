@@ -1,5 +1,5 @@
-from flask import Flask
 import logging
+from flask import Flask
 from flask.logging import default_handler
 from flask_restful import Api
 from hotel.config import Settings

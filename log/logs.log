@@ -792,3 +792,541 @@ TypeError: delete_client() got an unexpected keyword argument 'id'
 2023-03-02 09:31:24,049 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 187
 2023-03-02 09:31:24,056 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:31:24] "GET /client_list/ HTTP/1.1" 200 -
 2023-03-02 09:31:24,187 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:31:24] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 09:53:55,185 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.211:5000
+2023-03-02 09:53:55,186 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-03-02 09:54:21,140 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.211:5000
+2023-03-02 09:54:21,141 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-03-02 09:54:30,557 - hotel - ERROR - Exception on /clients/ [GET]
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/rest/client_api.py", line 13, in get
+    if "description" in response.json().keys():
+AttributeError: 'list' object has no attribute 'json'
+2023-03-02 09:54:30,559 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:54:30] "[35m[1mGET /clients/ HTTP/1.1[0m" 500 -
+2023-03-02 09:54:51,225 - hotel - ERROR - Exception on /clients/ [GET]
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/rest/client_api.py", line 13, in get
+    if "description" in response.json().keys():
+AttributeError: 'list' object has no attribute 'json'
+2023-03-02 09:54:51,230 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:54:51] "[35m[1mGET /clients/ HTTP/1.1[0m" 500 -
+2023-03-02 09:55:08,727 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 09:55:08,741 - hotel - ERROR - Exception on /clients/ [GET]
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/rest/client_api.py", line 13, in get
+    if "description" in response.json().keys():
+AttributeError: 'list' object has no attribute 'json'
+2023-03-02 09:55:08,743 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:55:08] "[35m[1mGET /clients/ HTTP/1.1[0m" 500 -
+2023-03-02 09:55:08,743 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 500 37
+2023-03-02 09:55:08,751 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:55:08] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-02 09:55:08,853 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:55:08] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 09:55:13,821 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 09:55:13,837 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:55:13] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 09:55:13,837 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 441
+2023-03-02 09:55:13,843 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:55:13] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-02 09:55:13,976 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:55:13] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 09:55:14,331 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 09:55:14,340 - hotel - ERROR - Exception on /clients/ [GET]
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/rest/client_api.py", line 13, in get
+    if "description" in response.json().keys():
+AttributeError: 'list' object has no attribute 'json'
+2023-03-02 09:55:14,341 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:55:14] "[35m[1mGET /clients/ HTTP/1.1[0m" 500 -
+2023-03-02 09:55:14,342 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 500 37
+2023-03-02 09:55:14,342 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:55:14] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-02 09:55:14,474 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:55:14] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 09:55:15,453 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 09:55:15,469 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:55:15] "GET /orders/ HTTP/1.1" 200 -
+2023-03-02 09:55:15,469 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /orders/ HTTP/1.1" 200 3
+2023-03-02 09:55:15,475 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:55:15] "GET /order_list/ HTTP/1.1" 200 -
+2023-03-02 09:55:15,623 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:55:15] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 09:55:16,131 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 09:55:16,148 - hotel - ERROR - Exception on /clients/ [GET]
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/rest/client_api.py", line 13, in get
+    if "description" in response.json().keys():
+AttributeError: 'list' object has no attribute 'json'
+2023-03-02 09:55:16,149 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:55:16] "[35m[1mGET /clients/ HTTP/1.1[0m" 500 -
+2023-03-02 09:55:16,149 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 500 37
+2023-03-02 09:55:16,150 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:55:16] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-02 09:55:16,260 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:55:16] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 09:55:16,665 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 09:55:16,680 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:55:16] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 09:55:16,680 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 441
+2023-03-02 09:55:16,681 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:55:16] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-02 09:55:16,803 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:55:16] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 09:55:17,065 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 09:55:17,079 - hotel - ERROR - Exception on /clients/ [GET]
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/rest/client_api.py", line 13, in get
+    if "description" in response.json().keys():
+AttributeError: 'list' object has no attribute 'json'
+2023-03-02 09:55:17,080 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:55:17] "[35m[1mGET /clients/ HTTP/1.1[0m" 500 -
+2023-03-02 09:55:17,080 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 500 37
+2023-03-02 09:55:17,081 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:55:17] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-02 09:55:17,215 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:55:17] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 09:55:20,976 - hotel - ERROR - Exception on /clients/ [GET]
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/rest/client_api.py", line 13, in get
+    if "description" in response.json().keys():
+AttributeError: 'list' object has no attribute 'json'
+2023-03-02 09:55:20,977 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:55:20] "[35m[1mGET /clients/ HTTP/1.1[0m" 500 -
+2023-03-02 09:56:16,056 - hotel - ERROR - Exception on /clients/ [GET]
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/rest/client_api.py", line 13, in get
+    if "description" in response.json().keys():
+AttributeError: 'list' object has no attribute 'json'
+2023-03-02 09:56:16,057 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:56:16] "[35m[1mGET /clients/ HTTP/1.1[0m" 500 -
+2023-03-02 09:56:55,800 - hotel - ERROR - Exception on /clients/ [GET]
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/rest/client_api.py", line 13, in get
+    if "description" in response.json().keys():
+AttributeError: 'list' object has no attribute 'json'
+2023-03-02 09:56:55,801 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:56:55] "[35m[1mGET /clients/ HTTP/1.1[0m" 500 -
+2023-03-02 09:57:10,887 - hotel - ERROR - Exception on /clients/ [GET]
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/rest/client_api.py", line 13, in get
+    if "description" in response.json().keys():
+AttributeError: 'list' object has no attribute 'json'
+2023-03-02 09:57:10,889 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:57:10] "[35m[1mGET /clients/ HTTP/1.1[0m" 500 -
+2023-03-02 09:59:29,558 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.211:5000
+2023-03-02 09:59:29,560 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-03-02 09:59:35,535 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:59:35] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 09:59:51,731 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 09:59:51,747 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:59:51] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 09:59:51,748 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 187
+2023-03-02 09:59:51,755 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:59:51] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-02 09:59:51,865 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:59:51] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 09:59:55,188 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 09:59:55,205 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:59:55] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 09:59:55,206 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 441
+2023-03-02 09:59:55,212 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:59:55] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-02 09:59:55,384 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:59:55] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 09:59:55,687 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 09:59:55,705 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:59:55] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 09:59:55,705 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 187
+2023-03-02 09:59:55,706 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:59:55] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-02 09:59:55,829 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:59:55] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 09:59:58,623 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:59:58] "GET /client_list/delete/ HTTP/1.1" 200 -
+2023-03-02 09:59:58,751 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 09:59:58] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:00:01,077 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:00:01,099 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:01] "[32mDELETE /clients/change/28 HTTP/1.1[0m" 308 -
+2023-03-02 10:00:01,099 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/28 HTTP/1.1" 308 267
+2023-03-02 10:00:01,101 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-02 10:00:01,310 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:01] "DELETE /clients/change/28/ HTTP/1.1" 200 -
+2023-03-02 10:00:01,310 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/28/ HTTP/1.1" 200 54
+2023-03-02 10:00:01,311 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:01] "[32mPOST /client_list/delete/ HTTP/1.1[0m" 302 -
+2023-03-02 10:00:01,340 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:00:01,364 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:01] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:00:01,365 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 125
+2023-03-02 10:00:01,365 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:01] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-02 10:00:01,467 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:01] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:00:03,164 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:03] "GET /client_list/delete/ HTTP/1.1" 200 -
+2023-03-02 10:00:03,307 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:03] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:00:05,261 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:00:05,271 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:05] "[32mDELETE /clients/change/29 HTTP/1.1[0m" 308 -
+2023-03-02 10:00:05,271 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/29 HTTP/1.1" 308 267
+2023-03-02 10:00:05,279 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-02 10:00:05,410 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:05] "DELETE /clients/change/29/ HTTP/1.1" 200 -
+2023-03-02 10:00:05,410 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/29/ HTTP/1.1" 200 54
+2023-03-02 10:00:05,411 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:05] "[32mPOST /client_list/delete/ HTTP/1.1[0m" 302 -
+2023-03-02 10:00:05,429 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:00:05,444 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:05] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:00:05,444 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 63
+2023-03-02 10:00:05,445 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:05] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-02 10:00:05,579 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:05] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:00:06,269 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:06] "GET /client_list/delete/ HTTP/1.1" 200 -
+2023-03-02 10:00:06,422 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:06] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:00:07,358 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:00:07,365 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:07] "[32mDELETE /clients/change/31 HTTP/1.1[0m" 308 -
+2023-03-02 10:00:07,366 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/31 HTTP/1.1" 308 267
+2023-03-02 10:00:07,376 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-02 10:00:07,556 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:07] "DELETE /clients/change/31/ HTTP/1.1" 200 -
+2023-03-02 10:00:07,557 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/31/ HTTP/1.1" 200 54
+2023-03-02 10:00:07,557 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:07] "[32mPOST /client_list/delete/ HTTP/1.1[0m" 302 -
+2023-03-02 10:00:07,575 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:00:07,592 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:07] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:00:07,592 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 52
+2023-03-02 10:00:07,593 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:07] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-02 10:00:07,679 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:07] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:00:43,449 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:00:43,462 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:43] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:00:43,462 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 52
+2023-03-02 10:00:43,464 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:43] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-02 10:00:43,567 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:43] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:00:44,535 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:00:44,549 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:44] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:00:44,550 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 52
+2023-03-02 10:00:44,550 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:44] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-02 10:00:44,649 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:44] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:00:45,851 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:00:45,864 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:45] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:00:45,864 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 52
+2023-03-02 10:00:45,865 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:45] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-02 10:00:45,958 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:45] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:00:46,428 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:00:46,443 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:46] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:00:46,444 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 441
+2023-03-02 10:00:46,444 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:46] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-02 10:00:46,538 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:46] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:00:46,992 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:00:47,017 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:47] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:00:47,018 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 52
+2023-03-02 10:00:47,018 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:47] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-02 10:00:47,114 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:47] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:00:58,068 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:00:58] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:06:02,312 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:06:02,324 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:06:02] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:06:02,325 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 52
+2023-03-02 10:06:02,326 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:06:02] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-02 10:06:02,413 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:06:02] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:06:02,892 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:06:02,912 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:06:02] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:06:02,913 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 52
+2023-03-02 10:06:02,913 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:06:02] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-02 10:06:03,011 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:06:03] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:06:03,202 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:06:03,220 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:06:03] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:06:03,221 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 441
+2023-03-02 10:06:03,222 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:06:03] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-02 10:06:03,375 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:06:03] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:06:03,905 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:06:03,917 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:06:03] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:06:03,917 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 52
+2023-03-02 10:06:03,918 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:06:03] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-02 10:06:04,011 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:06:04] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:06:04,526 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:06:04,545 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:06:04] "GET /orders/ HTTP/1.1" 200 -
+2023-03-02 10:06:04,545 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /orders/ HTTP/1.1" 200 3
+2023-03-02 10:06:04,551 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:06:04] "GET /order_list/ HTTP/1.1" 200 -
+2023-03-02 10:06:04,668 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:06:04] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:06:04,909 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:06:04,928 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:06:04] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:06:04,928 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 52
+2023-03-02 10:06:04,929 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:06:04] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-02 10:06:05,187 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:06:05] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:06:19,857 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:06:19] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:07:23,949 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:07:23] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:08:14,221 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:08:14,236 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:08:14] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:08:14,236 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 52
+2023-03-02 10:08:14,237 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:08:14] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-02 10:08:14,346 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:08:14] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:08:14,859 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:08:14,877 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:08:14] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:08:14,878 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 52
+2023-03-02 10:08:14,879 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:08:14] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-02 10:08:14,951 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:08:14] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:08:15,197 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:08:15,216 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:08:15] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:08:15,216 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 52
+2023-03-02 10:08:15,217 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:08:15] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-02 10:08:15,313 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:08:15] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:09:39,463 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.211:5000
+2023-03-02 10:09:39,463 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-03-02 10:09:46,968 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:09:47,029 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:09:47] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:09:47,029 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 52
+2023-03-02 10:09:47,036 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:09:47] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-02 10:09:47,123 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:09:47] "GET /static/css/main.css HTTP/1.1" 200 -
+2023-03-02 10:09:47,155 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:09:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-03-02 10:09:47,872 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:09:47,892 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:09:47] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:09:47,892 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 52
+2023-03-02 10:09:47,893 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:09:47] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-02 10:09:47,977 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:09:47] "GET /static/css/main.css HTTP/1.1" 200 -
+2023-03-02 10:09:49,287 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:09:49,309 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:09:49] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:09:49,309 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 441
+2023-03-02 10:09:49,314 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:09:49] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-02 10:09:49,414 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:09:49] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:09:50,009 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:09:50,024 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:09:50] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:09:50,024 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 52
+2023-03-02 10:09:50,025 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:09:50] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-02 10:09:50,115 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:09:50] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:09:50,691 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:09:50,713 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:09:50] "GET /orders/ HTTP/1.1" 200 -
+2023-03-02 10:09:50,714 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /orders/ HTTP/1.1" 200 3
+2023-03-02 10:09:50,719 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:09:50] "GET /order_list/ HTTP/1.1" 200 -
+2023-03-02 10:09:50,879 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:09:50] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:09:51,425 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:09:51,438 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:09:51] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:09:51,438 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 52
+2023-03-02 10:09:51,440 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:09:51] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-02 10:09:51,541 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:09:51] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:10:07,937 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:10:07] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:12:11,768 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:12:11] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:12:46,122 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:12:46] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:12:51,668 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.211:5000
+2023-03-02 10:12:51,669 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-03-02 10:13:03,331 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:13:03] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:13:44,198 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:13:44] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:15:55,233 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:15:55] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:17:09,936 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:17:09] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:17:09,951 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:17:09] "[32mPUT /rooms/change/25 HTTP/1.1[0m" 308 -
+2023-03-02 10:17:09,982 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:17:09] "PUT /rooms/change/25/ HTTP/1.1" 200 -
+2023-03-02 10:17:13,128 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:17:13] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:17:13,262 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:17:13] "DELETE /rooms/change/25/ HTTP/1.1" 200 -
+2023-03-02 10:17:14,859 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:17:14] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:17:14,989 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:17:14] "DELETE /rooms/change/23/ HTTP/1.1" 200 -
+2023-03-02 10:17:16,252 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:17:16] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:17:16,372 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:17:16] "DELETE /rooms/change/22/ HTTP/1.1" 200 -
+2023-03-02 10:17:17,442 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:17:17] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:17:17,522 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:17:17] "DELETE /rooms/change/21/ HTTP/1.1" 200 -
+2023-03-02 10:17:18,516 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:17:18] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:17:18,597 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:17:18] "DELETE /rooms/change/20/ HTTP/1.1" 200 -
+2023-03-02 10:17:19,601 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:17:19,616 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:17:19] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:17:19,617 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 3
+2023-03-02 10:17:19,625 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:17:19] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-02 10:17:19,766 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:17:19] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:17:21,560 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:17:21,576 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:17:21] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:17:21,576 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-02 10:17:21,582 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:17:21] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-02 10:17:21,783 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:17:21] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:17:22,571 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:17:22,593 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:17:22] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:17:22,594 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 3
+2023-03-02 10:17:22,595 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:17:22] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-02 10:17:22,704 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:17:22] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:17:23,715 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:17:23,742 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:17:23] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:17:23,743 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-02 10:17:23,744 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:17:23] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-02 10:17:23,859 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:17:23] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:17:24,717 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:17:24,732 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:17:24] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:17:24,732 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 3
+2023-03-02 10:17:24,733 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:17:24] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-02 10:17:24,827 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:17:24] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:17:25,408 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:17:25,421 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:17:25] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:17:25,421 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-02 10:17:25,422 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:17:25] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-02 10:17:25,539 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:17:25] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:19:28,476 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:19:28,489 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:19:28] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:19:28,490 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 3
+2023-03-02 10:19:28,490 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:19:28] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-02 10:19:28,687 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:19:28] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:19:29,021 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:19:29,036 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:19:29] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:19:29,036 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-02 10:19:29,038 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:19:29] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-02 10:19:29,199 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:19:29] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:19:29,435 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:19:29,454 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:19:29] "GET /orders/ HTTP/1.1" 200 -
+2023-03-02 10:19:29,454 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /orders/ HTTP/1.1" 200 3
+2023-03-02 10:19:29,460 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:19:29] "GET /order_list/ HTTP/1.1" 200 -
+2023-03-02 10:19:29,693 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:19:29] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:19:30,643 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:19:30,659 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:19:30] "GET /orders/ HTTP/1.1" 200 -
+2023-03-02 10:19:30,659 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /orders/ HTTP/1.1" 200 3
+2023-03-02 10:19:30,660 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:19:30] "GET /order_list/ HTTP/1.1" 200 -
+2023-03-02 10:19:30,783 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:19:30] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:19:31,437 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:19:31,459 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:19:31] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:19:31,459 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-02 10:19:31,460 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:19:31] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-02 10:19:31,619 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:19:31] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:19:31,922 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:19:31,925 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:19:31] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:19:31,926 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 3
+2023-03-02 10:19:31,926 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:19:31] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-02 10:19:32,104 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:19:32] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:19:32,386 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:19:32,404 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:19:32] "GET /orders/ HTTP/1.1" 200 -
+2023-03-02 10:19:32,405 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /orders/ HTTP/1.1" 200 3
+2023-03-02 10:19:32,405 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:19:32] "GET /order_list/ HTTP/1.1" 200 -
+2023-03-02 10:19:32,639 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:19:32] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:19:36,927 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:19:36] "GET /orders/ HTTP/1.1" 200 -
+2023-03-02 10:19:36,940 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:19:36] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:19:36,959 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:19:36] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:21:15,030 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:21:15] "GET /orders/ HTTP/1.1" 200 -
+2023-03-02 10:21:15,044 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:21:15] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:21:15,064 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:21:15] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:25:04,792 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:25:04] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:25:04,905 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:25:04] "POST /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:25:04,921 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:25:04] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:25:04,939 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:25:04] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:25:05,106 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:25:05] "DELETE /rooms/change/26/ HTTP/1.1" 200 -
+2023-03-02 10:25:05,131 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:25:05] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:25:05,148 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:25:05] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:25:17,949 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:25:17,961 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:25:17] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:25:17,961 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-02 10:25:17,962 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:25:17] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-02 10:25:18,208 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:25:18] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:25:18,669 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:25:18,696 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:25:18] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:25:18,696 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 3
+2023-03-02 10:25:18,697 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:25:18] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-02 10:25:18,803 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:25:18] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:26:20,428 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:26:20] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:26:56,488 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:26:56] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:27:18,239 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:27:18] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:28:15,380 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:28:15] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:28:51,095 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:28:51] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:29:15,359 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:29:15] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:29:43,752 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:29:43,768 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:29:43] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:29:43,768 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-02 10:29:43,769 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:29:43] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-02 10:29:43,946 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:29:43] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:29:44,592 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-02 10:29:44,607 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:29:44] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:29:44,607 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 3
+2023-03-02 10:29:44,608 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:29:44] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-02 10:29:44,715 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:29:44] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-02 10:30:03,224 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:30:03] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:30:05,552 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:30:05] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:30:11,312 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:30:11] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:32:00,135 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.211:5000
+2023-03-02 10:32:00,136 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-03-02 10:32:03,500 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:32:03] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:32:11,132 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:32:11] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:32:39,751 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:32:39] "GET /orders/ HTTP/1.1" 200 -
+2023-03-02 10:32:39,768 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:32:39] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:32:39,785 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:32:39] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:32:58,447 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:32:58] "GET /orders/ HTTP/1.1" 200 -
+2023-03-02 10:32:58,474 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:32:58] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:32:58,491 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:32:58] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:36:56,274 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:36:56] "GET /orders/ HTTP/1.1" 200 -
+2023-03-02 10:36:56,296 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:36:56] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:36:56,316 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:36:56] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:36:56,333 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:36:56] "GET /orders/ HTTP/1.1" 200 -
+2023-03-02 10:36:56,402 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:36:56] "GET /orders/ HTTP/1.1" 200 -
+2023-03-02 10:36:56,428 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:36:56] "GET /orders/ HTTP/1.1" 200 -
+2023-03-02 10:36:56,456 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:36:56] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:36:56,472 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:36:56] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:37:07,875 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.211:5000
+2023-03-02 10:37:07,876 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-03-02 10:37:10,934 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:37:10] "GET /orders/ HTTP/1.1" 200 -
+2023-03-02 10:37:10,964 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:37:10] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:37:10,984 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:37:10] "GET /clients/ HTTP/1.1" 200 -
+2023-03-02 10:37:11,002 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:37:11] "GET /orders/ HTTP/1.1" 200 -
+2023-03-02 10:37:11,024 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:37:11] "GET /orders/ HTTP/1.1" 200 -
+2023-03-02 10:37:11,042 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:37:11] "GET /orders/ HTTP/1.1" 200 -
+2023-03-02 10:37:11,068 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:37:11] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-02 10:37:11,087 - werkzeug - INFO - 127.0.0.1 - - [02/Mar/2023 10:37:11] "GET /clients/ HTTP/1.1" 200 -

@@ -6,17 +6,15 @@ from hotel.models.models import db
 def get_all_rooms() -> list[Hotel]:
     """get all rooms list"""
     rooms = Hotel.query.all()
-    if rooms:
-        return rooms
-    return []
+    return rooms
+
 
 
 def find_room(busy: int) -> list[Hotel]:
     """find free rooms"""
     room = Hotel.query.filter_by(busy=busy).all()
-    if room:
-        return room
-    return []
+    return room
+
 
 
 def add_room(room: hotel_schemas.AddRoom) -> dict:

@@ -11,7 +11,9 @@ class HotelList(Resource):
     def get(self) -> list:
         """get all rooms list"""
         response = get_all_rooms()
-        return [json.loads(room.to_json()) for room in response]
+        if response:
+            return [json.loads(room.to_json()) for room in response]
+        return {"description": "no rooms"}
 
     def post(self) -> dict:
         """add room"""

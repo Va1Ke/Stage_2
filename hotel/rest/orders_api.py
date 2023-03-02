@@ -10,7 +10,9 @@ class OrderList(Resource):
     def get(self) -> dict:
         """get all orders list"""
         response = get_all_orders()
-        return [json.loads(order.to_json()) for order in response]
+        if response:
+            return [json.loads(order.to_json()) for order in response]
+        return {"description": "no orders"}
 
     def post(self) -> dict:
         """add order"""
