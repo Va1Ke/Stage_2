@@ -5,7 +5,12 @@ import pytest
 class HotelApiTestCase(unittest.TestCase):
 
     def test_create_room(self):
-        amount_before = len(requests.get("http://127.0.0.1:5000/rooms/").json())
+        response_all = requests.get("http://127.0.0.1:5000/rooms/")
+        if isinstance(response_all.json(), dict) and "description" in response_all.json().keys():
+            self.assertEqual(response_all.json().get("description"), "no rooms")
+            amount_before = 0
+        else:
+            amount_before = len(response_all.json())
         var = amount_before + 1
         room_attrs = {
             "area": var,
