@@ -27,8 +27,6 @@ class ClientListByPhone(Resource):
     def post(self, phone_number: str) -> dict:
         """find client by phone number"""
         response = find_client(phone_number)
-        if type(response) == json:
-            return response
         return json.loads(response.to_json())
 
 class ClientDeleteUpdateAdd(Resource):

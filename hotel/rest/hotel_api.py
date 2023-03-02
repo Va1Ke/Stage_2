@@ -28,8 +28,6 @@ class HotelListByBusy(Resource):
     def post(self, busy: int) -> list:
         """get list of free rooms"""
         response = find_room(busy)
-        if type(response) == json:
-            return response
         return [json.loads(room.to_json()) for room in response]
 
 class HotelDeleteUpdateAdd(Resource):

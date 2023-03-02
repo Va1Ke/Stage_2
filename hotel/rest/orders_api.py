@@ -27,8 +27,6 @@ class OrderListByClient(Resource):
     def post(self, client_id: int) -> list:
         """find order by client"""
         response = find_orders(client_id)
-        if type(response) == json:
-            return response
         return [json.loads(order.to_json()) for order in response]
 
 class OrderDeleteUpdateAdd(Resource):
