@@ -5056,3 +5056,21 @@ TypeError: exceptions must derive from BaseException
 2023-03-03 14:14:12,093 - werkzeug - INFO - 127.0.0.1 - - [03/Mar/2023 14:14:12] "DELETE /rooms/change/7/ HTTP/1.1" 200 -
 2023-03-03 14:14:12,100 - werkzeug - INFO - 127.0.0.1 - - [03/Mar/2023 14:14:12] "GET /rooms/ HTTP/1.1" 200 -
 2023-03-03 14:14:12,106 - werkzeug - INFO - 127.0.0.1 - - [03/Mar/2023 14:14:12] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-03 16:58:19,384 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.211:5000
+2023-03-03 16:58:19,408 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-03-03 16:58:25,010 - werkzeug - INFO - 127.0.0.1 - - [03/Mar/2023 16:58:25] "[31m[1mGET /rooms/1/ HTTP/1.1[0m" 405 -
+2023-03-03 16:59:06,343 - werkzeug - INFO - 127.0.0.1 - - [03/Mar/2023 16:59:06] "POST /rooms/1/ HTTP/1.1" 200 -
+2023-03-03 17:02:59,891 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.211:5000
+2023-03-03 17:02:59,891 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-03-03 17:03:01,527 - werkzeug - INFO - 127.0.0.1 - - [03/Mar/2023 17:03:01] "GET /clients/ HTTP/1.1" 200 -
+2023-03-03 17:03:08,848 - werkzeug - INFO - 127.0.0.1 - - [03/Mar/2023 17:03:08] "POST /clients/ HTTP/1.1" 200 -
+2023-03-03 17:03:10,862 - werkzeug - INFO - 127.0.0.1 - - [03/Mar/2023 17:03:10] "GET /clients/ HTTP/1.1" 200 -
+2023-03-03 17:03:59,631 - werkzeug - INFO - 127.0.0.1 - - [03/Mar/2023 17:03:59] "GET /clients/ HTTP/1.1" 200 -
+2023-03-03 17:04:02,678 - werkzeug - INFO - 127.0.0.1 - - [03/Mar/2023 17:04:02] "GET /clients/ HTTP/1.1" 200 -
+2023-03-03 17:04:02,682 - werkzeug - INFO - 127.0.0.1 - - [03/Mar/2023 17:04:02] "POST /clients/+1901823/ HTTP/1.1" 200 -

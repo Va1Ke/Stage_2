@@ -27,6 +27,11 @@ class HotelApiTestCase(unittest.TestCase):
         self.assertEqual(200, response.status_code)
         self.assertIsNotNone(response.json())
 
+    def test_get_free_rooms(self):
+        response = requests.post("http://127.0.0.1:5000/rooms/1/")
+        self.assertEqual(200, response.status_code)
+        self.assertIsNotNone(response.json())
+
     def test_update_room(self):
         take_all = requests.get("http://127.0.0.1:5000/rooms/")
         if isinstance(take_all.json(), dict) and "description" in take_all.json().keys():

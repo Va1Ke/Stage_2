@@ -2,7 +2,7 @@ from flask import Blueprint, json
 from flask_restful import Resource, request
 from hotel.service.hotel_crud import get_all_rooms, add_room, edit_room, delete_room, search_room_by_free_amount
 from hotel.service.schemas import hotel_schemas
-
+from typing import Union
 
 api_Hotel_blueprint = Blueprint('hotel_api', __name__)
 
@@ -26,10 +26,12 @@ class HotelList(Resource):
 
 class HotelListByFreeAmount(Resource):
     """ApiClass for searching free rooms"""
-    def post(self, search_by_free_amount: int) -> list:
+    def post(self, search_by_free_amount: int) -> Union[list, dict]:
         """get list of free rooms"""
         response = search_room_by_free_amount(search_by_free_amount)
-        return [json.loads(room.to_json()) for room in response]
+        if response:
+            return [json.loads(room.to_json()) for room in response]
+        return {"description": "no rooms"}
 
 class HotelDeleteUpdateAdd(Resource):
     """ApiClass for get all rooms list and add room"""

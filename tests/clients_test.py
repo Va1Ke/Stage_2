@@ -30,6 +30,16 @@ class ClientApiTestCase(unittest.TestCase):
         self.assertEqual(200, response.status_code)
         self.assertIsNotNone(response.json())
 
+    def test_find_client_by_phone_number(self):
+        response_all = requests.get("http://127.0.0.1:5000/clients/")
+        if isinstance(response_all.json(), dict) and "description" in response_all.json().keys():
+            self.assertEqual(response_all.json().get("description"), "no clients")
+        else:
+            phone_number = response_all.json()[len(response_all.json()) - 1].get('phone_number')
+            response = requests.post(f"http://127.0.0.1:5000/clients/{phone_number}/")
+            self.assertEqual(200, response.status_code)
+            self.assertIsNotNone(response.json())
+
     def test_update_client(self):
         take_all = requests.get("http://127.0.0.1:5000/clients/")
         if isinstance(take_all.json(), dict) and "description" in take_all.json().keys():
