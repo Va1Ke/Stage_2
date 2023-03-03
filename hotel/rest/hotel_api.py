@@ -1,6 +1,6 @@
 from flask import Blueprint, json
 from flask_restful import Resource, request
-from hotel.service.hotel_crud import get_all_rooms, add_room, edit_room, delete_room, find_room
+from hotel.service.hotel_crud import get_all_rooms, add_room, edit_room, delete_room, search_room_by_free_amount
 from hotel.service.schemas import hotel_schemas
 
 
@@ -17,17 +17,18 @@ class HotelList(Resource):
 
     def post(self) -> dict:
         """add room"""
-        new_client = request.get_json(force=True)
-        room = hotel_schemas.AddRoom(area=new_client.get('area'), number_of_beds=new_client.get('number_of_beds'),
-                                     price_for_a_night=new_client.get('price_for_a_night'))
+        new_room = request.get_json(force=True)
+        room = hotel_schemas.AddRoom(area=new_room.get('area'),
+                                     price_for_a_night=new_room.get('price_for_a_night'),
+                                     max_amount_clients=new_room.get('max_amount_clients'))
         response = add_room(room)
         return response
 
-class HotelListByBusy(Resource):
-    """ApiClass for showing list of free rooms"""
-    def post(self, busy: int) -> list:
+class HotelListByFreeAmount(Resource):
+    """ApiClass for searching free rooms"""
+    def post(self, search_by_free_amount: int) -> list:
         """get list of free rooms"""
-        response = find_room(busy)
+        response = search_room_by_free_amount(search_by_free_amount)
         return [json.loads(room.to_json()) for room in response]
 
 class HotelDeleteUpdateAdd(Resource):
@@ -41,8 +42,7 @@ class HotelDeleteUpdateAdd(Resource):
         """put room"""
         new_info_room = request.get_json(force=True)
         room = hotel_schemas.EditRoomInfo(id=room_id, area=new_info_room.get('area'),
-                                          number_of_beds=new_info_room.get('number_of_beds'),
                                           price_for_a_night=new_info_room.get('price_for_a_night'),
-                                          busy=new_info_room.get('busy'))
+                                          max_amount_clients=new_info_room.get('max_amount_clients'))
         response = edit_room(room=room)
         return json.loads(response.to_json())

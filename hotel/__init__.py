@@ -3,8 +3,7 @@ from flask import Flask
 from flask.logging import default_handler
 from flask_restful import Api
 from hotel.config import Settings
-from hotel.rest import client_api, hotel_api, orders_api
-
+from hotel.rest import client_api, hotel_api
 def create_app():
     """flask main def"""
     logger = logging.getLogger()
@@ -28,11 +27,10 @@ def create_app():
     db.init_app(app)
     migrate.init_app(app, db)
 
-    from hotel.views import clients_routes, hotel_routes, orders_routes
+    from hotel.views import clients_routes, hotel_routes
 
     app.register_blueprint(clients_routes.clients_rout)
     app.register_blueprint(hotel_routes.hotel_rout)
-    app.register_blueprint(orders_routes.orders_rout)
 
     app.register_blueprint(client_api.api_Client_blueprint)
     api.add_resource(client_api.ClientList, '/clients/')
@@ -41,12 +39,7 @@ def create_app():
 
     app.register_blueprint(hotel_api.api_Hotel_blueprint)
     api.add_resource(hotel_api.HotelList, '/rooms/')
-    api.add_resource(hotel_api.HotelListByBusy, '/rooms/<busy>/')
+    api.add_resource(hotel_api.HotelListByFreeAmount, '/rooms/<search_by_free_amount>/')
     api.add_resource(hotel_api.HotelDeleteUpdateAdd, '/rooms/change/<room_id>/')
-
-    app.register_blueprint(orders_api.api_Orders_blueprint)
-    api.add_resource(orders_api.OrderList, '/orders/')
-    api.add_resource(orders_api.OrderListByClient, '/orders/<client_id>/')
-    api.add_resource(orders_api.OrderDeleteUpdateAdd, '/orders/change/<order_id>/')
 
     return app

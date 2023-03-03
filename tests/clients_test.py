@@ -36,16 +36,20 @@ class ClientApiTestCase(unittest.TestCase):
             self.assertEqual("no clients", take_all.json().get('description'))
         else:
             var = len(take_all.json())
-            client_attrs = {
-                "name": f"test{var}",
-                "phone_number": f"phone_number{var}"
-            }
-            client_id = take_all.json()[len(take_all.json()) - 1].get('id')
-            response = requests.put(f"http://127.0.0.1:5000/clients/change/{client_id}", json=client_attrs)
-            print(response.status_code)
-            self.assertEqual(200, response.status_code)
-            self.assertEqual(client_attrs['name'], response.json()['name'])
-            self.assertEqual(client_attrs['phone_number'], response.json()['phone_number'])
+            take_room = requests.get("http://127.0.0.1:5000/rooms/")
+            if isinstance(take_room.json(), list):
+                client_attrs = {
+                    "name": f"test{var}",
+                    "phone_number": f"phone_number{var}",
+                    "room_id": take_room.json()[len(take_room.json()) - 1].get('room_id')
+                }
+                client_id = take_all.json()[len(take_all.json()) - 1].get('id')
+                response = requests.put(f"http://127.0.0.1:5000/clients/change/{client_id}", json=client_attrs)
+                self.assertEqual(200, response.status_code)
+                self.assertEqual(client_attrs['name'], response.json()['name'])
+                self.assertEqual(client_attrs['phone_number'], response.json()['phone_number'])
+            else:
+                self.assertEqual("no rooms", take_room.json()['description'])
 
     def test_delete_client(self):
         take_all = requests.get("http://127.0.0.1:5000/clients/")

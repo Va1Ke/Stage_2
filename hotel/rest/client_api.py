@@ -34,14 +34,18 @@ class ClientDeleteUpdateAdd(Resource):
     def delete(self, client_id: int) -> dict:
         """delete client"""
         response = delete_client(client_id=client_id)
-        if response == "Success":
+        if response.get('description') == "Success":
             return {"Status_code": "200", "description": "Success"}
         return {"Status_code": "400", "description": "No such user"}
 
     def put(self, client_id: int) -> dict:
         """put client"""
         new_info_client = request.get_json(force=True)
+        k = new_info_client.get('room_id')
+        if new_info_client.get('room_id') == "":
+            k = None
         client = clients_schemas.EditClientInfo(id=client_id, name=new_info_client.get('name'),
-                                                phone_number=new_info_client.get('phone_number'))
+                                                phone_number=new_info_client.get('phone_number'),
+                                                room_id=k)
         response = edit_client(client=client)
         return json.loads(response.to_json())

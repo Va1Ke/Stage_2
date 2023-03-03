@@ -14,8 +14,8 @@ class HotelApiTestCase(unittest.TestCase):
         var = amount_before + 1
         room_attrs = {
             "area": var,
-            "number_of_beds": var,
-            "price_for_a_night": var
+            "price_for_a_night": var,
+            "max_amount_clients": var
         }
         response = requests.post("http://127.0.0.1:5000/rooms/", json=room_attrs)
         amount_after = len(requests.get("http://127.0.0.1:5000/rooms/").json())

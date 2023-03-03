@@ -9,16 +9,16 @@
 {% block second_body %}
     <form action='' method = "POST">
     <span class="menu">
-    <p>busy:<input type = "text" name = "busy" size="10"/></p>
+    <p>Search by free amount:<input type = "integer" name = "search" size="10"/></p>
     <p><input type = "submit" value = "Search"/></p>
     </span>
     </form>
 
     <table style="width:475px">
-        <thead><tr><th>id</th><th>area</th><th>number_of_beds</th><th>price_for_a_night</th><th>busy</th></tr></thead>
+        <thead><tr><th>id</th><th>area</th><th>price_for_a_night</th><th>max_amount</th><th>free</th><th>occupied</th></tr></thead>
     <tbody>
         {% for room in rooms %}
-        <tr><td>{{ room.room_id }}</td><td>{{ room.area }}</td><td>{{ room.number_of_beds }}</td><td>{{ room.price_for_a_night }}</td><td>{{ room.busy }}</td></tr>
+        <tr><td>{{ room.room_id }}</td><td>{{ room.area }}</td><td>{{ room.price_for_a_night }}</td><td>{{ room.max_amount_clients }}</td><td>{{ room.free_amount }}</td><td>{{ room.number_of_occupied }}</td></tr>
         {% endfor %}
     </tbody>
     </table>
