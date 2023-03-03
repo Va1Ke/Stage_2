@@ -16,10 +16,10 @@
     </form>
 
  <table style="width:475px">
-  <thead><tr><th>id</th><th>name</th><th>phone_number</th></tr></thead>
+  <thead><tr><th>id</th><th>name</th><th>phone_number</th><th>room_id</th></tr></thead>
     <tbody>
         {% for client in clients %}
-        <tr><td>{{ client.id }}</td><td>{{ client.name }}</td><td>{{ client.phone_number }}</td></tr>
+        <tr><td>{{ client.id }}</td><td>{{ client.name }}</td><td>{{ client.phone_number }}</td><td>{{ client.room_id }}</td></tr>
         {% endfor %}
     </tbody>
 </table>

@@ -1,7 +1,7 @@
+from typing import Union
 from hotel.service.schemas import clients_schemas
-from hotel.models.models import Clients, Orders
-from hotel.service.orders_crud import update_client_info
-from hotel.models.models import db
+from hotel.models.models import db, Clients
+from hotel.service.hotel_crud import add_client_to_room, subtract_client_from_room
 
 
 def get_all_clients() -> list[Clients]:
@@ -10,7 +10,7 @@ def get_all_clients() -> list[Clients]:
     return clients
 
 
-def find_client(phone_number: str):
+def find_client(phone_number: str) -> Clients:
     """find client by phone_number"""
     client = Clients.query.filter_by(phone_number=phone_number).first()
     if client:
@@ -18,7 +18,7 @@ def find_client(phone_number: str):
     return {"Status_code": "400", "description": "no such client"}
 
 
-def add_client(client: clients_schemas.AddClient):
+def add_client(client: clients_schemas.AddClient) -> Clients:
     """add client"""
     new_client = Clients(name=client.name, phone_number=client.phone_number)
     db.session.add(new_client)
@@ -27,31 +27,37 @@ def add_client(client: clients_schemas.AddClient):
     return client
 
 
-def edit_client(client: clients_schemas.EditClientInfo):
+def edit_client(client: clients_schemas.EditClientInfo) -> Union[Clients, dict]:
     """put client info"""
     updated_client = Clients.query.filter_by(id=client.id).first()
     if updated_client:
         updated_client.name = client.name
         updated_client.phone_number = client.phone_number
-        db.session.commit()
-        order = Orders.query.filter_by(client_id=client.id).first()
-        if order:
-            update_client_info(client_id=client.id, name=client.name,
-                                phone_number=client.phone_number)
-        client = Clients.query.filter_by(id=client.id).first()
-        return client
+        if updated_client.room_id is not None and client.room_id is None:
+            response = subtract_client_from_room(room_id=updated_client.room_id)
+            if isinstance(response, dict) and response.get("description") == "Success":
+                updated_client.room_id = None
+                db.session.commit()
+                client = Clients.query.filter_by(id=client.id).first()
+                return client
+        elif client.room_id > 0:
+            response = add_client_to_room(room_id=client.room_id)
+            if isinstance(response, dict) and response.get("description") == "Success":
+                updated_client.room_id = client.room_id
+                db.session.commit()
+                client = Clients.query.filter_by(id=client.id).first()
+                return client
+        return response
     return {"Status_code": 400, "description": "no such client"}
 
 
 def delete_client(client_id: int) -> dict:
     """delete client"""
-    check = Orders.query.filter_by(client_id=client_id).first()
-    if check:
-        return {"Status_code": "400", "description": "order exist with that user"}
-
     client = Clients.query.filter_by(id=client_id).first()
     if client:
+        if client.room_id:
+            subtract_client_from_room(room_id=client.room_id)
         db.session.delete(client)
         db.session.commit()
-        return {"Status_code": "200", "description": "Success"}
-    return {"Status_code": "400", "description": "no such client"}
+        return {"description": "Success"}
+    return {"description": "no such client"}

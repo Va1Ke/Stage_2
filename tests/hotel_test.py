@@ -14,8 +14,8 @@ class HotelApiTestCase(unittest.TestCase):
         var = amount_before + 1
         room_attrs = {
             "area": var,
-            "number_of_beds": var,
-            "price_for_a_night": var
+            "price_for_a_night": var,
+            "max_amount_clients": var
         }
         response = requests.post("http://127.0.0.1:5000/rooms/", json=room_attrs)
         amount_after = len(requests.get("http://127.0.0.1:5000/rooms/").json())
@@ -24,6 +24,11 @@ class HotelApiTestCase(unittest.TestCase):
 
     def test_get_all_rooms(self):
         response = requests.get("http://127.0.0.1:5000/rooms/")
+        self.assertEqual(200, response.status_code)
+        self.assertIsNotNone(response.json())
+
+    def test_get_free_rooms(self):
+        response = requests.post("http://127.0.0.1:5000/rooms/1/")
         self.assertEqual(200, response.status_code)
         self.assertIsNotNone(response.json())
 

@@ -43,9 +43,11 @@ def edit_client():
         client_id = request.form['id']
         name = request.form['name']
         phone_number = request.form['phone_number']
+        room_id = request.form['room_id']
         client_attrs = {
             "name": f"{name}",
-            "phone_number": f"{phone_number}"
+            "phone_number": f"{phone_number}",
+            "room_id": room_id
         }
         response = requests.put(f"http://127.0.0.1:5000/clients/change/{client_id}", json=client_attrs, timeout=100)
         if response.status_code == 200:
@@ -65,8 +67,7 @@ def delete_client():
             return redirect('/client_list/')
         return redirect('/bad_request/')
 
-
-@clients_rout.route('/client_list/delete/error/')
-def delete_error():
-    """Page for deleting clients"""
-    return render_template("/Clients/delete_error.html")
+@clients_rout.route('/')
+def main():
+    """Main page"""
+    return render_template("main.html")
