@@ -1,14 +1,14 @@
+from typing import Union
 from flask import Blueprint, json
 from flask_restful import Resource, request
 from hotel.service.hotel_crud import get_all_rooms, add_room, edit_room, delete_room, search_room_by_free_amount
 from hotel.service.schemas import hotel_schemas
-from typing import Union
 
 api_Hotel_blueprint = Blueprint('hotel_api', __name__)
 
 class HotelList(Resource):
     """ApiClass for get all rooms list and add room"""
-    def get(self) -> list:
+    def get(self) -> Union[list, dict]:
         """get all rooms list"""
         response = get_all_rooms()
         if response:
