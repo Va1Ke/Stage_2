@@ -21,7 +21,7 @@ def add_client_to_room(room_id: int) -> dict:
         room.number_of_occupied = room.number_of_occupied + 1
         db.session.commit()
         return {"description": "Success"}
-    raise {"description": "no free amount in this room"}
+    return {"description": "no free amount in this room"}
 
 def subtract_client_from_room(room_id: int) -> dict:
     """update a room amount"""
@@ -67,7 +67,7 @@ def edit_room(room: hotel_schemas.EditRoomInfo) -> dict:
             db.session.commit()
             return updated_room
         return {"description": "number_of_occupied must be <= than entered max_amount_clients"}
-    raise {"description": "no such room"}
+    return {"description": "no such room"}
 
 
 def delete_room(room_id: int) -> dict:
@@ -76,8 +76,8 @@ def delete_room(room_id: int) -> dict:
     if room:
         check = Clients.query.filter_by(room_id=room_id).first()
         if check:
-            raise {"Status_code": "400", "description": "room is busy"}
+            return {"Status_code": "400", "description": "room is busy"}
         db.session.delete(room)
         db.session.commit()
         return {"Status_code": "200", "description": "Success"}
-    raise {"Status_code": "400", "description": "no such room"}
+    return {"Status_code": "400", "description": "no such room"}

@@ -1,3 +1,4 @@
+from typing import Union
 from hotel.service.schemas import clients_schemas
 from hotel.models.models import db, Clients
 from hotel.service.hotel_crud import add_client_to_room, subtract_client_from_room
@@ -14,7 +15,7 @@ def find_client(phone_number: str) -> Clients:
     client = Clients.query.filter_by(phone_number=phone_number).first()
     if client:
         return client
-    raise {"Status_code": "400", "description": "no such client"}
+    return {"Status_code": "400", "description": "no such client"}
 
 
 def add_client(client: clients_schemas.AddClient) -> Clients:
@@ -26,13 +27,13 @@ def add_client(client: clients_schemas.AddClient) -> Clients:
     return client
 
 
-def edit_client(client: clients_schemas.EditClientInfo) -> Clients:
+def edit_client(client: clients_schemas.EditClientInfo) -> Union[Clients, dict]:
     """put client info"""
     updated_client = Clients.query.filter_by(id=client.id).first()
     if updated_client:
         updated_client.name = client.name
         updated_client.phone_number = client.phone_number
-        if updated_client.room_id !=None and client.room_id == None:
+        if updated_client.room_id is not None and client.room_id is None:
             response = subtract_client_from_room(room_id=updated_client.room_id)
             if isinstance(response, dict) and response.get("description") == "Success":
                 updated_client.room_id = None
@@ -46,8 +47,8 @@ def edit_client(client: clients_schemas.EditClientInfo) -> Clients:
                 db.session.commit()
                 client = Clients.query.filter_by(id=client.id).first()
                 return client
-        raise response
-    raise {"Status_code": 400, "description": "no such client"}
+        return response
+    return {"Status_code": 400, "description": "no such client"}
 
 
 def delete_client(client_id: int) -> dict:
@@ -59,4 +60,4 @@ def delete_client(client_id: int) -> dict:
         db.session.delete(client)
         db.session.commit()
         return {"description": "Success"}
-    raise {"description": "no such client"}
+    return {"description": "no such client"}
