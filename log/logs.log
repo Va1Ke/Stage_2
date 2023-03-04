@@ -5074,3 +5074,214 @@ TypeError: exceptions must derive from BaseException
 2023-03-03 17:03:59,631 - werkzeug - INFO - 127.0.0.1 - - [03/Mar/2023 17:03:59] "GET /clients/ HTTP/1.1" 200 -
 2023-03-03 17:04:02,678 - werkzeug - INFO - 127.0.0.1 - - [03/Mar/2023 17:04:02] "GET /clients/ HTTP/1.1" 200 -
 2023-03-03 17:04:02,682 - werkzeug - INFO - 127.0.0.1 - - [03/Mar/2023 17:04:02] "POST /clients/+1901823/ HTTP/1.1" 200 -
+2023-03-04 15:54:36,000 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.211:5000
+2023-03-04 15:54:36,000 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-03-04 15:54:37,856 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-04 15:54:37,862 - hotel - ERROR - Exception on /clients/ [GET]
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/util/_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x7f906a3d3340 (otid=0x7f9067ba42d0) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/rest/client_api.py", line 12, in get
+    response = get_all_clients()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/service/clients_crud.py", line 9, in get_all_clients
+    clients = Clients.query.all()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/orm/scoping.py", line 47, in __call__
+    sess = self.registry()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/util/_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4274, in __call__
+    return self.class_(**local_kw)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 176, in __init__
+    bind = options.pop('bind', None) or db.engine
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 998, in engine
+    return self.get_engine()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 1017, in get_engine
+    return connector.get_engine()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 593, in get_engine
+    sa_url, options = self.get_options(sa_url, echo)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 608, in get_options
+    sa_url, options = self._sa.apply_driver_hacks(self._app, sa_url, options)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 933, in apply_driver_hacks
+    if sa_url.drivername.startswith('mysql'):
+AttributeError: 'NoneType' object has no attribute 'drivername'
+2023-03-04 15:54:37,865 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2023 15:54:37] "[35m[1mGET /clients/ HTTP/1.1[0m" 500 -
+2023-03-04 15:54:37,865 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 500 37
+2023-03-04 15:54:37,884 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2023 15:54:37] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-04 15:54:37,950 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2023 15:54:37] "GET /static/css/main.css HTTP/1.1" 200 -
+2023-03-04 15:54:37,992 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2023 15:54:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-03-04 15:54:39,282 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-04 15:54:39,283 - hotel - ERROR - Exception on /clients/ [GET]
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/util/_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x7f9066909ec0 (otid=0x7f9067ba49c0) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/rest/client_api.py", line 12, in get
+    response = get_all_clients()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/service/clients_crud.py", line 9, in get_all_clients
+    clients = Clients.query.all()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/orm/scoping.py", line 47, in __call__
+    sess = self.registry()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/util/_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4274, in __call__
+    return self.class_(**local_kw)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 176, in __init__
+    bind = options.pop('bind', None) or db.engine
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 998, in engine
+    return self.get_engine()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 1017, in get_engine
+    return connector.get_engine()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 593, in get_engine
+    sa_url, options = self.get_options(sa_url, echo)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 608, in get_options
+    sa_url, options = self._sa.apply_driver_hacks(self._app, sa_url, options)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 933, in apply_driver_hacks
+    if sa_url.drivername.startswith('mysql'):
+AttributeError: 'NoneType' object has no attribute 'drivername'
+2023-03-04 15:54:39,284 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2023 15:54:39] "[35m[1mGET /clients/ HTTP/1.1[0m" 500 -
+2023-03-04 15:54:39,284 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 500 37
+2023-03-04 15:54:39,285 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2023 15:54:39] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-04 15:54:39,359 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2023 15:54:39] "GET /static/css/main.css HTTP/1.1" 200 -
+2023-03-04 15:57:12,287 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-04 15:57:12,288 - hotel - ERROR - Exception on /rooms/ [GET]
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/util/_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x7f906690a4c0 (otid=0x7f9067ba4ff0) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/rest/hotel_api.py", line 13, in get
+    response = get_all_rooms()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/service/hotel_crud.py", line 8, in get_all_rooms
+    rooms = Hotel.query.all()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/orm/scoping.py", line 47, in __call__
+    sess = self.registry()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/util/_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4274, in __call__
+    return self.class_(**local_kw)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 176, in __init__
+    bind = options.pop('bind', None) or db.engine
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 998, in engine
+    return self.get_engine()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 1017, in get_engine
+    return connector.get_engine()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 593, in get_engine
+    sa_url, options = self.get_options(sa_url, echo)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 608, in get_options
+    sa_url, options = self._sa.apply_driver_hacks(self._app, sa_url, options)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 933, in apply_driver_hacks
+    if sa_url.drivername.startswith('mysql'):
+AttributeError: 'NoneType' object has no attribute 'drivername'
+2023-03-04 15:57:12,289 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2023 15:57:12] "[35m[1mGET /rooms/ HTTP/1.1[0m" 500 -
+2023-03-04 15:57:12,289 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 500 37
+2023-03-04 15:57:12,295 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2023 15:57:12] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-04 15:57:12,310 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2023 15:57:12] "GET /static/css/main.css HTTP/1.1" 200 -
+2023-03-04 16:03:15,921 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2023 16:03:15] "GET /client_list/add/ HTTP/1.1" 200 -
+2023-03-04 16:03:15,989 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2023 16:03:15] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-04 16:20:13,064 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-04 16:20:13,065 - hotel - ERROR - Exception on /rooms/ [GET]
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/util/_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x7f906690a480 (otid=0x7f9067b4edc0) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/rest/hotel_api.py", line 13, in get
+    response = get_all_rooms()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/service/hotel_crud.py", line 8, in get_all_rooms
+    rooms = Hotel.query.all()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/orm/scoping.py", line 47, in __call__
+    sess = self.registry()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/util/_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4274, in __call__
+    return self.class_(**local_kw)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 176, in __init__
+    bind = options.pop('bind', None) or db.engine
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 998, in engine
+    return self.get_engine()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 1017, in get_engine
+    return connector.get_engine()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 593, in get_engine
+    sa_url, options = self.get_options(sa_url, echo)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 608, in get_options
+    sa_url, options = self._sa.apply_driver_hacks(self._app, sa_url, options)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_sqlalchemy/__init__.py", line 933, in apply_driver_hacks
+    if sa_url.drivername.startswith('mysql'):
+AttributeError: 'NoneType' object has no attribute 'drivername'
+2023-03-04 16:20:13,066 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2023 16:20:13] "[35m[1mGET /rooms/ HTTP/1.1[0m" 500 -
+2023-03-04 16:20:13,066 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 500 37
+2023-03-04 16:20:13,067 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2023 16:20:13] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-04 16:20:13,143 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2023 16:20:13] "GET /static/css/main.css HTTP/1.1" 200 -
+2023-03-04 16:20:13,163 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2023 16:20:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-03-04 16:24:05,797 - asyncio - DEBUG - Using selector: EpollSelector
+2023-03-04 16:24:05,800 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2023 16:24:05] "GET /room_list/add/ HTTP/1.1" 200 -
+2023-03-04 16:24:05,865 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2023 16:24:05] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-04 16:26:47,190 - asyncio - DEBUG - Using selector: EpollSelector
+2023-03-04 16:26:47,192 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2023 16:26:47] "GET /room_list/edit/ HTTP/1.1" 200 -
+2023-03-04 16:26:47,264 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2023 16:26:47] "GET /static/css/main.css HTTP/1.1" 200 -
