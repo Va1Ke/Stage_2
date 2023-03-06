@@ -8,11 +8,13 @@ Each room has different number of place to live there. That's mean that in a roo
 ## How to start a project
 
 * First you have to configure config file and create .env file for docker-compose db and local db in repository folder.
-* If you want to run project local with your local db you should uncomment SQLALCHEMY_DATABASE_URL for local and comment other two urls.<br>
-<br>
-  Than you should run:<br>
-  flask --app hotel run -h 0.0.0.0 -p 5000<br>
-<br>
+  * If you want to run project local with your local db you should uncomment SQLALCHEMY_DATABASE_URL for local and comment other two urls.<br>
+  <br>
+    Than you should run:<br>
+    flask --app hotel run -h 0.0.0.0 -p 5000<br>
+    flask db upgrade --directory hotel/migrations
+  <br>
+  <br>
 * If you want to run a project first time using docker-compose you should uncomment SQLALCHEMY_DATABASE_URL for docker and comment other two urls.<br>
 <br> 
   Than you should run:<br>
