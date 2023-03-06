@@ -5777,3 +5777,1770 @@ FROM clients]
  * Running on http://127.0.0.1:5000
  * Running on http://172.22.0.4:5000
 2023-03-06 08:49:48,665 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-03-06 09:02:57,089 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 09:02:57,113 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 09:02:57] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 09:02:57,113 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 09:02:57,120 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:02:57] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-06 09:02:57,199 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:02:57] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 09:02:57,481 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 09:02:57,484 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 09:02:57] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 09:02:57,485 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 09:02:57,490 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:02:57] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-06 09:02:57,567 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:02:57] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 09:02:58,730 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 09:02:58,733 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 09:02:58] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 09:02:58,733 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 09:02:58,735 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:02:58] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-06 09:02:58,795 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:02:58] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 09:02:59,164 - asyncio - DEBUG - Using selector: EpollSelector
+2023-03-06 09:02:59,166 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:02:59] "GET /room_list/add/ HTTP/1.1" 200 -
+2023-03-06 09:02:59,224 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:02:59] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 09:03:04,936 - asyncio - DEBUG - Using selector: EpollSelector
+2023-03-06 09:03:04,937 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 09:03:05,343 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 09:03:05] "POST /rooms/ HTTP/1.1" 200 -
+2023-03-06 09:03:05,343 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 09:03:05,344 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:03:05] "[32mPOST /room_list/add/ HTTP/1.1[0m" 302 -
+2023-03-06 09:03:05,351 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 09:03:05,353 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 09:03:05] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 09:03:05,353 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 122
+2023-03-06 09:03:05,354 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:03:05] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-06 09:03:05,395 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:03:05] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 09:03:06,340 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 09:03:06,342 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 09:03:06] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 09:03:06,342 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 09:03:06,343 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:03:06] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-06 09:03:06,403 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:03:06] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 09:03:08,317 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:03:08] "GET /client_list/add/ HTTP/1.1" 200 -
+2023-03-06 09:03:08,368 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:03:08] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 09:03:17,466 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 09:03:17,736 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 09:03:17] "POST /clients/ HTTP/1.1" 200 -
+2023-03-06 09:03:17,736 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/ HTTP/1.1" 200 73
+2023-03-06 09:03:17,737 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:03:17] "[32mPOST /client_list/add/ HTTP/1.1[0m" 302 -
+2023-03-06 09:03:17,742 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 09:03:17,744 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 09:03:17] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 09:03:17,745 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 75
+2023-03-06 09:03:17,746 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:03:17] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-06 09:03:17,796 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:03:17] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 09:03:52,707 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:03:52] "GET /client_list/edit/ HTTP/1.1" 200 -
+2023-03-06 09:03:52,767 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:03:52] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 09:03:59,646 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 09:03:59,648 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 09:03:59] "[32mPUT /clients/change/1 HTTP/1.1[0m" 308 -
+2023-03-06 09:03:59,648 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /clients/change/1 HTTP/1.1" 308 265
+2023-03-06 09:03:59,649 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 09:04:00,055 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 09:04:00] "PUT /clients/change/1/ HTTP/1.1" 200 -
+2023-03-06 09:04:00,056 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /clients/change/1/ HTTP/1.1" 200 69
+2023-03-06 09:04:00,056 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:04:00] "[32mPOST /client_list/edit/ HTTP/1.1[0m" 302 -
+2023-03-06 09:04:00,062 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 09:04:00,064 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 09:04:00] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 09:04:00,064 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 71
+2023-03-06 09:04:00,065 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:04:00] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-06 09:04:00,110 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:04:00] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 09:04:02,143 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:04:02] "GET /client_list/delete/ HTTP/1.1" 200 -
+2023-03-06 09:04:02,193 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:04:02] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 09:04:04,329 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 09:04:04,330 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 09:04:04] "[32mDELETE /clients/change/17 HTTP/1.1[0m" 308 -
+2023-03-06 09:04:04,331 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/17 HTTP/1.1" 308 267
+2023-03-06 09:04:04,332 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 09:04:04,335 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 09:04:04] "DELETE /clients/change/17/ HTTP/1.1" 200 -
+2023-03-06 09:04:04,335 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/17/ HTTP/1.1" 200 54
+2023-03-06 09:04:04,336 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:04:04] "[32mPOST /client_list/delete/ HTTP/1.1[0m" 302 -
+2023-03-06 09:04:04,341 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 09:04:04,343 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 09:04:04] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 09:04:04,343 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 71
+2023-03-06 09:04:04,344 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:04:04] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-06 09:04:04,397 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:04:04] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 09:04:05,223 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:04:05] "GET /client_list/delete/ HTTP/1.1" 200 -
+2023-03-06 09:04:05,281 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:04:05] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 09:04:06,566 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 09:04:06,567 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 09:04:06] "[32mDELETE /clients/change/1 HTTP/1.1[0m" 308 -
+2023-03-06 09:04:06,567 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/1 HTTP/1.1" 308 265
+2023-03-06 09:04:06,568 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 09:04:06,785 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 09:04:06] "DELETE /clients/change/1/ HTTP/1.1" 200 -
+2023-03-06 09:04:06,786 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/1/ HTTP/1.1" 200 49
+2023-03-06 09:04:06,787 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:04:06] "[32mPOST /client_list/delete/ HTTP/1.1[0m" 302 -
+2023-03-06 09:04:06,794 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 09:04:06,796 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 09:04:06] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 09:04:06,796 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 09:04:06,797 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:04:06] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-06 09:04:06,855 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:04:06] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 09:04:07,705 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 09:04:07,708 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 09:04:07] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 09:04:07,708 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 122
+2023-03-06 09:04:07,709 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:04:07] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-06 09:04:07,770 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:04:07] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 09:04:08,235 - asyncio - DEBUG - Using selector: EpollSelector
+2023-03-06 09:04:08,238 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:04:08] "GET /room_list/delete/ HTTP/1.1" 200 -
+2023-03-06 09:04:08,299 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:04:08] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 09:04:09,582 - asyncio - DEBUG - Using selector: EpollSelector
+2023-03-06 09:04:09,583 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 09:04:10,569 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 09:04:10] "DELETE /rooms/change/1/ HTTP/1.1" 200 -
+2023-03-06 09:04:10,569 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/1/ HTTP/1.1" 200 49
+2023-03-06 09:04:10,570 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:04:10] "[32mPOST /room_list/delete/ HTTP/1.1[0m" 302 -
+2023-03-06 09:04:10,576 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 09:04:10,577 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 09:04:10] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 09:04:10,578 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 09:04:10,579 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:04:10] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-06 09:04:10,620 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:04:10] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 09:04:11,546 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 09:04:11,549 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 09:04:11] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 09:04:11,549 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 09:04:11,550 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:04:11] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-06 09:04:11,602 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:04:11] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 09:04:11,816 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 09:04:11,819 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 09:04:11] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 09:04:11,819 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 09:04:11,820 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:04:11] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-06 09:04:11,888 - werkzeug - INFO - 172.22.0.1 - - [06/Mar/2023 09:04:11] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 11:04:27,469 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.211:5000
+2023-03-06 11:04:27,469 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-03-06 11:10:20,399 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 11:10:20,484 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 11:10:20] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 11:10:20,484 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 11:10:20,492 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 11:10:20] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-06 11:10:20,652 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 11:10:20] "GET /static/css/main.css HTTP/1.1" 200 -
+2023-03-06 11:10:22,158 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 11:10:22,170 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 11:10:22] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 11:10:22,170 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 11:10:22,171 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 11:10:22] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-06 11:10:22,255 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 11:10:22] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 11:10:22,694 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 11:10:22,707 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 11:10:22] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 11:10:22,708 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 11:10:22,709 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 11:10:22] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-06 11:10:22,862 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 11:10:22] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 11:58:16,913 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.211:5000
+2023-03-06 11:58:16,914 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-03-06 12:56:11,651 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:11,718 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:56:11] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 12:56:11,718 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:56:11,726 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:56:11] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-06 12:56:11,872 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:56:11] "GET /static/css/main.css HTTP/1.1" 200 -
+2023-03-06 12:56:12,072 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:12,094 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:56:12] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 12:56:12,094 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:12,100 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:56:12] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-06 12:56:12,224 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:56:12] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 12:56:12,710 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:12,720 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:56:12] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 12:56:12,721 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:56:12,725 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:56:12] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-06 12:56:12,858 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:56:12] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 12:56:13,159 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:13,181 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:56:13] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 12:56:13,181 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:13,182 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:56:13] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-06 12:56:13,356 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:56:13] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 12:56:23,730 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:23,730 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:23,730 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:23,730 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:23,730 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:23,745 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:56:23] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 12:56:23,745 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:56:23,745 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:56:23,745 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:56:23,745 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:56:23,745 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:56:23,748 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:23,748 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:23,748 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:23,748 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:23,748 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:23,855 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:56:23] "POST /clients/ HTTP/1.1" 200 -
+2023-03-06 12:56:23,856 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/ HTTP/1.1" 200 78
+2023-03-06 12:56:23,856 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/ HTTP/1.1" 200 78
+2023-03-06 12:56:23,856 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/ HTTP/1.1" 200 78
+2023-03-06 12:56:23,856 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/ HTTP/1.1" 200 78
+2023-03-06 12:56:23,856 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/ HTTP/1.1" 200 78
+2023-03-06 12:56:23,858 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:23,858 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:23,858 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:23,858 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:23,858 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:23,885 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:56:23] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 12:56:23,885 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 80
+2023-03-06 12:56:23,885 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 80
+2023-03-06 12:56:23,885 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 80
+2023-03-06 12:56:23,885 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 80
+2023-03-06 12:56:23,885 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 80
+2023-03-06 12:56:23,888 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:23,888 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:23,888 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:23,888 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:23,888 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:23,904 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:56:23] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 12:56:23,904 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 80
+2023-03-06 12:56:23,904 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 80
+2023-03-06 12:56:23,904 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 80
+2023-03-06 12:56:23,904 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 80
+2023-03-06 12:56:23,904 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 80
+2023-03-06 12:56:23,908 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:23,908 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:23,908 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:23,908 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:23,908 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:23,933 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:56:23] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 12:56:23,933 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 80
+2023-03-06 12:56:23,933 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 80
+2023-03-06 12:56:23,933 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 80
+2023-03-06 12:56:23,933 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 80
+2023-03-06 12:56:23,933 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 80
+2023-03-06 12:56:23,936 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:23,936 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:23,936 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:23,936 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:23,936 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:23,953 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:56:23] "[32mDELETE /clients/change/16 HTTP/1.1[0m" 308 -
+2023-03-06 12:56:23,954 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/16 HTTP/1.1" 308 267
+2023-03-06 12:56:23,954 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/16 HTTP/1.1" 308 267
+2023-03-06 12:56:23,954 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/16 HTTP/1.1" 308 267
+2023-03-06 12:56:23,954 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/16 HTTP/1.1" 308 267
+2023-03-06 12:56:23,954 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/16 HTTP/1.1" 308 267
+2023-03-06 12:56:23,957 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:56:23,957 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:56:23,957 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:56:23,957 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:56:23,957 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:56:24,045 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:56:24] "DELETE /clients/change/16/ HTTP/1.1" 200 -
+2023-03-06 12:56:24,045 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/16/ HTTP/1.1" 200 49
+2023-03-06 12:56:24,045 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/16/ HTTP/1.1" 200 49
+2023-03-06 12:56:24,045 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/16/ HTTP/1.1" 200 49
+2023-03-06 12:56:24,045 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/16/ HTTP/1.1" 200 49
+2023-03-06 12:56:24,045 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/16/ HTTP/1.1" 200 49
+2023-03-06 12:56:24,050 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,050 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,050 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,050 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,050 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,065 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:56:24] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 12:56:24,065 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:56:24,065 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:56:24,065 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:56:24,065 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:56:24,065 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:56:24,069 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,069 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,069 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,069 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,069 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,085 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:56:24] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 12:56:24,086 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:56:24,086 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:56:24,086 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:56:24,086 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:56:24,086 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:56:24,090 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,090 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,090 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,090 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,090 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,113 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:56:24] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 12:56:24,113 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:56:24,113 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:56:24,113 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:56:24,113 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:56:24,113 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:56:24,465 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,465 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,465 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,465 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,465 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,465 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,465 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,465 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,465 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,465 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,465 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,465 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,465 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,492 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:56:24] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 12:56:24,492 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,492 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,492 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,492 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,492 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,492 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,492 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,492 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,492 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,492 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,492 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,492 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,492 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,496 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,496 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,496 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,496 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,496 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,496 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,496 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,496 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,496 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,496 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,496 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,496 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,496 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,630 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:56:24] "POST /rooms/ HTTP/1.1" 200 -
+2023-03-06 12:56:24,631 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:56:24,631 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:56:24,631 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:56:24,631 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:56:24,631 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:56:24,631 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:56:24,631 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:56:24,631 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:56:24,631 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:56:24,631 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:56:24,631 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:56:24,631 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:56:24,631 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:56:24,633 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,633 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,633 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,633 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,633 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,633 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,633 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,633 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,633 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,633 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,633 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,633 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,633 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,653 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:56:24] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 12:56:24,654 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 120
+2023-03-06 12:56:24,654 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 120
+2023-03-06 12:56:24,654 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 120
+2023-03-06 12:56:24,654 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 120
+2023-03-06 12:56:24,654 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 120
+2023-03-06 12:56:24,654 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 120
+2023-03-06 12:56:24,654 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 120
+2023-03-06 12:56:24,654 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 120
+2023-03-06 12:56:24,654 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 120
+2023-03-06 12:56:24,654 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 120
+2023-03-06 12:56:24,654 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 120
+2023-03-06 12:56:24,654 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 120
+2023-03-06 12:56:24,654 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 120
+2023-03-06 12:56:24,658 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,658 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,658 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,658 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,658 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,658 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,658 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,658 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,658 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,658 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,658 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,658 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,658 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,685 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:56:24] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 12:56:24,685 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 120
+2023-03-06 12:56:24,685 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 120
+2023-03-06 12:56:24,685 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 120
+2023-03-06 12:56:24,685 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 120
+2023-03-06 12:56:24,685 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 120
+2023-03-06 12:56:24,685 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 120
+2023-03-06 12:56:24,685 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 120
+2023-03-06 12:56:24,685 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 120
+2023-03-06 12:56:24,685 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 120
+2023-03-06 12:56:24,685 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 120
+2023-03-06 12:56:24,685 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 120
+2023-03-06 12:56:24,685 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 120
+2023-03-06 12:56:24,685 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 120
+2023-03-06 12:56:24,688 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,688 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,688 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,688 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,688 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,688 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,688 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,688 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,688 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,688 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,688 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,688 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,688 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,789 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:56:24] "DELETE /rooms/change/8/ HTTP/1.1" 200 -
+2023-03-06 12:56:24,789 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/8/ HTTP/1.1" 200 49
+2023-03-06 12:56:24,789 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/8/ HTTP/1.1" 200 49
+2023-03-06 12:56:24,789 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/8/ HTTP/1.1" 200 49
+2023-03-06 12:56:24,789 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/8/ HTTP/1.1" 200 49
+2023-03-06 12:56:24,789 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/8/ HTTP/1.1" 200 49
+2023-03-06 12:56:24,789 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/8/ HTTP/1.1" 200 49
+2023-03-06 12:56:24,789 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/8/ HTTP/1.1" 200 49
+2023-03-06 12:56:24,789 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/8/ HTTP/1.1" 200 49
+2023-03-06 12:56:24,789 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/8/ HTTP/1.1" 200 49
+2023-03-06 12:56:24,789 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/8/ HTTP/1.1" 200 49
+2023-03-06 12:56:24,789 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/8/ HTTP/1.1" 200 49
+2023-03-06 12:56:24,789 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/8/ HTTP/1.1" 200 49
+2023-03-06 12:56:24,789 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/8/ HTTP/1.1" 200 49
+2023-03-06 12:56:24,793 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,793 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,793 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,793 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,793 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,793 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,793 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,793 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,793 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,793 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,793 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,793 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,793 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,817 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:56:24] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 12:56:24,817 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,817 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,817 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,817 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,817 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,817 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,817 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,817 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,817 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,817 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,817 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,817 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,817 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,822 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,822 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,822 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,822 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,822 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,822 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,822 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,822 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,822 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,822 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,822 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,822 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,822 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,843 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:56:24] "POST /rooms/1/ HTTP/1.1" 200 -
+2023-03-06 12:56:24,843 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 3
+2023-03-06 12:56:24,843 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 3
+2023-03-06 12:56:24,843 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 3
+2023-03-06 12:56:24,843 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 3
+2023-03-06 12:56:24,843 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 3
+2023-03-06 12:56:24,843 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 3
+2023-03-06 12:56:24,843 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 3
+2023-03-06 12:56:24,843 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 3
+2023-03-06 12:56:24,843 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 3
+2023-03-06 12:56:24,843 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 3
+2023-03-06 12:56:24,843 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 3
+2023-03-06 12:56:24,843 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 3
+2023-03-06 12:56:24,843 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 3
+2023-03-06 12:56:24,847 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,847 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,847 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,847 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,847 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,847 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,847 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,847 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,847 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,847 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,847 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,847 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,847 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:56:24,865 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:56:24] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 12:56:24,865 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,865 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,865 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,865 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,865 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,865 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,865 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,865 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,865 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,865 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,865 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,865 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:56:24,865 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:22,794 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:22,794 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:22,794 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:22,794 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:22,794 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:22,821 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:57:22] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 12:57:22,821 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:57:22,821 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:57:22,821 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:57:22,821 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:57:22,821 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:57:22,824 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:22,824 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:22,824 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:22,824 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:22,824 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:22,924 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:57:22] "POST /clients/ HTTP/1.1" 200 -
+2023-03-06 12:57:22,924 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/ HTTP/1.1" 200 78
+2023-03-06 12:57:22,924 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/ HTTP/1.1" 200 78
+2023-03-06 12:57:22,924 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/ HTTP/1.1" 200 78
+2023-03-06 12:57:22,924 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/ HTTP/1.1" 200 78
+2023-03-06 12:57:22,924 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/ HTTP/1.1" 200 78
+2023-03-06 12:57:22,927 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:22,927 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:22,927 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:22,927 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:22,927 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:22,953 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:57:22] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 12:57:22,953 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 80
+2023-03-06 12:57:22,953 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 80
+2023-03-06 12:57:22,953 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 80
+2023-03-06 12:57:22,953 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 80
+2023-03-06 12:57:22,953 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 80
+2023-03-06 12:57:22,956 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:22,956 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:22,956 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:22,956 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:22,956 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:22,981 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:57:22] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 12:57:22,981 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 80
+2023-03-06 12:57:22,981 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 80
+2023-03-06 12:57:22,981 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 80
+2023-03-06 12:57:22,981 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 80
+2023-03-06 12:57:22,981 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 80
+2023-03-06 12:57:22,985 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:22,985 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:22,985 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:22,985 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:22,985 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:22,999 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:57:22] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 12:57:22,999 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 80
+2023-03-06 12:57:22,999 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 80
+2023-03-06 12:57:22,999 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 80
+2023-03-06 12:57:22,999 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 80
+2023-03-06 12:57:22,999 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 80
+2023-03-06 12:57:23,002 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,002 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,002 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,002 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,002 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,016 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:57:23] "[32mDELETE /clients/change/18 HTTP/1.1[0m" 308 -
+2023-03-06 12:57:23,016 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/18 HTTP/1.1" 308 267
+2023-03-06 12:57:23,016 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/18 HTTP/1.1" 308 267
+2023-03-06 12:57:23,016 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/18 HTTP/1.1" 308 267
+2023-03-06 12:57:23,016 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/18 HTTP/1.1" 308 267
+2023-03-06 12:57:23,016 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/18 HTTP/1.1" 308 267
+2023-03-06 12:57:23,019 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:57:23,019 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:57:23,019 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:57:23,019 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:57:23,019 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:57:23,240 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:57:23] "DELETE /clients/change/18/ HTTP/1.1" 200 -
+2023-03-06 12:57:23,241 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/18/ HTTP/1.1" 200 49
+2023-03-06 12:57:23,241 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/18/ HTTP/1.1" 200 49
+2023-03-06 12:57:23,241 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/18/ HTTP/1.1" 200 49
+2023-03-06 12:57:23,241 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/18/ HTTP/1.1" 200 49
+2023-03-06 12:57:23,241 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/18/ HTTP/1.1" 200 49
+2023-03-06 12:57:23,245 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,245 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,245 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,245 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,245 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,269 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:57:23] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 12:57:23,269 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:57:23,269 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:57:23,269 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:57:23,269 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:57:23,269 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:57:23,273 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,273 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,273 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,273 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,273 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,297 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:57:23] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 12:57:23,297 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:57:23,297 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:57:23,297 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:57:23,297 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:57:23,297 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:57:23,302 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,302 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,302 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,302 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,302 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,325 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:57:23] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 12:57:23,325 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:57:23,325 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:57:23,325 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:57:23,325 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:57:23,325 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:57:23,842 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,842 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,842 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,842 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,842 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,842 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,842 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,842 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,842 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,842 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,842 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,842 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,842 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,857 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:57:23] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 12:57:23,857 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:23,857 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:23,857 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:23,857 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:23,857 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:23,857 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:23,857 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:23,857 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:23,857 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:23,857 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:23,857 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:23,857 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:23,857 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:23,860 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,860 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,860 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,860 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,860 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,860 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,860 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,860 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,860 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,860 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,860 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,860 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:23,860 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,118 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:57:24] "POST /rooms/ HTTP/1.1" 200 -
+2023-03-06 12:57:24,118 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:57:24,118 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:57:24,118 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:57:24,118 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:57:24,118 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:57:24,118 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:57:24,118 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:57:24,118 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:57:24,118 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:57:24,118 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:57:24,118 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:57:24,118 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:57:24,118 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:57:24,121 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,121 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,121 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,121 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,121 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,121 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,121 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,121 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,121 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,121 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,121 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,121 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,121 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,145 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:57:24] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 12:57:24,145 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 121
+2023-03-06 12:57:24,145 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 121
+2023-03-06 12:57:24,145 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 121
+2023-03-06 12:57:24,145 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 121
+2023-03-06 12:57:24,145 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 121
+2023-03-06 12:57:24,145 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 121
+2023-03-06 12:57:24,145 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 121
+2023-03-06 12:57:24,145 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 121
+2023-03-06 12:57:24,145 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 121
+2023-03-06 12:57:24,145 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 121
+2023-03-06 12:57:24,145 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 121
+2023-03-06 12:57:24,145 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 121
+2023-03-06 12:57:24,145 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 121
+2023-03-06 12:57:24,200 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,200 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,200 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,200 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,200 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,200 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,200 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,200 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,200 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,200 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,200 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,200 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,200 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,217 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:57:24] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 12:57:24,217 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 121
+2023-03-06 12:57:24,217 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 121
+2023-03-06 12:57:24,217 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 121
+2023-03-06 12:57:24,217 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 121
+2023-03-06 12:57:24,217 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 121
+2023-03-06 12:57:24,217 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 121
+2023-03-06 12:57:24,217 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 121
+2023-03-06 12:57:24,217 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 121
+2023-03-06 12:57:24,217 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 121
+2023-03-06 12:57:24,217 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 121
+2023-03-06 12:57:24,217 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 121
+2023-03-06 12:57:24,217 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 121
+2023-03-06 12:57:24,217 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 121
+2023-03-06 12:57:24,220 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,220 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,220 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,220 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,220 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,220 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,220 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,220 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,220 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,220 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,220 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,220 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,220 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,326 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:57:24] "DELETE /rooms/change/10/ HTTP/1.1" 200 -
+2023-03-06 12:57:24,327 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/10/ HTTP/1.1" 200 49
+2023-03-06 12:57:24,327 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/10/ HTTP/1.1" 200 49
+2023-03-06 12:57:24,327 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/10/ HTTP/1.1" 200 49
+2023-03-06 12:57:24,327 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/10/ HTTP/1.1" 200 49
+2023-03-06 12:57:24,327 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/10/ HTTP/1.1" 200 49
+2023-03-06 12:57:24,327 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/10/ HTTP/1.1" 200 49
+2023-03-06 12:57:24,327 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/10/ HTTP/1.1" 200 49
+2023-03-06 12:57:24,327 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/10/ HTTP/1.1" 200 49
+2023-03-06 12:57:24,327 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/10/ HTTP/1.1" 200 49
+2023-03-06 12:57:24,327 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/10/ HTTP/1.1" 200 49
+2023-03-06 12:57:24,327 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/10/ HTTP/1.1" 200 49
+2023-03-06 12:57:24,327 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/10/ HTTP/1.1" 200 49
+2023-03-06 12:57:24,327 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/10/ HTTP/1.1" 200 49
+2023-03-06 12:57:24,331 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,331 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,331 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,331 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,331 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,331 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,331 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,331 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,331 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,331 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,331 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,331 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,331 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,356 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:57:24] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 12:57:24,356 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:24,356 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:24,356 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:24,356 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:24,356 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:24,356 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:24,356 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:24,356 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:24,356 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:24,356 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:24,356 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:24,356 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:24,356 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:24,361 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,361 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,361 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,361 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,361 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,361 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,361 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,361 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,361 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,361 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,361 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,361 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,361 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,385 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:57:24] "POST /rooms/1/ HTTP/1.1" 200 -
+2023-03-06 12:57:24,385 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 3
+2023-03-06 12:57:24,385 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 3
+2023-03-06 12:57:24,385 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 3
+2023-03-06 12:57:24,385 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 3
+2023-03-06 12:57:24,385 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 3
+2023-03-06 12:57:24,385 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 3
+2023-03-06 12:57:24,385 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 3
+2023-03-06 12:57:24,385 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 3
+2023-03-06 12:57:24,385 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 3
+2023-03-06 12:57:24,385 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 3
+2023-03-06 12:57:24,385 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 3
+2023-03-06 12:57:24,385 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 3
+2023-03-06 12:57:24,385 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 3
+2023-03-06 12:57:24,390 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,390 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,390 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,390 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,390 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,390 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,390 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,390 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,390 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,390 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,390 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,390 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,390 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:57:24,416 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:57:24] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 12:57:24,416 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:24,416 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:24,416 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:24,416 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:24,416 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:24,416 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:24,416 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:24,416 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:24,416 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:24,416 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:24,416 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:24,416 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:57:24,416 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:58:11,885 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:11,909 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:11] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 12:58:11,910 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:58:11,910 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:11] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-06 12:58:11,995 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:11] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 12:58:12,466 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:12,489 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:12] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 12:58:12,489 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:58:12,490 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:12] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-06 12:58:12,664 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:12] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 12:58:12,773 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:12,797 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:12] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 12:58:12,797 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:58:12,798 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:12] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-06 12:58:12,953 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:12] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 12:58:15,706 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:15,724 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:15] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 12:58:15,724 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 30
+2023-03-06 12:58:15,725 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:15] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-06 12:58:15,902 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:15] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 12:58:16,892 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:16] "GET /client_list/add/ HTTP/1.1" 200 -
+2023-03-06 12:58:16,995 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:16] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 12:58:26,765 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:26,993 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:26] "POST /clients/ HTTP/1.1" 200 -
+2023-03-06 12:58:26,994 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/ HTTP/1.1" 200 74
+2023-03-06 12:58:26,994 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:26] "[32mPOST /client_list/add/ HTTP/1.1[0m" 302 -
+2023-03-06 12:58:27,029 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:27,045 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:27] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 12:58:27,046 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 76
+2023-03-06 12:58:27,047 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:27] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-06 12:58:27,185 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:27] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 12:58:27,506 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:27] "GET /client_list/add/ HTTP/1.1" 200 -
+2023-03-06 12:58:27,632 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:27] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 12:58:31,585 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:31,837 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:31] "POST /clients/ HTTP/1.1" 200 -
+2023-03-06 12:58:31,838 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/ HTTP/1.1" 200 70
+2023-03-06 12:58:31,838 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:31] "[32mPOST /client_list/add/ HTTP/1.1[0m" 302 -
+2023-03-06 12:58:31,865 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:31,883 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:31] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 12:58:31,883 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 147
+2023-03-06 12:58:31,884 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:31] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-06 12:58:32,012 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:32] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 12:58:32,339 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:32,361 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:32] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 12:58:32,361 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 28
+2023-03-06 12:58:32,362 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:32] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-06 12:58:32,560 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:32] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 12:58:33,194 - asyncio - DEBUG - Using selector: EpollSelector
+2023-03-06 12:58:33,208 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:33] "GET /room_list/add/ HTTP/1.1" 200 -
+2023-03-06 12:58:33,407 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:33] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 12:58:40,108 - asyncio - DEBUG - Using selector: EpollSelector
+2023-03-06 12:58:40,124 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:40,263 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:40] "POST /rooms/ HTTP/1.1" 200 -
+2023-03-06 12:58:40,263 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:58:40,264 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:40] "[32mPOST /room_list/add/ HTTP/1.1[0m" 302 -
+2023-03-06 12:58:40,285 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:40,309 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:40] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 12:58:40,309 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:40,310 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:40] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-06 12:58:40,405 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:40] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 12:58:48,941 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:48,941 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:48,941 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:48,941 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:48,941 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:48,959 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:48] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 12:58:48,960 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 145
+2023-03-06 12:58:48,960 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 145
+2023-03-06 12:58:48,960 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 145
+2023-03-06 12:58:48,960 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 145
+2023-03-06 12:58:48,960 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 145
+2023-03-06 12:58:48,963 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:48,963 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:48,963 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:48,963 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:48,963 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,052 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:49] "POST /clients/ HTTP/1.1" 200 -
+2023-03-06 12:58:49,052 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/ HTTP/1.1" 200 78
+2023-03-06 12:58:49,052 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/ HTTP/1.1" 200 78
+2023-03-06 12:58:49,052 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/ HTTP/1.1" 200 78
+2023-03-06 12:58:49,052 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/ HTTP/1.1" 200 78
+2023-03-06 12:58:49,052 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/ HTTP/1.1" 200 78
+2023-03-06 12:58:49,055 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,055 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,055 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,055 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,055 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,081 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:49] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 12:58:49,081 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 224
+2023-03-06 12:58:49,081 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 224
+2023-03-06 12:58:49,081 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 224
+2023-03-06 12:58:49,081 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 224
+2023-03-06 12:58:49,081 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 224
+2023-03-06 12:58:49,084 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,084 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,084 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,084 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,084 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,109 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:49] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 12:58:49,109 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 224
+2023-03-06 12:58:49,109 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 224
+2023-03-06 12:58:49,109 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 224
+2023-03-06 12:58:49,109 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 224
+2023-03-06 12:58:49,109 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 224
+2023-03-06 12:58:49,114 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,114 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,114 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,114 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,114 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,137 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:49] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 12:58:49,138 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 224
+2023-03-06 12:58:49,138 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 224
+2023-03-06 12:58:49,138 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 224
+2023-03-06 12:58:49,138 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 224
+2023-03-06 12:58:49,138 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 224
+2023-03-06 12:58:49,141 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,141 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,141 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,141 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,141 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,164 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:49] "[32mDELETE /clients/change/22 HTTP/1.1[0m" 308 -
+2023-03-06 12:58:49,164 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/22 HTTP/1.1" 308 267
+2023-03-06 12:58:49,164 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/22 HTTP/1.1" 308 267
+2023-03-06 12:58:49,164 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/22 HTTP/1.1" 308 267
+2023-03-06 12:58:49,164 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/22 HTTP/1.1" 308 267
+2023-03-06 12:58:49,164 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/22 HTTP/1.1" 308 267
+2023-03-06 12:58:49,167 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:58:49,167 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:58:49,167 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:58:49,167 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:58:49,167 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:58:49,293 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:49] "DELETE /clients/change/22/ HTTP/1.1" 200 -
+2023-03-06 12:58:49,294 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/22/ HTTP/1.1" 200 49
+2023-03-06 12:58:49,294 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/22/ HTTP/1.1" 200 49
+2023-03-06 12:58:49,294 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/22/ HTTP/1.1" 200 49
+2023-03-06 12:58:49,294 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/22/ HTTP/1.1" 200 49
+2023-03-06 12:58:49,294 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/22/ HTTP/1.1" 200 49
+2023-03-06 12:58:49,298 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,298 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,298 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,298 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,298 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,317 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:49] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 12:58:49,317 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 145
+2023-03-06 12:58:49,317 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 145
+2023-03-06 12:58:49,317 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 145
+2023-03-06 12:58:49,317 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 145
+2023-03-06 12:58:49,317 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 145
+2023-03-06 12:58:49,320 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,320 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,320 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,320 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,320 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,337 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:49] "POST /clients/98172397/ HTTP/1.1" 200 -
+2023-03-06 12:58:49,338 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/98172397/ HTTP/1.1" 200 68
+2023-03-06 12:58:49,338 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/98172397/ HTTP/1.1" 200 68
+2023-03-06 12:58:49,338 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/98172397/ HTTP/1.1" 200 68
+2023-03-06 12:58:49,338 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/98172397/ HTTP/1.1" 200 68
+2023-03-06 12:58:49,338 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/98172397/ HTTP/1.1" 200 68
+2023-03-06 12:58:49,342 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,342 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,342 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,342 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,342 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,361 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:49] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 12:58:49,361 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 145
+2023-03-06 12:58:49,361 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 145
+2023-03-06 12:58:49,361 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 145
+2023-03-06 12:58:49,361 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 145
+2023-03-06 12:58:49,361 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 145
+2023-03-06 12:58:49,366 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,366 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,366 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,366 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,366 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,384 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:49] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 12:58:49,384 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 145
+2023-03-06 12:58:49,384 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 145
+2023-03-06 12:58:49,384 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 145
+2023-03-06 12:58:49,384 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 145
+2023-03-06 12:58:49,384 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 145
+2023-03-06 12:58:49,387 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,387 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,387 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,387 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,387 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,495 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:49] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 12:58:49,495 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:49,495 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:49,495 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:49,495 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:49,495 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:49,498 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,498 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,498 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,498 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,498 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:49,516 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:49] "[32mPUT /clients/change/20 HTTP/1.1[0m" 308 -
+2023-03-06 12:58:49,516 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /clients/change/20 HTTP/1.1" 308 267
+2023-03-06 12:58:49,516 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /clients/change/20 HTTP/1.1" 308 267
+2023-03-06 12:58:49,516 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /clients/change/20 HTTP/1.1" 308 267
+2023-03-06 12:58:49,516 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /clients/change/20 HTTP/1.1" 308 267
+2023-03-06 12:58:49,516 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /clients/change/20 HTTP/1.1" 308 267
+2023-03-06 12:58:49,519 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:58:49,519 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:58:49,519 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:58:49,519 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:58:49,519 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:58:49,640 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:49] "PUT /clients/change/20/ HTTP/1.1" 200 -
+2023-03-06 12:58:49,640 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /clients/change/20/ HTTP/1.1" 200 76
+2023-03-06 12:58:49,640 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /clients/change/20/ HTTP/1.1" 200 76
+2023-03-06 12:58:49,640 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /clients/change/20/ HTTP/1.1" 200 76
+2023-03-06 12:58:49,640 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /clients/change/20/ HTTP/1.1" 200 76
+2023-03-06 12:58:49,640 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /clients/change/20/ HTTP/1.1" 200 76
+2023-03-06 12:58:50,317 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,317 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,317 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,317 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,317 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,317 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,317 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,317 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,317 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,317 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,317 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,317 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,317 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,341 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:50] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 12:58:50,341 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,341 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,341 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,341 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,341 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,341 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,341 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,341 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,341 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,341 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,341 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,341 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,341 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,344 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,344 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,344 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,344 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,344 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,344 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,344 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,344 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,344 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,344 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,344 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,344 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,344 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,430 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:50] "POST /rooms/ HTTP/1.1" 200 -
+2023-03-06 12:58:50,431 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:58:50,431 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:58:50,431 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:58:50,431 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:58:50,431 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:58:50,431 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:58:50,431 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:58:50,431 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:58:50,431 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:58:50,431 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:58:50,431 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:58:50,431 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:58:50,431 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 12:58:50,434 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,434 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,434 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,434 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,434 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,434 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,434 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,434 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,434 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,434 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,434 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,434 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,434 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,457 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:50] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 12:58:50,457 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 12:58:50,457 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 12:58:50,457 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 12:58:50,457 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 12:58:50,457 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 12:58:50,457 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 12:58:50,457 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 12:58:50,457 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 12:58:50,457 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 12:58:50,457 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 12:58:50,457 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 12:58:50,457 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 12:58:50,457 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 12:58:50,462 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,462 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,462 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,462 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,462 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,462 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,462 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,462 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,462 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,462 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,462 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,462 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,462 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,485 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:50] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 12:58:50,485 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 12:58:50,485 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 12:58:50,485 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 12:58:50,485 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 12:58:50,485 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 12:58:50,485 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 12:58:50,485 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 12:58:50,485 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 12:58:50,485 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 12:58:50,485 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 12:58:50,485 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 12:58:50,485 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 12:58:50,485 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 12:58:50,488 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,488 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,488 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,488 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,488 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,488 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,488 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,488 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,488 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,488 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,488 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,488 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,488 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,591 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:50] "DELETE /rooms/change/13/ HTTP/1.1" 200 -
+2023-03-06 12:58:50,591 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/13/ HTTP/1.1" 200 49
+2023-03-06 12:58:50,591 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/13/ HTTP/1.1" 200 49
+2023-03-06 12:58:50,591 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/13/ HTTP/1.1" 200 49
+2023-03-06 12:58:50,591 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/13/ HTTP/1.1" 200 49
+2023-03-06 12:58:50,591 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/13/ HTTP/1.1" 200 49
+2023-03-06 12:58:50,591 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/13/ HTTP/1.1" 200 49
+2023-03-06 12:58:50,591 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/13/ HTTP/1.1" 200 49
+2023-03-06 12:58:50,591 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/13/ HTTP/1.1" 200 49
+2023-03-06 12:58:50,591 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/13/ HTTP/1.1" 200 49
+2023-03-06 12:58:50,591 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/13/ HTTP/1.1" 200 49
+2023-03-06 12:58:50,591 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/13/ HTTP/1.1" 200 49
+2023-03-06 12:58:50,591 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/13/ HTTP/1.1" 200 49
+2023-03-06 12:58:50,591 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/13/ HTTP/1.1" 200 49
+2023-03-06 12:58:50,596 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,596 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,596 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,596 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,596 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,596 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,596 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,596 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,596 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,596 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,596 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,596 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,596 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,621 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:50] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 12:58:50,621 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,621 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,621 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,621 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,621 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,621 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,621 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,621 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,621 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,621 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,621 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,621 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,621 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,626 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,626 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,626 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,626 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,626 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,626 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,626 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,626 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,626 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,626 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,626 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,626 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,626 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,644 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:50] "POST /rooms/1/ HTTP/1.1" 200 -
+2023-03-06 12:58:50,644 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,644 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,644 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,644 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,644 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,644 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,644 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,644 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,644 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,644 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,644 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,644 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,644 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,649 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,649 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,649 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,649 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,649 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,649 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,649 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,649 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,649 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,649 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,649 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,649 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,649 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,673 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:50] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 12:58:50,673 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,673 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,673 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,673 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,673 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,673 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,673 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,673 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,673 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,673 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,673 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,673 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,673 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 12:58:50,676 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,676 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,676 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,676 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,676 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,676 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,676 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,676 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,676 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,676 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,676 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,676 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,676 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 12:58:50,700 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:50] "[32mPUT /rooms/change/11 HTTP/1.1[0m" 308 -
+2023-03-06 12:58:50,700 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11 HTTP/1.1" 308 263
+2023-03-06 12:58:50,700 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11 HTTP/1.1" 308 263
+2023-03-06 12:58:50,700 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11 HTTP/1.1" 308 263
+2023-03-06 12:58:50,700 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11 HTTP/1.1" 308 263
+2023-03-06 12:58:50,700 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11 HTTP/1.1" 308 263
+2023-03-06 12:58:50,700 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11 HTTP/1.1" 308 263
+2023-03-06 12:58:50,700 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11 HTTP/1.1" 308 263
+2023-03-06 12:58:50,700 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11 HTTP/1.1" 308 263
+2023-03-06 12:58:50,700 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11 HTTP/1.1" 308 263
+2023-03-06 12:58:50,700 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11 HTTP/1.1" 308 263
+2023-03-06 12:58:50,700 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11 HTTP/1.1" 308 263
+2023-03-06 12:58:50,700 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11 HTTP/1.1" 308 263
+2023-03-06 12:58:50,700 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11 HTTP/1.1" 308 263
+2023-03-06 12:58:50,703 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:58:50,703 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:58:50,703 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:58:50,703 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:58:50,703 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:58:50,703 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:58:50,703 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:58:50,703 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:58:50,703 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:58:50,703 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:58:50,703 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:58:50,703 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:58:50,703 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 12:58:50,715 - hotel - ERROR - Exception on /rooms/change/11/ [PUT]
+Traceback (most recent call last):
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask/views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/venv/lib/python3.10/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/vlad/PycharmProjects/pythonProject/Stage_2/hotel/rest/hotel_api.py", line 46, in put
+    room = hotel_schemas.EditRoomInfo(id=room_id, area=new_info_room.get('area'),
+  File "pydantic/main.py", line 342, in pydantic.main.BaseModel.__init__
+pydantic.error_wrappers.ValidationError: 1 validation error for EditRoomInfo
+max_amount_clients
+  none is not an allowed value (type=type_error.none.not_allowed)
+2023-03-06 12:58:50,716 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 12:58:50] "[35m[1mPUT /rooms/change/11/ HTTP/1.1[0m" 500 -
+2023-03-06 12:58:50,717 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11/ HTTP/1.1" 500 37
+2023-03-06 12:58:50,717 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11/ HTTP/1.1" 500 37
+2023-03-06 12:58:50,717 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11/ HTTP/1.1" 500 37
+2023-03-06 12:58:50,717 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11/ HTTP/1.1" 500 37
+2023-03-06 12:58:50,717 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11/ HTTP/1.1" 500 37
+2023-03-06 12:58:50,717 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11/ HTTP/1.1" 500 37
+2023-03-06 12:58:50,717 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11/ HTTP/1.1" 500 37
+2023-03-06 12:58:50,717 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11/ HTTP/1.1" 500 37
+2023-03-06 12:58:50,717 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11/ HTTP/1.1" 500 37
+2023-03-06 12:58:50,717 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11/ HTTP/1.1" 500 37
+2023-03-06 12:58:50,717 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11/ HTTP/1.1" 500 37
+2023-03-06 12:58:50,717 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11/ HTTP/1.1" 500 37
+2023-03-06 12:58:50,717 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11/ HTTP/1.1" 500 37
+2023-03-06 13:00:11,522 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,522 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,522 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,522 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,522 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,550 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:11] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 13:00:11,551 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 153
+2023-03-06 13:00:11,551 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 153
+2023-03-06 13:00:11,551 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 153
+2023-03-06 13:00:11,551 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 153
+2023-03-06 13:00:11,551 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 153
+2023-03-06 13:00:11,554 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,554 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,554 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,554 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,554 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,640 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:11] "POST /clients/ HTTP/1.1" 200 -
+2023-03-06 13:00:11,640 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/ HTTP/1.1" 200 78
+2023-03-06 13:00:11,640 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/ HTTP/1.1" 200 78
+2023-03-06 13:00:11,640 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/ HTTP/1.1" 200 78
+2023-03-06 13:00:11,640 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/ HTTP/1.1" 200 78
+2023-03-06 13:00:11,640 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/ HTTP/1.1" 200 78
+2023-03-06 13:00:11,643 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,643 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,643 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,643 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,643 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,656 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:11] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 13:00:11,656 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 232
+2023-03-06 13:00:11,656 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 232
+2023-03-06 13:00:11,656 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 232
+2023-03-06 13:00:11,656 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 232
+2023-03-06 13:00:11,656 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 232
+2023-03-06 13:00:11,659 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,659 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,659 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,659 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,659 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,681 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:11] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 13:00:11,681 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 232
+2023-03-06 13:00:11,681 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 232
+2023-03-06 13:00:11,681 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 232
+2023-03-06 13:00:11,681 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 232
+2023-03-06 13:00:11,681 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 232
+2023-03-06 13:00:11,686 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,686 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,686 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,686 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,686 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,699 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:11] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 13:00:11,699 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 232
+2023-03-06 13:00:11,699 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 232
+2023-03-06 13:00:11,699 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 232
+2023-03-06 13:00:11,699 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 232
+2023-03-06 13:00:11,699 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 232
+2023-03-06 13:00:11,702 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,702 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,702 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,702 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,702 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,716 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:11] "[32mDELETE /clients/change/24 HTTP/1.1[0m" 308 -
+2023-03-06 13:00:11,716 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/24 HTTP/1.1" 308 267
+2023-03-06 13:00:11,716 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/24 HTTP/1.1" 308 267
+2023-03-06 13:00:11,716 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/24 HTTP/1.1" 308 267
+2023-03-06 13:00:11,716 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/24 HTTP/1.1" 308 267
+2023-03-06 13:00:11,716 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/24 HTTP/1.1" 308 267
+2023-03-06 13:00:11,719 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 13:00:11,719 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 13:00:11,719 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 13:00:11,719 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 13:00:11,719 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 13:00:11,815 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:11] "DELETE /clients/change/24/ HTTP/1.1" 200 -
+2023-03-06 13:00:11,815 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/24/ HTTP/1.1" 200 49
+2023-03-06 13:00:11,815 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/24/ HTTP/1.1" 200 49
+2023-03-06 13:00:11,815 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/24/ HTTP/1.1" 200 49
+2023-03-06 13:00:11,815 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/24/ HTTP/1.1" 200 49
+2023-03-06 13:00:11,815 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /clients/change/24/ HTTP/1.1" 200 49
+2023-03-06 13:00:11,820 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,820 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,820 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,820 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,820 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,837 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:11] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 13:00:11,837 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 153
+2023-03-06 13:00:11,837 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 153
+2023-03-06 13:00:11,837 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 153
+2023-03-06 13:00:11,837 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 153
+2023-03-06 13:00:11,837 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 153
+2023-03-06 13:00:11,840 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,840 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,840 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,840 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,840 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,862 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:11] "POST /clients/phone_number2/ HTTP/1.1" 200 -
+2023-03-06 13:00:11,863 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/phone_number2/ HTTP/1.1" 200 76
+2023-03-06 13:00:11,863 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/phone_number2/ HTTP/1.1" 200 76
+2023-03-06 13:00:11,863 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/phone_number2/ HTTP/1.1" 200 76
+2023-03-06 13:00:11,863 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/phone_number2/ HTTP/1.1" 200 76
+2023-03-06 13:00:11,863 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /clients/phone_number2/ HTTP/1.1" 200 76
+2023-03-06 13:00:11,867 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,867 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,867 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,867 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,867 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,893 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:11] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 13:00:11,893 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 153
+2023-03-06 13:00:11,893 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 153
+2023-03-06 13:00:11,893 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 153
+2023-03-06 13:00:11,893 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 153
+2023-03-06 13:00:11,893 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 153
+2023-03-06 13:00:11,898 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,898 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,898 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,898 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,898 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,913 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:11] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 13:00:11,913 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 153
+2023-03-06 13:00:11,913 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 153
+2023-03-06 13:00:11,913 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 153
+2023-03-06 13:00:11,913 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 153
+2023-03-06 13:00:11,913 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 153
+2023-03-06 13:00:11,916 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,916 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,916 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,916 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,916 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,941 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:11] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 13:00:11,941 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:11,941 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:11,941 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:11,941 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:11,941 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:11,944 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,944 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,944 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,944 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,944 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:11,958 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:11] "[32mPUT /clients/change/20 HTTP/1.1[0m" 308 -
+2023-03-06 13:00:11,958 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /clients/change/20 HTTP/1.1" 308 267
+2023-03-06 13:00:11,958 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /clients/change/20 HTTP/1.1" 308 267
+2023-03-06 13:00:11,958 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /clients/change/20 HTTP/1.1" 308 267
+2023-03-06 13:00:11,958 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /clients/change/20 HTTP/1.1" 308 267
+2023-03-06 13:00:11,958 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /clients/change/20 HTTP/1.1" 308 267
+2023-03-06 13:00:11,961 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 13:00:11,961 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 13:00:11,961 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 13:00:11,961 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 13:00:11,961 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 13:00:12,042 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:12] "PUT /clients/change/20/ HTTP/1.1" 200 -
+2023-03-06 13:00:12,043 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /clients/change/20/ HTTP/1.1" 200 76
+2023-03-06 13:00:12,043 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /clients/change/20/ HTTP/1.1" 200 76
+2023-03-06 13:00:12,043 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /clients/change/20/ HTTP/1.1" 200 76
+2023-03-06 13:00:12,043 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /clients/change/20/ HTTP/1.1" 200 76
+2023-03-06 13:00:12,043 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /clients/change/20/ HTTP/1.1" 200 76
+2023-03-06 13:00:12,856 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,856 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,856 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,856 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,856 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,856 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,856 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,856 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,856 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,856 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,856 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,856 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,856 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,867 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:12] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 13:00:12,868 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:12,868 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:12,868 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:12,868 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:12,868 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:12,868 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:12,868 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:12,868 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:12,868 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:12,868 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:12,868 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:12,868 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:12,868 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:12,871 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,871 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,871 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,871 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,871 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,871 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,871 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,871 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,871 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,871 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,871 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,871 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,871 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,977 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:12] "POST /rooms/ HTTP/1.1" 200 -
+2023-03-06 13:00:12,978 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 13:00:12,978 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 13:00:12,978 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 13:00:12,978 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 13:00:12,978 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 13:00:12,978 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 13:00:12,978 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 13:00:12,978 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 13:00:12,978 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 13:00:12,978 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 13:00:12,978 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 13:00:12,978 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 13:00:12,978 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/ HTTP/1.1" 200 49
+2023-03-06 13:00:12,981 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,981 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,981 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,981 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,981 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,981 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,981 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,981 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,981 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,981 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,981 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,981 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:12,981 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,001 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:13] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 13:00:13,001 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 13:00:13,001 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 13:00:13,001 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 13:00:13,001 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 13:00:13,001 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 13:00:13,001 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 13:00:13,001 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 13:00:13,001 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 13:00:13,001 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 13:00:13,001 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 13:00:13,001 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 13:00:13,001 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 13:00:13,001 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 13:00:13,006 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,006 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,006 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,006 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,006 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,006 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,006 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,006 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,006 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,006 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,006 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,006 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,006 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,015 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:13] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 13:00:13,016 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 13:00:13,016 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 13:00:13,016 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 13:00:13,016 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 13:00:13,016 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 13:00:13,016 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 13:00:13,016 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 13:00:13,016 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 13:00:13,016 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 13:00:13,016 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 13:00:13,016 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 13:00:13,016 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 13:00:13,016 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 243
+2023-03-06 13:00:13,019 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,019 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,019 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,019 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,019 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,019 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,019 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,019 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,019 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,019 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,019 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,019 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,019 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,103 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:13] "DELETE /rooms/change/15/ HTTP/1.1" 200 -
+2023-03-06 13:00:13,103 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/15/ HTTP/1.1" 200 49
+2023-03-06 13:00:13,103 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/15/ HTTP/1.1" 200 49
+2023-03-06 13:00:13,103 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/15/ HTTP/1.1" 200 49
+2023-03-06 13:00:13,103 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/15/ HTTP/1.1" 200 49
+2023-03-06 13:00:13,103 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/15/ HTTP/1.1" 200 49
+2023-03-06 13:00:13,103 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/15/ HTTP/1.1" 200 49
+2023-03-06 13:00:13,103 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/15/ HTTP/1.1" 200 49
+2023-03-06 13:00:13,103 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/15/ HTTP/1.1" 200 49
+2023-03-06 13:00:13,103 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/15/ HTTP/1.1" 200 49
+2023-03-06 13:00:13,103 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/15/ HTTP/1.1" 200 49
+2023-03-06 13:00:13,103 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/15/ HTTP/1.1" 200 49
+2023-03-06 13:00:13,103 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/15/ HTTP/1.1" 200 49
+2023-03-06 13:00:13,103 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "DELETE /rooms/change/15/ HTTP/1.1" 200 49
+2023-03-06 13:00:13,108 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,108 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,108 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,108 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,108 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,108 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,108 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,108 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,108 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,108 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,108 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,108 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,108 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,120 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:13] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 13:00:13,120 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,120 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,120 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,120 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,120 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,120 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,120 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,120 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,120 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,120 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,120 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,120 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,120 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,125 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,125 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,125 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,125 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,125 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,125 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,125 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,125 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,125 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,125 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,125 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,125 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,125 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,136 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:13] "POST /rooms/1/ HTTP/1.1" 200 -
+2023-03-06 13:00:13,136 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,136 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,136 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,136 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,136 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,136 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,136 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,136 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,136 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,136 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,136 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,136 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,136 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /rooms/1/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,140 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,140 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,140 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,140 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,140 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,140 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,140 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,140 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,140 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,140 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,140 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,140 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,140 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,153 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:13] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 13:00:13,153 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,153 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,153 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,153 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,153 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,153 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,153 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,153 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,153 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,153 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,153 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,153 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,153 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 123
+2023-03-06 13:00:13,156 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,156 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,156 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,156 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,156 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,156 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,156 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,156 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,156 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,156 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,156 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,156 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,156 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:13,169 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:13] "[32mPUT /rooms/change/11 HTTP/1.1[0m" 308 -
+2023-03-06 13:00:13,169 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11 HTTP/1.1" 308 263
+2023-03-06 13:00:13,169 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11 HTTP/1.1" 308 263
+2023-03-06 13:00:13,169 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11 HTTP/1.1" 308 263
+2023-03-06 13:00:13,169 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11 HTTP/1.1" 308 263
+2023-03-06 13:00:13,169 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11 HTTP/1.1" 308 263
+2023-03-06 13:00:13,169 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11 HTTP/1.1" 308 263
+2023-03-06 13:00:13,169 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11 HTTP/1.1" 308 263
+2023-03-06 13:00:13,169 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11 HTTP/1.1" 308 263
+2023-03-06 13:00:13,169 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11 HTTP/1.1" 308 263
+2023-03-06 13:00:13,169 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11 HTTP/1.1" 308 263
+2023-03-06 13:00:13,169 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11 HTTP/1.1" 308 263
+2023-03-06 13:00:13,169 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11 HTTP/1.1" 308 263
+2023-03-06 13:00:13,169 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11 HTTP/1.1" 308 263
+2023-03-06 13:00:13,172 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 13:00:13,172 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 13:00:13,172 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 13:00:13,172 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 13:00:13,172 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 13:00:13,172 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 13:00:13,172 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 13:00:13,172 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 13:00:13,172 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 13:00:13,172 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 13:00:13,172 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 13:00:13,172 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 13:00:13,172 - urllib3.connectionpool - DEBUG - Resetting dropped connection: 127.0.0.1
+2023-03-06 13:00:13,263 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:13] "PUT /rooms/change/11/ HTTP/1.1" 200 -
+2023-03-06 13:00:13,264 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11/ HTTP/1.1" 200 119
+2023-03-06 13:00:13,264 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11/ HTTP/1.1" 200 119
+2023-03-06 13:00:13,264 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11/ HTTP/1.1" 200 119
+2023-03-06 13:00:13,264 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11/ HTTP/1.1" 200 119
+2023-03-06 13:00:13,264 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11/ HTTP/1.1" 200 119
+2023-03-06 13:00:13,264 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11/ HTTP/1.1" 200 119
+2023-03-06 13:00:13,264 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11/ HTTP/1.1" 200 119
+2023-03-06 13:00:13,264 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11/ HTTP/1.1" 200 119
+2023-03-06 13:00:13,264 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11/ HTTP/1.1" 200 119
+2023-03-06 13:00:13,264 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11/ HTTP/1.1" 200 119
+2023-03-06 13:00:13,264 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11/ HTTP/1.1" 200 119
+2023-03-06 13:00:13,264 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11/ HTTP/1.1" 200 119
+2023-03-06 13:00:13,264 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "PUT /rooms/change/11/ HTTP/1.1" 200 119
+2023-03-06 13:00:28,380 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:28,393 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:28] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 13:00:28,393 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 121
+2023-03-06 13:00:28,394 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:28] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-06 13:00:28,530 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:28] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 13:00:29,425 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:29,449 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:29] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 13:00:29,450 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 153
+2023-03-06 13:00:29,451 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:29] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-06 13:00:29,660 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:29] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 13:00:29,872 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:29,889 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:29] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 13:00:29,890 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 121
+2023-03-06 13:00:29,890 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:29] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-06 13:00:30,037 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:30] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 13:00:31,034 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:31,049 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:31] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 13:00:31,049 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 153
+2023-03-06 13:00:31,050 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:31] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-06 13:00:31,177 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:31] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 13:00:34,561 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:34,575 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:34] "GET /rooms/ HTTP/1.1" 200 -
+2023-03-06 13:00:34,576 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /rooms/ HTTP/1.1" 200 121
+2023-03-06 13:00:34,579 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:34] "GET /room_list/ HTTP/1.1" 200 -
+2023-03-06 13:00:34,692 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:34] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-06 13:00:40,324 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-03-06 13:00:40,337 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:40] "GET /clients/ HTTP/1.1" 200 -
+2023-03-06 13:00:40,337 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /clients/ HTTP/1.1" 200 153
+2023-03-06 13:00:40,338 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:40] "GET /client_list/ HTTP/1.1" 200 -
+2023-03-06 13:00:40,448 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2023 13:00:40] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -

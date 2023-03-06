@@ -40,16 +40,15 @@ class HotelApiTestCase(unittest.TestCase):
             var = len(take_all.json())
             room_attrs = {
                 "area": var,
-                "number_of_beds": var,
                 "price_for_a_night": var,
-                "busy": False
+                "max_amount_clients": var+2
             }
             room_id = take_all.json()[len(take_all.json()) - 1].get('room_id')
             response = requests.put(f"http://127.0.0.1:5000/rooms/change/{room_id}", json=room_attrs)
             self.assertEqual(200, response.status_code)
             self.assertEqual(room_attrs['area'], response.json()['area'])
-            self.assertEqual(room_attrs['number_of_beds'], response.json()['number_of_beds'])
             self.assertEqual(room_attrs['price_for_a_night'], response.json()['price_for_a_night'])
+            self.assertEqual(room_attrs['max_amount_clients'], response.json()['max_amount_clients'])
 
     def test_delete_room(self):
         take_all = requests.get("http://127.0.0.1:5000/rooms/")

@@ -48,7 +48,7 @@ def edit_client(client: clients_schemas.EditClientInfo) -> Union[Clients, dict]:
                 client = Clients.query.filter_by(id=client.id).first()
                 return client
         return response
-    return {"Status_code": 400, "description": "no such client"}
+    return {"description": "no such client"}
 
 
 def delete_client(client_id: int) -> dict:

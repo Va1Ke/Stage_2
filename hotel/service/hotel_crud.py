@@ -10,7 +10,7 @@ def get_all_rooms() -> list[Hotel]:
 
 def search_room_by_free_amount(search_by_free_amount: int) -> dict:
     """find a free room"""
-    rooms = Hotel.query.filter(Hotel.free_amount >= search_by_free_amount)
+    rooms = Hotel.query.filter(Hotel.free_amount >= search_by_free_amount).all()
     return rooms
 
 def add_client_to_room(room_id: int) -> dict:
@@ -41,7 +41,7 @@ def update_rooms_amount() -> dict:
             room.number_of_occupied = len(clients)
             room.free_amount = room.max_amount_clients - room.number_of_occupied
             db.session.commit()
-    return {"Status_code": "200", "description": "Success"}
+    return {"description": "Success"}
 
 
 
@@ -52,7 +52,7 @@ def add_room(room: hotel_schemas.AddRoom) -> dict:
                     free_amount=room.max_amount_clients, number_of_occupied=0)
     db.session.add(db_room)
     db.session.commit()
-    return {"Status_code": "200", "description": "Success"}
+    return {"description": "Success"}
 
 
 def edit_room(room: hotel_schemas.EditRoomInfo) -> dict:
@@ -65,7 +65,8 @@ def edit_room(room: hotel_schemas.EditRoomInfo) -> dict:
             updated_room.max_amount_clients = room.max_amount_clients
             updated_room.free_amount = room.max_amount_clients - updated_room.number_of_occupied
             db.session.commit()
-            return updated_room
+            new_room_info = Hotel.query.filter_by(id=room.id).first()
+            return new_room_info
         return {"description": "number_of_occupied must be <= than entered max_amount_clients"}
     return {"description": "no such room"}
 
@@ -76,8 +77,8 @@ def delete_room(room_id: int) -> dict:
     if room:
         check = Clients.query.filter_by(room_id=room_id).first()
         if check:
-            return {"Status_code": "400", "description": "room is busy"}
+            return {"error": "room is busy"}
         db.session.delete(room)
         db.session.commit()
-        return {"Status_code": "200", "description": "Success"}
-    return {"Status_code": "400", "description": "no such room"}
+        return {"description": "Success"}
+    return {"description": "no such room"}

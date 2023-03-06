@@ -11,7 +11,6 @@ class AddClient(BaseModel):
     name: str
     phone_number: str
 
-
 class EditClientInfo(BaseModel):
     id: int
     name: str
