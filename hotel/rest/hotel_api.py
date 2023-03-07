@@ -47,4 +47,6 @@ class HotelDeleteUpdateAdd(Resource):
                                           price_for_a_night=new_info_room.get('price_for_a_night'),
                                           max_amount_clients=new_info_room.get('max_amount_clients'))
         response = edit_room(room=room)
+        if isinstance(response, dict):
+            return json.loads(response)
         return json.loads(response.to_json())

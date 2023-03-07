@@ -35,8 +35,8 @@ class ClientDeleteUpdateAdd(Resource):
         """delete client"""
         response = delete_client(client_id=client_id)
         if response.get('description') == "Success":
-            return {"Status_code": "200", "description": "Success"}
-        return {"Status_code": "400", "description": "No such user"}
+            return {"description": "Success"}
+        return {"description": "No such user"}
 
     def put(self, client_id: int) -> dict:
         """put client"""

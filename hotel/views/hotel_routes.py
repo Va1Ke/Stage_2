@@ -64,9 +64,9 @@ async def delete_room():
     if request.method == "POST":
         room_id = request.form['id']
         response = requests.delete(f"http://127.0.0.1:5000/rooms/change/{room_id}/", timeout=100)
-        if response.status_code == 200:
-            return redirect('/room_list/')
-        return redirect('/bad_request/')
+        if isinstance(response.json(), dict) and "room is busy" == response.json().get("error"):
+            return redirect('/bad_request/')
+        return redirect('/room_list/')
 
 @hotel_rout.route('/bad_request/')
 def error():

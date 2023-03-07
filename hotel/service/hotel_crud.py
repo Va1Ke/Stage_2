@@ -21,7 +21,7 @@ def add_client_to_room(room_id: int) -> dict:
         room.number_of_occupied = room.number_of_occupied + 1
         db.session.commit()
         return {"description": "Success"}
-    return {"description": "no free amount in this room"}
+    return {"error": "no free amount in this room"}
 
 def subtract_client_from_room(room_id: int) -> dict:
     """update a room amount"""
