@@ -2,76 +2,8 @@
 It is web-application which allows users to record information about clients, rooms in hotel and the rental
 orders.
 
-## 1. Orders
-### 1.1 Display list of orders
-The mode is designed to view the list of orders, if it possible to display the number of orders for a specified
-period of time.<br>
-
-Main scenario: 
-* User selects item “Orders”;
-* Application displays list of Orders.
-
-![Orders](images/orders_list.png)
-
-The list displays the following columns:
-* id - unique order id
-* client_id - unique client id
-* room_id - unique room id
-* name - client name
-* phone_nuber - client phone number
-* rented - when rented
-* on_days - how much time rented
-
-### 1.2 Add order
-Main scenario:
-* User clicks the “Add” button in the orders list view mode
-* Application displays form to enter order data
-* User enters order data and presses “Save” button
-* If any data is entered incorrectly, incorrect data messages are displayed;
-* If entered data is valid, then record is adding to database
-* If error occurs, then error message is displaying
-* If new order record is successfully added, then list of orders with added records is displaying
-
-Cancel operation scenario:
-* User clicks the “Add” button in the order list view mode
-* Application displays form to enter order data
-* User enters order data and presses “Cancel” button;
-* Data don’t save in data base, then list of orders records is displaying to user.
-* If the user selects the menu item "Orders”, ”Clients” or "Hotel", the data will not be saved to the database and the corresponding form with updated data will be opened.
-
-![Orders](images/order_add.png)
-
-### 1.3 Edit order
-Main scenario:
-* User clicks the “Edit” button in the orders list view mode
-* Application displays form to enter order data
-* User enters order data and presses “Save” button
-* If any data is entered incorrectly, incorrect data messages are displayed
-* If entered data is valid, then edited data is added to database
-* If error occurs, then error message is displaying
-* If order record is successfully edited, then list of orders with added records is displaying
-
-Cancel operation scenario:
-* User clicks the “Edit” button in the orders list view mode;
-* Application displays form to enter order data;
-* User enters order data and presses “Cancel” button
-* Data don’t save in database, then list of orders records is displaying to user.
-* If the user selects the menu item "Orders”, ”Clients” or "Hotel", the data will not be saved to the database and the corresponding form with updated data will be opened
-
-![Orders](images/order_edit.png)
-
-### 1.4 Delete order
-Main scenario:
-* User clicks the “delete” button in the orders list view mode
-* Application displays form to enter order id
-* User enters order id and presses “delete” button
-* If any data is entered incorrectly, incorrect data messages are displayed
-* If error occurs, then error message is displaying
-
-![Orders](images/order_delete.png)
-
-## 2.Clients
-### 2.1 Display list of Clients
+## 1.Clients
+### 1.1 Display list of Clients
 This mode is intended for viewing and editing the clients list.<br>
 Main scenario:
 * User selects item “Clients”
@@ -83,116 +15,125 @@ The list displays the following columns:
 * id - unique client id
 * name - client name
 * phone_number - client phone number
+* room_id - rented room
 
-### 2.2 Add a Client
+### 1.2 Add a Client
 Main scenario:
 * User clicks the “Add” button in the clients list view mode
-* Application displays form to enter order data
-* User enters order data and presses “add” button
+* Application displays form to enter client data
+* User enters client data and presses “add” button
 * If any data is entered incorrectly, incorrect data messages are displayed;
 * If entered data is valid, then record is adding to database
 * If error occurs, then error message is displaying
-* If new order record is successfully added, then list of orders with added records is displaying
+* If new client is successfully added, then list of clients with added records is displaying
 
 Cancel operation scenario:
 * User clicks the “Add” button in the order list view mode
-* Application displays form to enter order data
-* User enters order data and presses “Cancel” button;
-* Data don’t save in database, then list of orders records is displaying to user.
-* If the user selects the menu item "Orders”, ”Clients” or "Hotel", the data will not
+* Application displays form to enter client data
+* User enters client data and presses “Cancel” button;
+* Data don’t save in database, then list of clients is displaying to user.
+* If the user selects the menu item ”Clients” or "Hotel", the data will not be applied.
 
-![Clients](images/client_add.png)
+![Clients](images/add_client.png)
 
-### 2.3 Edit Client
+### 1.3 Edit Client
 Main scenario:
 * User clicks the “Edit” button in the client list view mode
-* Application displays form to enter order data
-* User enters order data and presses “Save” button
+* Application displays form to enter client data
+* User enters client data and presses “Save” button
 * If any data is entered incorrectly, incorrect data messages are displayed
 * If entered data is valid, then edited data is added to database
 * If error occurs, then error message is displaying
-* If order record is successfully edited, then list of orders with added records is displaying
+* If order record is successfully edited, then list of clients with added records is displaying
 
 Cancel operation scenario:
 * User clicks the “Edit” button in the orders list view mode;
-* Application displays form to enter order data;
-* User enters order data and presses “Cancel” button
-* Data don’t save in database, then list of orders records is displaying to user.
-* If the user selects the menu item "Orders”, ”Clients” or "Hotel", the data will not be saved to the database and the corresponding form with updated data will be opened
+* Application displays form to enter new client data
+* User enters new client data and presses “Cancel” button;
+* Data don’t save in database, then list of clients is displaying to user.
+* If the user selects the menu item ”Clients” or "Hotel", the data will not be applied.
 
-![Clients](images/client_edit.png)
+![Clients](images/edit_client.png)
 
-### 2.4 Client delete
+### 1.4 Client delete
 Main scenario:
 * User clicks the “delete” button in the client list view mode
-* Application displays form to enter order id
-* User enters order id and presses “delete” button
+* Application displays form to enter client id
+* User enters client id and presses “delete” button
 * If any data is entered incorrectly, incorrect data messages are displayed
 * If error occurs, then error message is displaying
 
-![Orders](images/client_delete.png)
+![Orders](images/delete_client.png)
 
-## 3. Hotel
-### 3.1 Display list of room
-This mode is intended for viewing and editing the clients list.<br>
+## 2. Hotel
+### 2.1 Display list of room
+This mode is intended for viewing and editing the rooms list.<br>
 Main scenario:
 * User selects item “Hotel”
-* Application displays list of clients
+* Application displays list of rooms
 
 ![Orders](images/room_list.png)
 
 The list displays the following columns:
 * id - unique room id
 * area - area of a room
-* number_of_beds - number of beds in a room
 * price_for_a_night - price for one night
-* busy - indicate renting
+* max_amount - max numbers of clients in room
+* free - numbers of free place on room
+* occupied - numbers of occupied place on room
 
 
-### 3.2 Add a room
+### 2.2 Add a room
 Main scenario:
 * User clicks the “Add” button in the room list view mode
-* Application displays form to enter order data
-* User enters order data and presses “add” button
+* Application displays form to enter room data
+* User enters room data and presses “add” button
 * If any data is entered incorrectly, incorrect data messages are displayed;
 * If entered data is valid, then record is adding to database
 * If error occurs, then error message is displaying
-* If new order record is successfully added, then list of orders with added records is displaying
+* If new room  is successfully added, then list of orders with added room is displaying
 
 Cancel operation scenario:
 * User clicks the “Add” button in the order list view mode
-* Application displays form to enter order data
+* Application displays form to enter room data
 * User enters order data and presses “Cancel” button;
 * Data don’t save in database, then list of orders records is displaying to user.
-* If the user selects the menu item "Orders”, ”Clients” or "Hotel", the data will not
+* If the user selects the menu item ”Clients” or "Hotel", the data will not be applied.
 
-![Clients](images/room_add.png)
+![Clients](images/add_room.png)
 
-### 3.3 Edit Room
+### 2.3 Edit Room
 Main scenario:
 * User clicks the “Edit” button in the room list view mode
-* Application displays form to enter order data
-* User enters order data and presses “Save” button
+* Application displays form to enter room data
+* User enters room data and presses “Edit” button
 * If any data is entered incorrectly, incorrect data messages are displayed
 * If entered data is valid, then edited data is added to database
 * If error occurs, then error message is displaying
-* If order record is successfully edited, then list of orders with added records is displaying
+* If room is successfully edited, then list of rooms with added records is displaying
 
 Cancel operation scenario:
-* User clicks the “Edit” button in the orders list view mode;
-* Application displays form to enter order data;
+* User clicks the “Edit” button in the room list view mode;
+* Application displays form to enter room data;
 * User enters order data and presses “Cancel” button
 * Data don’t save in database, then list of orders records is displaying to user.
-* If the user selects the menu item "Orders”, ”Clients” or "Hotel", the data will not be saved to the database and the corresponding form with updated data will be opened
+* If the user selects the menu item "Orders”, ”Clients” or "Hotel", the data will not be applied.
 
-![Orders](images/room_edit.png)
+![Orders](images/edit_room.png)
 
-### 3.4 Room delete
+### 2.4 Room delete
 Main scenario:
 * User clicks the “delete” button in the room list view mode
-* Application displays form to enter order id
-* User enters order id and presses “delete” button
+* Application displays form to enter room id
+* User enters room id and presses “delete” button
 * If any data is entered incorrectly, incorrect data messages are displayed
 * If error occurs, then error message is displaying
 
-![Orders](images/room_delete.png)
+![Orders](images/delete_room.png)
+
+Cancel operation scenario:
+* User clicks the “Delete” button in the room list view mode;
+* Application displays form to enter room data;
+* User enters order data and presses “Cancel” button
+* Data don’t save in database, then list of orders records is displaying to user.
+* If the user selects the menu item "Orders”, ”Clients” or "Hotel", the data will not be applied.

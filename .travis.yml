@@ -18,7 +18,7 @@ before_script:
 
 script:
   - pylint hotel/
-  - flask --app=hotel/ db upgrade
+  - flask --app=hotel/ db upgrade --directory hotel/migrations
   - coverage run -m pytest && coverage report
 
 after_script:

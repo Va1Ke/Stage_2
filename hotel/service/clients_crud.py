@@ -40,15 +40,23 @@ def edit_client(client: clients_schemas.EditClientInfo) -> Union[Clients, dict]:
                 db.session.commit()
                 client = Clients.query.filter_by(id=client.id).first()
                 return client
-        elif client.room_id > 0:
+            return response
+        if client.room_id is not None:
             response = add_client_to_room(room_id=client.room_id)
             if isinstance(response, dict) and response.get("description") == "Success":
-                updated_client.room_id = client.room_id
-                db.session.commit()
-                client = Clients.query.filter_by(id=client.id).first()
-                return client
-        return response
-    return {"Status_code": 400, "description": "no such client"}
+                if updated_client.room_id is not None:
+                    subtract_client_from_room(room_id=updated_client.room_id)
+                    updated_client.room_id = client.room_id
+                    db.session.commit()
+                    client = Clients.query.filter_by(id=client.id).first()
+                    return client
+                if updated_client.room_id is None:
+                    updated_client.room_id = client.room_id
+                    db.session.commit()
+                    client = Clients.query.filter_by(id=client.id).first()
+                    return client
+            return response
+    return {"description": "no such client"}
 
 
 def delete_client(client_id: int) -> dict:
