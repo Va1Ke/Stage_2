@@ -16,8 +16,4 @@ class Settings:
     #                          '@db:' + MYSQL_PORT + '/' + MYSQL_DATABASE
 
     #for local
-    #SQLALCHEMY_DATABASE_URL: str = 'mysql+pymysql://' + MYSQL_USER + ':' + MYSQL_PASSWORD + \
-    #                               '@127.0.0.1:' + MYSQL_PORT + '/' + MYSQL_DATABASE
-
-    #for travis-ci
     SQLALCHEMY_DATABASE_URL: str = os.getenv("DATABASE_URL")
